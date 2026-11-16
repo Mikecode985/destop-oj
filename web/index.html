@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>本地 OJ · 从语法到算法</title>
+<link rel="icon" type="image/png" href="/static/app-icon.png?v=20261116z1">
+<link rel="apple-touch-icon" href="/static/app-icon.png?v=20261116z1">
+<link rel="shortcut icon" href="/static/favicon.ico?v=20261116z1">
+<link rel="stylesheet" href="/static/style.css?v=20261116z1">
+<link rel="stylesheet" href="/static/rpg.css?v=20261116z1">
+<link rel="stylesheet" href="/static/arena.css?v=20261116z1">
+<link rel="stylesheet" href="/static/grammar.css?v=20261116z1">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img class="logo" src="/static/app-icon.png?v=20261116z1" alt="本地 OJ 图标" draggable="false">
+    <div>
+      <h1>本地 OJ</h1>
+      <div class="sub">从语法到算法 · 贵阳生活题库</div>
+    </div>
+  </div>
+  <div class="view-switch" id="viewSwitch">
+    <button class="view-tab on" data-view="oj">做题</button>
+    <button class="view-tab" data-view="book"><span class="view-spark">✦</span>原书</button>
+    <button class="view-tab" data-view="stats"><span class="view-spark">◔</span>学习</button>
+    <button class="view-tab arena-tab" data-view="arena"><span class="view-spark">◈</span>竞技场</button>
+    <button class="view-tab grammar-tab" data-view="grammar"><span class="view-spark">✎</span>语法</button>
+  </div>
+  <div class="arena-head-live" id="arenaHeadLive">
+    <span class="arena-head-pulse" aria-hidden="true"></span>
+    <b class="arena-head-time" id="arenaHeadTime">45:00</b>
+    <span class="arena-head-sep" aria-hidden="true"></span>
+    <span class="arena-head-score"><b id="arenaHeadScore">0</b>分</span>
+    <span class="arena-head-solved" id="arenaHeadSolved">0 / 3</span>
+    <button class="arena-head-finish" id="arenaHeadFinish" type="button">交卷</button>
+  </div>
+  <div class="spacer"></div>
+  <div class="progress-wrap">
+    <span class="progress-text">已通过 <b id="acCount">0</b> / <b id="totalCount">0</b></span>
+    <div class="progress-bar"><i id="progressFill"></i></div>
+  </div>
+  <button class="icon-btn" id="resetProgress" title="清空本机做题记录">重置进度</button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="side-head">
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="搜索题号 / 标题 / 知识点…" autocomplete="off">
+        <button class="clear" id="clearSearch">×</button>
+      </div>
+      <div class="chips" id="filterChips">
+        <button class="chip on" data-filter="all">全部</button>
+        <button class="chip" data-filter="example">例题</button>
+        <button class="chip" data-filter="exercise">习题</button>
+        <button class="chip" data-filter="ai">AI 题</button>
+        <button class="chip" data-filter="guiyang">贵阳题</button>
+        <button class="chip" data-filter="think">思考题</button>
+        <button class="chip" data-filter="todo">未通过</button>
+        <button class="chip" data-filter="wrong">错题</button>
+        <button class="chip" data-filter="ac">已通过</button>
+        <button class="chip chip-star" data-filter="star">收藏</button>
+      </div>
+      <div class="sortbar">
+        <span class="sort-label">排序</span>
+        <div class="seg" id="sortSeg">
+          <button class="seg-btn on" data-sort="chapter">按章节</button>
+          <button class="seg-btn" data-sort="asc">难度 ↑</button>
+          <button class="seg-btn" data-sort="desc">难度 ↓</button>
+        </div>
+      </div>
+      <div class="side-quick">
+        <button class="quick-btn" id="btnDaily" title="每天固定一道，按日期挑选"><span>◷</span>每日一题</button>
+        <button class="quick-btn" id="btnRandom" title="从可判题中随机抽一道"><span>↻</span>随机一题</button>
+      </div>
+      <button class="rpg-hud" id="rpgHud" type="button" aria-label="打开冒险者档案">
+        <span class="rpg-emblem"><b id="rpgLevelNo">1</b><small>LV</small></span>
+        <span class="rpg-hud-copy">
+          <span class="rpg-hud-line"><b id="rpgTitle">初入算法谷</b><span id="rpgXpText">0 / 80 XP</span></span>
+          <span class="rpg-bar"><i id="rpgFill"></i></span>
+          <span class="rpg-hud-foot"><span id="rpgSolved">0 题已通过</span><span id="rpgDaily">今日首胜 +10 XP</span></span>
+        </span>
+        <span class="rpg-arrow" aria-hidden="true">›</span>
+      </button>
+    </div>
+    <div class="side-list" id="sideList"></div>
+    <section class="arena-side" id="arenaSide" aria-label="竞技场比赛面板"></section>
+  </aside>
+
+  <div class="main">
+    <section class="statement-pane" id="statementPane">
+      <div class="empty" id="welcome">
+        <div>
+          <div class="empty-badge">Local Judge</div>
+          <h3>欢迎来到本地 OJ</h3>
+          <p>题库取自《从语法到算法》，并新增 100 道贵阳生活原创题。</p>
+          <p>难度按知识点、思维、实现、细节四个维度评估，可按难度排序。</p>
+          <p>左边选一道题，右边写代码，提交后由本机 <b>g++</b> 逐用例评测。</p>
+          <p style="margin-top:16px"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> 提交　<kbd>Ctrl</kbd> + <kbd>S</kbd> 运行自测</p>
+        </div>
+      </div>
+      <div class="problem-head" id="problemHead" style="display:none"></div>
+      <div class="statement" id="statement" style="display:none"></div>
+    </section>
+
+    <section class="work-pane">
+      <div class="editor-toolbar">
+        <span class="lang-pill">C++17 · g++</span>
+        <button class="tool-btn" id="btnTemplate">插入模板</button>
+        <button class="tool-btn" id="btnImport" title="从本地选择 .cpp / .c / .txt 代码文件，载入后直接提交评测">提交本地文件</button>
+        <input type="file" id="fileInput" accept=".cpp,.cc,.cxx,.c,.h,.hpp,.txt" hidden>
+        <button class="tool-btn" id="btnSaveCode" title="把当前代码保存为 .cpp 文件（Ctrl+Shift+S）">保存代码</button>
+        <button class="tool-btn" id="btnSelf" title="展开 / 收起控制台">收起控制台</button>
+        <button class="tool-btn" id="btnResetCode">清空代码</button>
+        <button class="tool-btn ai" id="btnAI" title="让 AI 助教讲思路、找错、解释考点">AI 助教</button>
+        <div class="spacer" style="flex:1"></div>
+        <span class="kbd" id="editorHint">Ctrl+Enter 提交</span>
+        <button class="tool-btn run" id="btnRun">运行自测</button>
+        <button class="tool-btn primary" id="btnSubmit">提交评测</button>
+      </div>
+
+      <div class="editor-wrap">
+        <div class="gutter" id="gutter">1</div>
+        <div class="code-editor" id="codeEditor">
+          <div class="code-active-line" id="codeActiveLine" aria-hidden="true"></div>
+          <pre class="code-highlight" id="codeHighlight" aria-hidden="true"><code id="codeHighlightInner"></code></pre>
+          <textarea id="code" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="C++ 代码编辑器"></textarea>
+        </div>
+      </div>
+      <div class="editor-status" aria-live="polite">
+        <span id="editorPos">Ln 1, Col 1</span>
+        <span id="editorChars">0 字符 · 1 行</span>
+        <span class="spacer"></span>
+        <span class="editor-status-hint">Tab 缩进 · Ctrl+Space 补全</span>
+      </div>
+      <div class="code-suggest" id="codeSuggest" hidden></div>
+
+      <div class="console-box show" id="consoleBox">
+        <div class="console-head">
+          <span class="console-title">控制台</span>
+          <span class="console-tip">自测：左边输入 → 运行 → 右边看输出（不判分、不记进度）</span>
+          <div class="spacer"></div>
+          <button id="btnFillSample">填入样例</button>
+          <button id="btnClearInput">清空输入</button>
+          <button id="btnClearOut">清空输出</button>
+          <button id="btnScrollTop" title="把输入滚回开头">回到开头</button>
+          <button class="console-run" id="btnConsoleRun" title="用左边的输入跑一遍（Ctrl+S）">运行</button>
+        </div>
+        <div class="console-grid">
+          <div class="console-pane">
+            <div class="console-cap"><span>输入 · stdin</span><span id="inputLines">0 行</span></div>
+            <textarea id="selfInput" spellcheck="false" placeholder="在这里输入数据，程序会从标准输入读它…"></textarea>
+          </div>
+          <div class="console-pane">
+            <div class="console-cap"><span>输出 · stdout</span><span id="consoleStatus">未运行</span></div>
+            <pre class="console-out" id="consoleOut">点「运行自测」后，程序输出会显示在这里</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-panel" id="resultPanel">
+        <div class="result-head" id="resultHead">
+          <span class="verdict none" id="verdict">等待提交</span>
+          <span class="result-sum" id="resultSum"></span>
+          <div class="spacer"></div>
+          <span id="resultToggle" style="color:#8a958f;font-size:12px">展开</span>
+        </div>
+        <div class="result-body" id="resultBody"></div>
+      </div>
+
+      <div class="history-inline hide" id="historyPanel">
+        <div class="history-inline-head">
+          <b>提交记录</b><span id="historyPanelCount"></span>
+          <div class="spacer"></div>
+          <button id="historyPanelClose">收起</button>
+        </div>
+        <div class="history-inline-list" id="historyInlineList"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<main class="book-workspace hide" id="bookWorkspace">
+  <aside class="book-side">
+    <div class="book-side-head">
+      <div class="book-kicker">ORIGINAL EDITION</div>
+      <h2>从语法到算法</h2>
+      <p class="book-side-sub">原书电子版 · 32 章 + 6 附录</p>
+      <div class="book-search">
+        <input id="bookSearch" type="text" placeholder="搜索章节 / 标题…" autocomplete="off">
+        <span>⌕</span>
+      </div>
+    </div>
+
+    <div class="book-current" id="bookCurrent">
+      <div class="book-current-label">当前题目</div>
+      <div class="book-current-title" id="bookCurrentTitle">未选题</div>
+      <div class="book-current-actions">
+        <button id="bookCurrentOpen">打开对应章节</button>
+        <button id="bookCurrentBack">回到题目</button>
+      </div>
+    </div>
+
+    <div class="book-related" id="bookRelated"></div>
+
+    <nav class="book-toc" id="bookToc"></nav>
+  </aside>
+
+  <section class="book-stage">
+    <div class="book-topbar">
+      <button class="book-back" id="bookBack">← 回到做题</button>
+      <div class="book-crumb" id="bookCrumb">原书阅读</div>
+      <div class="spacer"></div>
+      <div class="book-read-progress" title="当前章节阅读进度">
+        <span id="bookPercent">0%</span>
+        <i><b id="bookProgressFill"></b></i>
+      </div>
+      <button class="book-pdf" id="bookPdf">PDF 原版 ↗</button>
+    </div>
+
+    <div class="book-scroll" id="bookScroll" tabindex="-1">
+      <div class="book-paper">
+        <div class="book-hero" id="bookHero">
+          <div class="book-hero-num" id="bookHeroNum">01</div>
+          <div class="book-hero-kicker" id="bookHeroKicker">CHAPTER</div>
+          <h1 id="bookHeroTitle">第 1 章</h1>
+          <p id="bookHeroSub">从语法到算法</p>
+        </div>
+        <div class="book-guide" id="bookGuide"></div>
+        <article class="book-content" id="bookContent">
+          <div class="book-loading"><i></i><i></i><i></i><span>正在翻开原书…</span></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="book-pager">
+      <button id="bookPrev">← 上一章</button>
+      <span id="bookPageHint">原书阅读</span>
+      <button id="bookNext">下一章 →</button>
+    </div>
+  </section>
+</main>
+
+<main class="stats-workspace hide" id="statsWorkspace">
+  <section class="stats-shell">
+    <header class="stats-hero">
+      <div class="stats-hero-copy">
+        <div class="stats-kicker">LEARNING TRACKER · 本机数据</div>
+        <h1>学习轨迹</h1>
+        <p>每一次提交都会留下记录。这里把提交、AC、难度和薄弱知识点汇总成一张可回看的学习地图。</p>
+      </div>
+      <div class="stats-hero-actions">
+        <button class="stats-refresh" id="statsExport">导出学习报告</button>
+        <button class="stats-refresh" id="statsRefresh">刷新数据</button>
+      </div>
+    </header>
+    <section class="rpg-profile" id="rpgProfile"></section>
+    <div class="stats-metrics" id="statsMetrics"></div>
+    <div class="stats-layout">
+      <section class="stats-card heat-card">
+        <header class="stats-card-head">
+          <div><span class="stats-label">ACTIVITY</span><h2>提交热力图</h2></div>
+          <span class="stats-note" id="statsHeatRange">最近 16 周</span>
+        </header>
+        <div class="stats-heatmap" id="statsHeatmap"></div>
+        <div class="heat-legend"><span>少</span><i class="heat-cell lv0"></i><i class="heat-cell lv1"></i><i class="heat-cell lv2"></i><i class="heat-cell lv3"></i><i class="heat-cell lv4"></i><span>多</span></div>
+      </section>
+      <section class="stats-card diff-card">
+        <header class="stats-card-head">
+          <div><span class="stats-label">DIFFICULTY</span><h2>难度分布</h2></div>
+        </header>
+        <div class="stats-diff" id="statsDiff"></div>
+      </section>
+      <section class="stats-card weak-card">
+        <header class="stats-card-head">
+          <div><span class="stats-label">WEAK SPOTS</span><h2>薄弱知识点</h2></div>
+        </header>
+        <div class="stats-weak" id="statsWeak"></div>
+      </section>
+      <section class="stats-card history-card">
+        <header class="stats-card-head">
+          <div><span class="stats-label">SUBMISSIONS</span><h2>最近提交</h2></div>
+          <span class="stats-note" id="statsHistoryTotal"></span>
+        </header>
+        <div class="stats-history" id="statsHistory"></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<main class="arena-workspace hide" id="arenaWorkspace"></main>
+<main class="grammar-workspace hide" id="grammarWorkspace"></main>
+
+<div class="arena-modal hide" id="arenaConfirm" role="dialog" aria-modal="true" aria-labelledby="arenaConfirmTitle">
+  <section class="arena-confirm-card">
+    <div class="arena-confirm-mark" aria-hidden="true">◷</div>
+    <h3 id="arenaConfirmTitle">要现在交卷吗？</h3>
+    <p id="arenaConfirmText">交卷后会立即结算，剩余时间不会保留。</p>
+    <div class="arena-confirm-actions">
+      <button data-arena-confirm-cancel type="button">继续比赛</button>
+      <button class="primary" data-arena-confirm-go type="button">交卷并结算</button>
+    </div>
+  </section>
+</div>
+
+<div class="arena-modal hide" id="arenaRecap" role="dialog" aria-modal="true" aria-label="竞技场赛后总结">
+  <section class="arena-recap-card">
+    <button class="arena-recap-close" id="arenaRecapClose" type="button" title="关闭">×</button>
+    <div id="arenaRecapContent"></div>
+  </section>
+</div>
+
+<div class="submission-backdrop hide" id="submissionBackdrop">
+  <section class="submission-panel" role="dialog" aria-modal="true" aria-label="提交详情">
+    <header class="submission-head">
+      <div>
+        <span class="submission-kicker" id="submissionKicker">SUBMISSION</span>
+        <h2 id="submissionTitle">提交详情</h2>
+      </div>
+      <div class="spacer"></div>
+      <span class="verdict none" id="submissionVerdict">—</span>
+      <button class="submission-close" id="submissionClose">×</button>
+    </header>
+    <div class="submission-meta" id="submissionMeta"></div>
+    <pre class="submission-code" id="submissionCode"></pre>
+    <div class="submission-cases" id="submissionCases"></div>
+    <footer class="submission-foot">
+      <button id="submissionAskAI">AI 复盘</button>
+      <button id="submissionOpenProblem">打开题目</button>
+      <button id="submissionLoadCode">载入编辑器</button>
+      <button id="submissionCopy">复制代码</button>
+    </footer>
+  </section>
+</div>
+
+<div class="book-selbar hide" id="bookSelBar">
+  <span class="book-sel-mark">✦</span>
+  <span class="book-sel-text" id="bookSelPreview">已选中原书内容</span>
+  <button class="book-sel-ai" data-book-ask="explain">问 AI</button>
+  <button data-book-ask="generate">用这段出题</button>
+  <button data-book-ask="relate" id="bookAskRelate">联系本题</button>
+  <button id="bookSelCopy">复制</button>
+</div>
+
+<div class="ai-backdrop hide" id="aiBackdrop">
+  <section class="ai-panel" role="dialog" aria-modal="true" aria-label="AI 助教">
+    <header class="ai-head">
+      <div class="ai-head-mark">✦</div>
+      <div class="ai-head-text">
+        <div class="ai-title">AI 助教 <span class="ai-beta">Studio</span></div>
+        <div class="ai-sub" id="aiSub">讲思路、找错误、造数据、写题解、出题</div>
+      </div>
+      <div class="ai-head-actions">
+        <button class="ai-ghost" id="aiExport" title="把当前对话导出为 Markdown">导出对话</button>
+        <button class="ai-close" id="aiClose" title="关闭">×</button>
+      </div>
+    </header>
+
+    <div class="ai-configbar">
+      <button class="ai-config-toggle" id="aiConfigToggle">API 设置</button>
+      <span class="ai-config-state" id="aiConfigState">未配置 API Key</span>
+      <div class="spacer"></div>
+      <span class="ai-private">Key 只留在这台电脑的浏览器里</span>
+    </div>
+
+    <div class="ai-config hide" id="aiConfig">
+      <div class="ai-grid2">
+        <label class="ai-field">服务商
+          <select id="aiProvider">
+            <option value="deepseek">DeepSeek</option>
+            <option value="openai">OpenAI</option>
+            <option value="siliconflow">硅基流动</option>
+            <option value="custom">自定义 / 本地模型</option>
+          </select>
+        </label>
+        <label class="ai-field">模型
+          <input id="aiModel" spellcheck="false" placeholder="deepseek-chat">
+        </label>
+      </div>
+      <label class="ai-field">接口地址
+        <input id="aiBase" spellcheck="false" placeholder="https://api.deepseek.com/v1">
+      </label>
+      <label class="ai-field">API Key
+        <input id="aiKey" type="password" spellcheck="false" autocomplete="off" placeholder="sk-...">
+      </label>
+      <div class="ai-config-actions">
+        <button class="ai-save" id="aiSave">保存并测试</button>
+        <span class="ai-hint">题目与代码会发送给所选服务商；Key 不写入题库或日志</span>
+      </div>
+    </div>
+
+    <div class="ai-modes" id="aiModes">
+      <button class="ai-mode on" data-ai-mode="coach">教练</button>
+      <button class="ai-mode" data-ai-mode="debug">诊断</button>
+      <button class="ai-mode" data-ai-mode="data">造数据</button>
+      <button class="ai-mode" data-ai-mode="code">代码</button>
+      <button class="ai-mode" data-ai-mode="review">复盘</button>
+      <button class="ai-mode ai-mode-gen" data-ai-mode="gen">出题</button>
+    </div>
+    <div class="ai-contextbar">
+      <span class="ai-context-dot"></span>
+      <span id="aiContext">当前未选题</span>
+    </div>
+
+    <div class="ai-gen-panel hide" id="aiGenPanel">
+      <div class="ai-gen-head">
+        <span class="ai-gen-kicker">AI 出题</span>
+        <span class="ai-gen-title">生成一道能判、能存的原创题</span>
+        <span class="ai-gen-seal">g++ 预校验</span>
+        <button class="ai-gen-toggle" id="aiGenToggle" type="button">收起</button>
+      </div>
+      <textarea id="aiGenTopic" rows="2" spellcheck="false" placeholder="出题内容：知识点、场景、要求；留空则用原书选段 / 当前题"></textarea>
+      <div class="ai-gen-controls">
+        <label class="ai-gen-diff" for="aiGenDifficulty">难度
+          <input id="aiGenDifficulty" type="range" min="1" max="5" step="1" value="3">
+          <b id="aiGenDiffName">3 · 提高</b>
+        </label>
+        <button class="ai-gen-go" id="aiGenGo">生成题目</button>
+      </div>
+      <div class="ai-gen-quote hide" id="aiGenQuote">
+        <span class="ai-gen-quote-mark">“</span>
+        <span id="aiGenQuoteText"></span>
+        <button id="aiGenQuoteClear" type="button" title="不使用这段选段">×</button>
+      </div>
+      <details class="ai-gen-spec" id="aiGenSpec">
+        <summary>出题规范 · 给助教的硬约束</summary>
+        <div class="ai-gen-spec-body">
+          <p>生成结果先由本机 g++ 编译，并用参考答案跑完全部 tests；通过后才会写入题库。</p>
+          <ol>
+            <li><b>题面完整</b>：背景、输入格式、输出格式、数据范围、至少 1 组样例；不能写“见原题”。</li>
+            <li><b>可判题</b>：4–6 组 tests，必须包含样例，覆盖最小 / 边界 / 极端；每组 <code>in</code> / <code>out</code> 是精确字符串。</li>
+            <li><b>参考答案</b>：C++17，首行必须是 <code>#include &lt;bits/stdc++.h&gt;</code>，且在 1 秒内通过全部 tests。</li>
+            <li><b>难度</b>：严格按 1 入门 / 2 基础 / 3 提高 / 4 进阶 / 5 挑战控制知识点、思维量和代码量。</li>
+            <li><b>原创</b>：不许旧题只换情景；同名题、同题面会被拒绝。原书选段只提炼知识点，不照抄原文。</li>
+            <li><b>输出</b>：只返回 JSON，字段为 title、statement_md、input_md、output_md、constraints_md、samples、tests、solution、hints、tags。</li>
+          </ol>
+        </div>
+      </details>
+    </div>
+
+    <div class="ai-scroll" id="aiScroll">
+      <div class="ai-welcome" id="aiWelcome">
+        <div class="ai-welcome-title">六种用法，随题切换</div>
+        <p><b>教练</b>：一步步提示，不直接代写。　<b>诊断</b>：对着代码和判题结果找错。</p>
+        <p><b>造数据</b>：生成边界/随机输入，一键填入控制台。　<b>代码</b>：给可提交代码，一键插入。</p>
+        <p><b>复盘</b>：把这道题沉淀成题解笔记。　<b>出题</b>：按难度/知识点/原书选段生成可判题。</p>
+        <p class="ai-welcome-tip">首次使用请点「API 设置」填入自己的 Key。</p>
+      </div>
+      <div class="ai-messages" id="aiMessages"></div>
+    </div>
+
+    <div class="ai-quick" id="aiQuick">
+      <button data-ai-prompt="p1">给我一个提示</button>
+      <button data-ai-prompt="p2">我卡住了</button>
+      <button data-ai-prompt="p3">下一步怎么想</button>
+      <button data-ai-prompt="p4">检查边界</button>
+    </div>
+
+    <div class="ai-compose">
+      <textarea id="aiInput" rows="2" spellcheck="false" placeholder="例如：为什么这个 DP 会重复计数？"></textarea>
+      <button class="ai-send" id="aiSend">发送</button>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="rpg-backdrop hide" id="rpgBackdrop">
+  <section class="rpg-modal" role="dialog" aria-modal="true" aria-label="冒险者档案">
+    <header class="rpg-modal-head">
+      <div class="rpg-modal-mark">✦</div>
+      <div class="rpg-modal-copy">
+        <div class="rpg-modal-kicker">ADVENTURER PROFILE</div>
+        <h2>冒险者档案</h2>
+      </div>
+      <button class="rpg-close" id="rpgClose" type="button" title="关闭">×</button>
+    </header>
+    <div class="rpg-modal-body" id="rpgModalBody"></div>
+  </section>
+</div>
+
+<div class="levelup-backdrop hide" id="levelupBackdrop">
+  <section class="levelup-card" role="dialog" aria-modal="true" aria-label="升级">
+    <div class="levelup-glow" aria-hidden="true"></div>
+    <div class="levelup-confetti" id="levelupConfetti" aria-hidden="true"></div>
+    <div class="levelup-kicker">LEVEL UP</div>
+    <div class="levelup-medal"><small>LV</small><b id="levelupNo">2</b></div>
+    <h2 id="levelupTitle">代码学徒</h2>
+    <p id="levelupSub">经验够了，新的算法领域正在展开。</p>
+    <div class="levelup-unlock" id="levelupUnlock"></div>
+    <button class="levelup-go" id="levelupClose" type="button">继续冒险</button>
+  </section>
+</div>
+
+<div class="ai-debug-suggest hide" id="aiDebugSuggest" role="status" aria-live="polite" aria-labelledby="aiDebugTitle">
+  <button class="ai-debug-close" id="aiDebugClose" type="button" title="关闭建议">×</button>
+  <div class="ai-debug-head">
+    <span class="ai-debug-mark" aria-hidden="true">✦</span>
+    <div class="ai-debug-copy">
+      <span class="ai-debug-kicker" id="aiDebugKicker">AI DEBUG</span>
+      <h3 id="aiDebugTitle">要请 AI 助教一起 debug 吗？</h3>
+    </div>
+  </div>
+  <p class="ai-debug-body" id="aiDebugBody">看到结果有问题，要不要让 AI 助教对着错误信息和代码帮你找错？</p>
+  <pre class="ai-debug-snippet" id="aiDebugSnippet" hidden></pre>
+  <div class="ai-debug-actions">
+    <button class="ai-debug-primary" id="aiDebugGo" type="button">请教 AI 助教</button>
+    <button class="ai-debug-secondary" id="aiDebugLater" type="button">先自己看看</button>
+  </div>
+</div>
+<script src="/static/app.js?v=20261116z1"></script>
+<script src="/static/arena.js?v=20261116z1"></script>
+<script src="/static/grammar.js?v=20261116z1"></script>
+</body>
+</html>

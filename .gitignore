@@ -1,0 +1,29 @@
+# Local-only files
+data/progress.json
+data/submissions.json
+data/*.log
+data/server_stdout.log
+data/server_stderr.log
+data/acceptance_last.log
+data/extra/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary / build output
+dist/
+build/
+*.tmp
+*.bak

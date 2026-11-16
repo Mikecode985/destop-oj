@@ -1,0 +1,6127 @@
+[
+ {
+  "id": "gy-001",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-001",
+  "title": "青云路夜市的摊位账本",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "青云路夜市收摊后，摊主老周把每个摊位的营业额依次记在账本上。他想知道今晚整条街一共卖了多少，以及卖得最好的第一个摊位是几号。\n\n**任务**：统计这 n 个数的总和，并输出总和与第一个最大值的位置（位置从 1 开始）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一行两个整数：总和、第一个最大值的下标（从 1 开始），用一个空格隔开。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9；总和可能超过 int，请用 64 位整数。",
+  "hint_md": "先读入 n 和整个数组，边累加边记录当前最大值。\n最大值相等时不要更新下标，才能得到“第一个”最大值的编号。\n总和最大约 10^14，C++ 用 long long。",
+  "note_md": "",
+  "hints": [
+   "先读入 n 和整个数组，边累加边记录当前最大值。",
+   "最大值相等时不要更新下标，才能得到“第一个”最大值的编号。",
+   "总和最大约 10^14，C++ 用 long long。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "求和"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\n56 351 423 536",
+    "out": "1366 4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\n56 351 423 536",
+    "out": "1366 4"
+   },
+   {
+    "in": "3\n251 600 976",
+    "out": "1827 3"
+   },
+   {
+    "in": "10\n586 999 959 389 458 904 940 646 614 67",
+    "out": "6562 2"
+   },
+   {
+    "in": "10\n366 507 600 905 446 66 596 433 472 415",
+    "out": "4806 4"
+   },
+   {
+    "in": "9\n999 969 954 33 724 872 781 798 638",
+    "out": "6768 1"
+   },
+   {
+    "in": "6\n654 307 87 498 469 595",
+    "out": "2610 1"
+   }
+  ]
+ },
+ {
+  "id": "gy-002",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-002",
+  "title": "贵阳北站网约车接单量",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "贵阳北站夜间接驳高峰，调度员按小时记录了网约车的接单量。请算出当晚总接单量，并找出接单量最高的第一个小时。\n\n**任务**：统计这 n 个数的总和，并输出总和与第一个最大值的位置（位置从 1 开始）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一行两个整数：总和、第一个最大值的下标（从 1 开始），用一个空格隔开。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9；总和可能超过 int，请用 64 位整数。",
+  "hint_md": "先读入 n 和整个数组，边累加边记录当前最大值。\n最大值相等时不要更新下标，才能得到“第一个”最大值的编号。\n总和最大约 10^14，C++ 用 long long。",
+  "note_md": "",
+  "hints": [
+   "先读入 n 和整个数组，边累加边记录当前最大值。",
+   "最大值相等时不要更新下标，才能得到“第一个”最大值的编号。",
+   "总和最大约 10^14，C++ 用 long long。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "求和"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\n189 575 88 287",
+    "out": "1139 2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\n189 575 88 287",
+    "out": "1139 2"
+   },
+   {
+    "in": "7\n15 447 201 507 358 120 468",
+    "out": "2116 4"
+   },
+   {
+    "in": "4\n128 758 415 184",
+    "out": "1485 2"
+   },
+   {
+    "in": "5\n650 202 712 510 698",
+    "out": "2772 3"
+   },
+   {
+    "in": "6\n296 547 171 864 832 325",
+    "out": "3035 4"
+   },
+   {
+    "in": "9\n372 126 273 829 650 972 262 677 659",
+    "out": "4820 6"
+   }
+  ]
+ },
+ {
+  "id": "gy-003",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-003",
+  "title": "黔灵山猕猴桃果园产量",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "修文县谷堡镇的果农把每棵猕猴桃树的产量记成一串数字。请算出果园总产量，并指出产量最高的第一棵树。\n\n**任务**：统计这 n 个数的总和，并输出总和与第一个最大值的位置（位置从 1 开始）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一行两个整数：总和、第一个最大值的下标（从 1 开始），用一个空格隔开。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9；总和可能超过 int，请用 64 位整数。",
+  "hint_md": "先读入 n 和整个数组，边累加边记录当前最大值。\n最大值相等时不要更新下标，才能得到“第一个”最大值的编号。\n总和最大约 10^14，C++ 用 long long。",
+  "note_md": "",
+  "hints": [
+   "先读入 n 和整个数组，边累加边记录当前最大值。",
+   "最大值相等时不要更新下标，才能得到“第一个”最大值的编号。",
+   "总和最大约 10^14，C++ 用 long long。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "求和"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3\n541 202 175",
+    "out": "918 1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3\n541 202 175",
+    "out": "918 1"
+   },
+   {
+    "in": "2\n564 309",
+    "out": "873 1"
+   },
+   {
+    "in": "8\n929 205 286 355 361 565 510 376",
+    "out": "3587 1"
+   },
+   {
+    "in": "8\n227 323 152 489 780 849 37 660",
+    "out": "3517 6"
+   },
+   {
+    "in": "5\n642 900 243 452 747",
+    "out": "2984 2"
+   },
+   {
+    "in": "4\n812 953 746 140",
+    "out": "2651 2"
+   }
+  ]
+ },
+ {
+  "id": "gy-004",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-004",
+  "title": "花果园快递柜取件量",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "花果园半山小镇的快递柜按格口记录了当天取件量。物业想知道总取件量，以及取件最多的第一个格口号。\n\n**任务**：统计这 n 个数的总和，并输出总和与第一个最大值的位置（位置从 1 开始）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一行两个整数：总和、第一个最大值的下标（从 1 开始），用一个空格隔开。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9；总和可能超过 int，请用 64 位整数。",
+  "hint_md": "先读入 n 和整个数组，边累加边记录当前最大值。\n最大值相等时不要更新下标，才能得到“第一个”最大值的编号。\n总和最大约 10^14，C++ 用 long long。",
+  "note_md": "",
+  "hints": [
+   "先读入 n 和整个数组，边累加边记录当前最大值。",
+   "最大值相等时不要更新下标，才能得到“第一个”最大值的编号。",
+   "总和最大约 10^14，C++ 用 long long。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "求和"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8\n811 20 873 856 670 766 941 488",
+    "out": "5425 7"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8\n811 20 873 856 670 766 941 488",
+    "out": "5425 7"
+   },
+   {
+    "in": "4\n512 523 907 205",
+    "out": "2147 3"
+   },
+   {
+    "in": "2\n557 434",
+    "out": "991 1"
+   },
+   {
+    "in": "10\n319 332 798 129 998 203 174 552 537 820",
+    "out": "4862 5"
+   },
+   {
+    "in": "8\n13 356 488 552 569 221 143 66",
+    "out": "2408 5"
+   },
+   {
+    "in": "8\n752 92 179 647 863 988 164 57",
+    "out": "3742 6"
+   }
+  ]
+ },
+ {
+  "id": "gy-005",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-005",
+  "title": "地铁 1 号线各站客流",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "早高峰结束后，贵阳地铁 1 号线从窦官到小孟工业园的每个站都报来了上车人数。请统计全线总客流，并找出客流最大的第一个站。\n\n**任务**：统计这 n 个数的总和，并输出总和与第一个最大值的位置（位置从 1 开始）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一行两个整数：总和、第一个最大值的下标（从 1 开始），用一个空格隔开。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9；总和可能超过 int，请用 64 位整数。",
+  "hint_md": "先读入 n 和整个数组，边累加边记录当前最大值。\n最大值相等时不要更新下标，才能得到“第一个”最大值的编号。\n总和最大约 10^14，C++ 用 long long。",
+  "note_md": "",
+  "hints": [
+   "先读入 n 和整个数组，边累加边记录当前最大值。",
+   "最大值相等时不要更新下标，才能得到“第一个”最大值的编号。",
+   "总和最大约 10^14，C++ 用 long long。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "求和"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9\n255 601 935 980 474 843 743 949 698",
+    "out": "6478 4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9\n255 601 935 980 474 843 743 949 698",
+    "out": "6478 4"
+   },
+   {
+    "in": "8\n913 922 970 922 961 981 986 407",
+    "out": "7062 7"
+   },
+   {
+    "in": "5\n401 877 218 85 224",
+    "out": "1805 2"
+   },
+   {
+    "in": "6\n206 259 785 242 954 610",
+    "out": "3056 5"
+   },
+   {
+    "in": "9\n790 789 480 886 383 452 755 780 931",
+    "out": "6246 9"
+   },
+   {
+    "in": "7\n236 325 420 364 181 648 964",
+    "out": "3138 7"
+   }
+  ]
+ },
+ {
+  "id": "gy-006",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-006",
+  "title": "贵阳的雨到底下了几天",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "贵阳人说“天无三日晴”。气象站记录了连续 n 天的降雨量，降雨量达到 k 毫米才算一个有效雨天。请数一数有效雨天有几天。\n\n**任务**：统计 n 个数中不小于 k 的数有多少个。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，-10^9 ≤ k ≤ 10^9）。\n第二行 n 个整数 a[i]（-10^9 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示满足 a[i] ≥ k 的个数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，-10^9 ≤ a[i], k ≤ 10^9。",
+  "hint_md": "循环每个数，用一个计数器统计 ≥ k 的个数。\n注意 k 可能为负数，不要只考虑正数。\n数据量 10^5，O(n) 足够。",
+  "note_md": "",
+  "hints": [
+   "循环每个数，用一个计数器统计 ≥ k 的个数。",
+   "注意 k 可能为负数，不要只考虑正数。",
+   "数据量 10^5，O(n) 足够。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "循环",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "10 21\n73 56 -18 18 67 5 46 59 50 51",
+    "out": "7"
+   }
+  ],
+  "tests": [
+   {
+    "in": "10 21\n73 56 -18 18 67 5 46 59 50 51",
+    "out": "7"
+   },
+   {
+    "in": "7 0\n-16 17 -9 -7 58 20 -6",
+    "out": "3"
+   },
+   {
+    "in": "8 24\n20 29 3 66 -12 4 62 69",
+    "out": "4"
+   },
+   {
+    "in": "6 -9\n11 74 63 -11 -20 -10",
+    "out": "3"
+   },
+   {
+    "in": "20 15\n28 63 20 37 13 54 58 66 41 75 13 22 38 -10 46 43 73 1 1 72",
+    "out": "15"
+   },
+   {
+    "in": "9 -13\n48 64 22 13 0 27 42 -11 47",
+    "out": "9"
+   }
+  ]
+ },
+ {
+  "id": "gy-007",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-007",
+  "title": "黔灵山猴子的体重普查",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山公园给一群猕猴称体重。饲养员想统计体重不低于 k 千克的猴子有多少只，好准备加餐。\n\n**任务**：统计 n 个数中不小于 k 的数有多少个。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，-10^9 ≤ k ≤ 10^9）。\n第二行 n 个整数 a[i]（-10^9 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示满足 a[i] ≥ k 的个数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，-10^9 ≤ a[i], k ≤ 10^9。",
+  "hint_md": "循环每个数，用一个计数器统计 ≥ k 的个数。\n注意 k 可能为负数，不要只考虑正数。\n数据量 10^5，O(n) 足够。",
+  "note_md": "",
+  "hints": [
+   "循环每个数，用一个计数器统计 ≥ k 的个数。",
+   "注意 k 可能为负数，不要只考虑正数。",
+   "数据量 10^5，O(n) 足够。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "循环",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "15 60\n80 54 20 57 52 68 38 -17 30 -19 18 41 -17 9 11",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "15 60\n80 54 20 57 52 68 38 -17 30 -19 18 41 -17 9 11",
+    "out": "2"
+   },
+   {
+    "in": "13 51\n43 4 -12 8 73 9 12 11 29 -7 59 73 -18",
+    "out": "3"
+   },
+   {
+    "in": "15 44\n25 -4 0 11 14 64 67 51 19 40 2 27 73 2 -15",
+    "out": "4"
+   },
+   {
+    "in": "4 24\n24 11 69 50",
+    "out": "3"
+   },
+   {
+    "in": "16 -3\n-7 -18 39 45 75 46 1 17 32 31 -4 26 25 30 27 -17",
+    "out": "12"
+   },
+   {
+    "in": "13 17\n-9 43 77 13 32 -11 56 17 72 11 47 18 7",
+    "out": "8"
+   }
+  ]
+ },
+ {
+  "id": "gy-008",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-008",
+  "title": "数博会单日客流预警",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "数博会期间，入口闸机按天统计参观人数。安保组关心参观人数达到 k 人的日子有多少天，需要提前加派人手。\n\n**任务**：统计 n 个数中不小于 k 的数有多少个。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，-10^9 ≤ k ≤ 10^9）。\n第二行 n 个整数 a[i]（-10^9 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示满足 a[i] ≥ k 的个数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，-10^9 ≤ a[i], k ≤ 10^9。",
+  "hint_md": "循环每个数，用一个计数器统计 ≥ k 的个数。\n注意 k 可能为负数，不要只考虑正数。\n数据量 10^5，O(n) 足够。",
+  "note_md": "",
+  "hints": [
+   "循环每个数，用一个计数器统计 ≥ k 的个数。",
+   "注意 k 可能为负数，不要只考虑正数。",
+   "数据量 10^5，O(n) 足够。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "循环",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 32\n-1 51 51 -20 72",
+    "out": "3"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 32\n-1 51 51 -20 72",
+    "out": "3"
+   },
+   {
+    "in": "8 37\n71 42 26 17 7 72 34 75",
+    "out": "4"
+   },
+   {
+    "in": "20 2\n0 43 -10 39 45 14 0 31 25 -10 22 -20 -15 13 22 15 66 49 68 78",
+    "out": "14"
+   },
+   {
+    "in": "4 17\n-3 11 76 33",
+    "out": "2"
+   },
+   {
+    "in": "16 49\n22 -6 43 9 28 -17 50 -20 69 44 44 34 33 42 26 67",
+    "out": "3"
+   },
+   {
+    "in": "9 43\n-10 73 50 27 72 17 6 58 71",
+    "out": "5"
+   }
+  ]
+ },
+ {
+  "id": "gy-009",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-009",
+  "title": "观山湖公园的晨跑人数",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "观山湖公园北门记录了连续 n 个清晨的跑者人数。体育局想统计人数不少于 k 的清晨有多少个。\n\n**任务**：统计 n 个数中不小于 k 的数有多少个。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，-10^9 ≤ k ≤ 10^9）。\n第二行 n 个整数 a[i]（-10^9 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示满足 a[i] ≥ k 的个数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，-10^9 ≤ a[i], k ≤ 10^9。",
+  "hint_md": "循环每个数，用一个计数器统计 ≥ k 的个数。\n注意 k 可能为负数，不要只考虑正数。\n数据量 10^5，O(n) 足够。",
+  "note_md": "",
+  "hints": [
+   "循环每个数，用一个计数器统计 ≥ k 的个数。",
+   "注意 k 可能为负数，不要只考虑正数。",
+   "数据量 10^5，O(n) 足够。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "循环",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8 12\n54 53 69 0 4 -8 46 14",
+    "out": "5"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8 12\n54 53 69 0 4 -8 46 14",
+    "out": "5"
+   },
+   {
+    "in": "18 -5\n29 35 -15 3 56 41 1 -15 10 41 64 -12 50 3 42 38 40 70",
+    "out": "15"
+   },
+   {
+    "in": "17 22\n-14 39 37 -12 27 -6 69 55 3 4 51 48 12 76 24 9 74",
+    "out": "10"
+   },
+   {
+    "in": "4 24\n56 47 -20 2",
+    "out": "2"
+   },
+   {
+    "in": "10 20\n78 10 6 -16 31 6 31 36 16 37",
+    "out": "5"
+   },
+   {
+    "in": "15 18\n24 -6 -15 27 19 18 16 52 -9 59 64 50 62 59 24",
+    "out": "11"
+   }
+  ]
+ },
+ {
+  "id": "gy-010",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-010",
+  "title": "青岩古镇客栈的入住率",
+  "difficulty": 1,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇一家客栈记录了连续 n 天的入住房间数。老板想统计入住数达到 k 间的天数，判断旺季是否真的来了。\n\n**任务**：统计 n 个数中不小于 k 的数有多少个。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，-10^9 ≤ k ≤ 10^9）。\n第二行 n 个整数 a[i]（-10^9 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示满足 a[i] ≥ k 的个数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，-10^9 ≤ a[i], k ≤ 10^9。",
+  "hint_md": "循环每个数，用一个计数器统计 ≥ k 的个数。\n注意 k 可能为负数，不要只考虑正数。\n数据量 10^5，O(n) 足够。",
+  "note_md": "",
+  "hints": [
+   "循环每个数，用一个计数器统计 ≥ k 的个数。",
+   "注意 k 可能为负数，不要只考虑正数。",
+   "数据量 10^5，O(n) 足够。"
+  ],
+  "difficulty_label": "入门",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "循环",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "15 -8\n80 47 26 50 -1 7 60 45 55 21 12 18 -16 29 1",
+    "out": "14"
+   }
+  ],
+  "tests": [
+   {
+    "in": "15 -8\n80 47 26 50 -1 7 60 45 55 21 12 18 -16 29 1",
+    "out": "14"
+   },
+   {
+    "in": "17 49\n62 2 80 -3 18 10 14 73 43 55 32 30 -2 80 22 56 12",
+    "out": "6"
+   },
+   {
+    "in": "16 20\n45 22 -20 78 -5 10 16 5 40 33 51 7 28 -10 38 70",
+    "out": "9"
+   },
+   {
+    "in": "9 19\n-7 -17 2 79 10 27 -14 10 53",
+    "out": "3"
+   },
+   {
+    "in": "10 -12\n-4 48 20 61 75 67 5 57 65 25",
+    "out": "10"
+   },
+   {
+    "in": "5 56\n41 63 10 28 52",
+    "out": "1"
+   }
+  ]
+ },
+ {
+  "id": "gy-011",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-011",
+  "title": "青云路小吃价格榜",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青云路夜市的管理员要把各家小吃的价格整理成榜单：先按价格从低到高，价格相同的再按拼音名字从 A 到 Z。\n\n**任务**：把 n 个“名称 + 数值”按数值从小到大排序；数值相同的按名称字典序从小到大。输出排序后的名称和数值。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个不含空格的字符串 name 和一个整数 value。",
+  "output_md": "n 行，每行一个名称和一个整数，表示排序后的结果。",
+  "constraints_md": "1 ≤ n ≤ 10^5，名称只含小写字母，1 ≤ value ≤ 10^9。",
+  "hint_md": "用结构体或 pair 存下名称和数值。\n排序规则是：先比数值，数值相同再比名称。\n直接调用 sort 并写自定义比较函数即可。",
+  "note_md": "",
+  "hints": [
+   "用结构体或 pair 存下名称和数值。",
+   "排序规则是：先比数值，数值相同再比名称。",
+   "直接调用 sort 并写自定义比较函数即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "结构体"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7\nsuanfen 97\nlusi 7\ndoumi 82\nyangyuba 22\nchangwang 38\nkaoluo 34\nsiwawa 83",
+    "out": "lusi 7\nyangyuba 22\nkaoluo 34\nchangwang 38\ndoumi 82\nsiwawa 83\nsuanfen 97"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7\nsuanfen 97\nlusi 7\ndoumi 82\nyangyuba 22\nchangwang 38\nkaoluo 34\nsiwawa 83",
+    "out": "lusi 7\nyangyuba 22\nkaoluo 34\nchangwang 38\ndoumi 82\nsiwawa 83\nsuanfen 97"
+   },
+   {
+    "in": "8\nsiwawa 28\nkaoluo 48\ndoumi 15\nbingjiang 72\nyangyuba 78\nlusi 47\nchangwang 90\nsuanfen 63",
+    "out": "doumi 15\nsiwawa 28\nlusi 47\nkaoluo 48\nsuanfen 63\nbingjiang 72\nyangyuba 78\nchangwang 90"
+   },
+   {
+    "in": "6\nkaoluo 66\nsuanfen 1\nsiwawa 12\ndoumi 35\nlusi 12\nbingjiang 24",
+    "out": "suanfen 1\nlusi 12\nsiwawa 12\nbingjiang 24\ndoumi 35\nkaoluo 66"
+   },
+   {
+    "in": "6\nlusi 32\nchangwang 83\nsiwawa 86\nbingjiang 23\ndoumi 6\nyangyuba 9",
+    "out": "doumi 6\nyangyuba 9\nbingjiang 23\nlusi 32\nchangwang 83\nsiwawa 86"
+   },
+   {
+    "in": "8\nchangwang 21\nlusi 51\nyangyuba 12\nsiwawa 87\ndoumi 29\nsuanfen 7\nkaoluo 8\nbingjiang 28",
+    "out": "suanfen 7\nkaoluo 8\nyangyuba 12\nchangwang 21\nbingjiang 28\ndoumi 29\nlusi 51\nsiwawa 87"
+   },
+   {
+    "in": "8\nlusi 32\nkaoluo 18\ndoumi 88\nsiwawa 78\nyangyuba 10\nbingjiang 97\nsuanfen 12\nchangwang 81",
+    "out": "yangyuba 10\nsuanfen 12\nkaoluo 18\nlusi 32\nsiwawa 78\nchangwang 81\ndoumi 88\nbingjiang 97"
+   }
+  ]
+ },
+ {
+  "id": "gy-012",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-012",
+  "title": "花溪大学城食堂窗口评分",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "花溪大学城食堂要公示各窗口的评分。请按评分从低到高排序；评分相同的窗口按窗口拼音名排序。\n\n**任务**：把 n 个“名称 + 数值”按数值从小到大排序；数值相同的按名称字典序从小到大。输出排序后的名称和数值。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个不含空格的字符串 name 和一个整数 value。",
+  "output_md": "n 行，每行一个名称和一个整数，表示排序后的结果。",
+  "constraints_md": "1 ≤ n ≤ 10^5，名称只含小写字母，1 ≤ value ≤ 10^9。",
+  "hint_md": "用结构体或 pair 存下名称和数值。\n排序规则是：先比数值，数值相同再比名称。\n直接调用 sort 并写自定义比较函数即可。",
+  "note_md": "",
+  "hints": [
+   "用结构体或 pair 存下名称和数值。",
+   "排序规则是：先比数值，数值相同再比名称。",
+   "直接调用 sort 并写自定义比较函数即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "结构体"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "6\nyangyuba 33\nsuanfen 17\nkaoluo 40\nsiwawa 57\nchangwang 87\nlusi 65",
+    "out": "suanfen 17\nyangyuba 33\nkaoluo 40\nsiwawa 57\nlusi 65\nchangwang 87"
+   }
+  ],
+  "tests": [
+   {
+    "in": "6\nyangyuba 33\nsuanfen 17\nkaoluo 40\nsiwawa 57\nchangwang 87\nlusi 65",
+    "out": "suanfen 17\nyangyuba 33\nkaoluo 40\nsiwawa 57\nlusi 65\nchangwang 87"
+   },
+   {
+    "in": "3\nchangwang 67\nlusi 21\nkaoluo 8",
+    "out": "kaoluo 8\nlusi 21\nchangwang 67"
+   },
+   {
+    "in": "8\nlusi 1\nsuanfen 26\nyangyuba 3\nkaoluo 51\nsiwawa 1\nchangwang 93\nbingjiang 33\ndoumi 76",
+    "out": "lusi 1\nsiwawa 1\nyangyuba 3\nsuanfen 26\nbingjiang 33\nkaoluo 51\ndoumi 76\nchangwang 93"
+   },
+   {
+    "in": "7\nlusi 59\nyangyuba 48\nsuanfen 1\nbingjiang 48\nchangwang 44\nsiwawa 32\nkaoluo 81",
+    "out": "suanfen 1\nsiwawa 32\nchangwang 44\nbingjiang 48\nyangyuba 48\nlusi 59\nkaoluo 81"
+   },
+   {
+    "in": "7\nlusi 28\nsuanfen 85\nbingjiang 5\ndoumi 92\nsiwawa 82\nyangyuba 98\nkaoluo 91",
+    "out": "bingjiang 5\nlusi 28\nsiwawa 82\nsuanfen 85\nkaoluo 91\ndoumi 92\nyangyuba 98"
+   },
+   {
+    "in": "8\ndoumi 68\nsuanfen 2\nchangwang 11\nkaoluo 53\nyangyuba 86\nsiwawa 73\nlusi 9\nbingjiang 57",
+    "out": "suanfen 2\nlusi 9\nchangwang 11\nkaoluo 53\nbingjiang 57\ndoumi 68\nsiwawa 73\nyangyuba 86"
+   }
+  ]
+ },
+ {
+  "id": "gy-013",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-013",
+  "title": "青岩古镇伴手礼价目表",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇的伴手礼店把商品名和价格交给店员。请按价格升序打印价目表，同价的商品按名称升序。\n\n**任务**：把 n 个“名称 + 数值”按数值从小到大排序；数值相同的按名称字典序从小到大。输出排序后的名称和数值。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个不含空格的字符串 name 和一个整数 value。",
+  "output_md": "n 行，每行一个名称和一个整数，表示排序后的结果。",
+  "constraints_md": "1 ≤ n ≤ 10^5，名称只含小写字母，1 ≤ value ≤ 10^9。",
+  "hint_md": "用结构体或 pair 存下名称和数值。\n排序规则是：先比数值，数值相同再比名称。\n直接调用 sort 并写自定义比较函数即可。",
+  "note_md": "",
+  "hints": [
+   "用结构体或 pair 存下名称和数值。",
+   "排序规则是：先比数值，数值相同再比名称。",
+   "直接调用 sort 并写自定义比较函数即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "结构体"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\nsuanfen 84\nlusi 37\nkaoluo 22\nbingjiang 65",
+    "out": "kaoluo 22\nlusi 37\nbingjiang 65\nsuanfen 84"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\nsuanfen 84\nlusi 37\nkaoluo 22\nbingjiang 65",
+    "out": "kaoluo 22\nlusi 37\nbingjiang 65\nsuanfen 84"
+   },
+   {
+    "in": "4\nkaoluo 61\nyangyuba 76\nlusi 17\nsuanfen 6",
+    "out": "suanfen 6\nlusi 17\nkaoluo 61\nyangyuba 76"
+   },
+   {
+    "in": "8\nsuanfen 22\nkaoluo 92\nchangwang 86\nyangyuba 9\nbingjiang 75\ndoumi 43\nlusi 70\nsiwawa 86",
+    "out": "yangyuba 9\nsuanfen 22\ndoumi 43\nlusi 70\nbingjiang 75\nchangwang 86\nsiwawa 86\nkaoluo 92"
+   },
+   {
+    "in": "8\nchangwang 3\nsuanfen 53\nkaoluo 63\nlusi 36\nyangyuba 94\nsiwawa 93\ndoumi 38\nbingjiang 17",
+    "out": "changwang 3\nbingjiang 17\nlusi 36\ndoumi 38\nsuanfen 53\nkaoluo 63\nsiwawa 93\nyangyuba 94"
+   },
+   {
+    "in": "4\nlusi 28\nbingjiang 42\nchangwang 99\ndoumi 21",
+    "out": "doumi 21\nlusi 28\nbingjiang 42\nchangwang 99"
+   },
+   {
+    "in": "8\nyangyuba 92\nsuanfen 15\nsiwawa 47\ndoumi 48\nkaoluo 49\nchangwang 99\nlusi 52\nbingjiang 65",
+    "out": "suanfen 15\nsiwawa 47\ndoumi 48\nkaoluo 49\nlusi 52\nbingjiang 65\nyangyuba 92\nchangwang 99"
+   }
+  ]
+ },
+ {
+  "id": "gy-014",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-014",
+  "title": "贵阳地铁沿线的二手房",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "房产中介整理了一批地铁沿线小区，每个小区有一个拼音名和挂牌总价。请按总价从低到高列出，同价按名称排序。\n\n**任务**：把 n 个“名称 + 数值”按数值从小到大排序；数值相同的按名称字典序从小到大。输出排序后的名称和数值。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个不含空格的字符串 name 和一个整数 value。",
+  "output_md": "n 行，每行一个名称和一个整数，表示排序后的结果。",
+  "constraints_md": "1 ≤ n ≤ 10^5，名称只含小写字母，1 ≤ value ≤ 10^9。",
+  "hint_md": "用结构体或 pair 存下名称和数值。\n排序规则是：先比数值，数值相同再比名称。\n直接调用 sort 并写自定义比较函数即可。",
+  "note_md": "",
+  "hints": [
+   "用结构体或 pair 存下名称和数值。",
+   "排序规则是：先比数值，数值相同再比名称。",
+   "直接调用 sort 并写自定义比较函数即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "结构体"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8\ndoumi 50\nchangwang 31\nsuanfen 1\nsiwawa 27\nyangyuba 93\nkaoluo 51\nlusi 3\nbingjiang 18",
+    "out": "suanfen 1\nlusi 3\nbingjiang 18\nsiwawa 27\nchangwang 31\ndoumi 50\nkaoluo 51\nyangyuba 93"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8\ndoumi 50\nchangwang 31\nsuanfen 1\nsiwawa 27\nyangyuba 93\nkaoluo 51\nlusi 3\nbingjiang 18",
+    "out": "suanfen 1\nlusi 3\nbingjiang 18\nsiwawa 27\nchangwang 31\ndoumi 50\nkaoluo 51\nyangyuba 93"
+   },
+   {
+    "in": "7\ndoumi 89\nbingjiang 68\nyangyuba 31\nsiwawa 44\nkaoluo 18\nlusi 86\nsuanfen 35",
+    "out": "kaoluo 18\nyangyuba 31\nsuanfen 35\nsiwawa 44\nbingjiang 68\nlusi 86\ndoumi 89"
+   },
+   {
+    "in": "3\nlusi 31\nyangyuba 86\nbingjiang 55",
+    "out": "lusi 31\nbingjiang 55\nyangyuba 86"
+   },
+   {
+    "in": "4\nchangwang 97\nkaoluo 83\nlusi 92\ndoumi 80",
+    "out": "doumi 80\nkaoluo 83\nlusi 92\nchangwang 97"
+   },
+   {
+    "in": "4\nsuanfen 23\ndoumi 55\nkaoluo 73\nchangwang 46",
+    "out": "suanfen 23\nchangwang 46\ndoumi 55\nkaoluo 73"
+   },
+   {
+    "in": "5\nlusi 89\nsiwawa 24\nbingjiang 74\nkaoluo 99\nchangwang 7",
+    "out": "changwang 7\nsiwawa 24\nbingjiang 74\nlusi 89\nkaoluo 99"
+   }
+  ]
+ },
+ {
+  "id": "gy-015",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-015",
+  "title": "数博会参展商的展位面积",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "数博会展馆要核对参展商面积。请按面积从小到大输出参展商名称和面积，面积相同的按名称排序。\n\n**任务**：把 n 个“名称 + 数值”按数值从小到大排序；数值相同的按名称字典序从小到大。输出排序后的名称和数值。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个不含空格的字符串 name 和一个整数 value。",
+  "output_md": "n 行，每行一个名称和一个整数，表示排序后的结果。",
+  "constraints_md": "1 ≤ n ≤ 10^5，名称只含小写字母，1 ≤ value ≤ 10^9。",
+  "hint_md": "用结构体或 pair 存下名称和数值。\n排序规则是：先比数值，数值相同再比名称。\n直接调用 sort 并写自定义比较函数即可。",
+  "note_md": "",
+  "hints": [
+   "用结构体或 pair 存下名称和数值。",
+   "排序规则是：先比数值，数值相同再比名称。",
+   "直接调用 sort 并写自定义比较函数即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "结构体"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8\nbingjiang 2\nchangwang 89\nsiwawa 48\nlusi 85\nkaoluo 1\nyangyuba 5\ndoumi 79\nsuanfen 11",
+    "out": "kaoluo 1\nbingjiang 2\nyangyuba 5\nsuanfen 11\nsiwawa 48\ndoumi 79\nlusi 85\nchangwang 89"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8\nbingjiang 2\nchangwang 89\nsiwawa 48\nlusi 85\nkaoluo 1\nyangyuba 5\ndoumi 79\nsuanfen 11",
+    "out": "kaoluo 1\nbingjiang 2\nyangyuba 5\nsuanfen 11\nsiwawa 48\ndoumi 79\nlusi 85\nchangwang 89"
+   },
+   {
+    "in": "3\ndoumi 17\nsiwawa 33\nsuanfen 75",
+    "out": "doumi 17\nsiwawa 33\nsuanfen 75"
+   },
+   {
+    "in": "4\nbingjiang 9\nyangyuba 76\nchangwang 32\nsiwawa 62",
+    "out": "bingjiang 9\nchangwang 32\nsiwawa 62\nyangyuba 76"
+   },
+   {
+    "in": "5\nbingjiang 38\nlusi 4\nyangyuba 90\nkaoluo 41\nsuanfen 20",
+    "out": "lusi 4\nsuanfen 20\nbingjiang 38\nkaoluo 41\nyangyuba 90"
+   },
+   {
+    "in": "8\nlusi 46\nyangyuba 6\nbingjiang 16\nkaoluo 45\ndoumi 54\nsiwawa 68\nsuanfen 70\nchangwang 9",
+    "out": "yangyuba 6\nchangwang 9\nbingjiang 16\nkaoluo 45\nlusi 46\ndoumi 54\nsiwawa 68\nsuanfen 70"
+   },
+   {
+    "in": "6\nkaoluo 91\nyangyuba 78\nbingjiang 62\nsuanfen 58\ndoumi 31\nchangwang 71",
+    "out": "doumi 31\nsuanfen 58\nbingjiang 62\nchangwang 71\nyangyuba 78\nkaoluo 91"
+   }
+  ]
+ },
+ {
+  "id": "gy-016",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-016",
+  "title": "南明河分段水质采样",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "南明河被分成 n 段，每段记录了一个水质指标。监测员会询问若干次“第 l 段到第 r 段的总指标是多少”。\n\n**任务**：给定长度为 n 的数组，回答 q 次询问：第 l 个数到第 r 个数的和是多少（下标从 1 开始）。",
+  "input_md": "第一行两个整数 n、q（1 ≤ n, q ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 q 行，每行两个整数 l、r（1 ≤ l ≤ r ≤ n）。",
+  "output_md": "q 行，每行一个整数，表示区间和。",
+  "constraints_md": "1 ≤ n, q ≤ 10^5，0 ≤ a[i] ≤ 10^9；区间和可能超过 int。",
+  "hint_md": "多次区间求和，不要每次 for 一遍，会超时。\n预处理前缀和 pre[i] = a[1] + … + a[i]。\n答案就是 pre[r] - pre[l-1]。",
+  "note_md": "",
+  "hints": [
+   "多次区间求和，不要每次 for 一遍，会超时。",
+   "预处理前缀和 pre[i] = a[1] + … + a[i]。",
+   "答案就是 pre[r] - pre[l-1]。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "前缀和",
+   "区间查询"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "13 5\n57 157 152 40 29 194 77 111 153 101 82 60 65\n3 6\n2 11\n10 13\n5 7\n2 3",
+    "out": "415\n1096\n308\n300\n309"
+   }
+  ],
+  "tests": [
+   {
+    "in": "13 5\n57 157 152 40 29 194 77 111 153 101 82 60 65\n3 6\n2 11\n10 13\n5 7\n2 3",
+    "out": "415\n1096\n308\n300\n309"
+   },
+   {
+    "in": "13 8\n163 4 120 166 75 38 174 88 116 72 12 58 86\n8 11\n9 13\n2 7\n4 5\n7 11\n1 3\n3 11\n4 4",
+    "out": "288\n344\n577\n241\n462\n287\n861\n166"
+   },
+   {
+    "in": "5 5\n100 4 83 125 53\n1 4\n5 5\n1 1\n5 5\n4 4",
+    "out": "312\n53\n100\n53\n125"
+   },
+   {
+    "in": "12 3\n138 189 27 86 132 124 105 124 77 199 29 60\n2 2\n2 11\n11 12",
+    "out": "189\n1092\n89"
+   },
+   {
+    "in": "15 5\n124 76 29 178 123 125 183 198 165 7 89 184 127 118 33\n2 8\n14 14\n7 10\n6 10\n7 11",
+    "out": "912\n118\n553\n678\n642"
+   },
+   {
+    "in": "15 5\n142 27 13 50 183 111 199 57 46 127 65 17 180 176 155\n9 14\n8 13\n12 14\n6 8\n9 13",
+    "out": "611\n492\n373\n367\n435"
+   }
+  ]
+ },
+ {
+  "id": "gy-017",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-017",
+  "title": "地铁 1 号线区间客流",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "贵阳地铁 1 号线把相邻站点之间的客流记成 n 个数。调度中心想知道任意一段连续区间的客流总和。\n\n**任务**：给定长度为 n 的数组，回答 q 次询问：第 l 个数到第 r 个数的和是多少（下标从 1 开始）。",
+  "input_md": "第一行两个整数 n、q（1 ≤ n, q ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 q 行，每行两个整数 l、r（1 ≤ l ≤ r ≤ n）。",
+  "output_md": "q 行，每行一个整数，表示区间和。",
+  "constraints_md": "1 ≤ n, q ≤ 10^5，0 ≤ a[i] ≤ 10^9；区间和可能超过 int。",
+  "hint_md": "多次区间求和，不要每次 for 一遍，会超时。\n预处理前缀和 pre[i] = a[1] + … + a[i]。\n答案就是 pre[r] - pre[l-1]。",
+  "note_md": "",
+  "hints": [
+   "多次区间求和，不要每次 for 一遍，会超时。",
+   "预处理前缀和 pre[i] = a[1] + … + a[i]。",
+   "答案就是 pre[r] - pre[l-1]。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "前缀和",
+   "区间查询"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9 3\n144 199 83 189 26 164 4 146 158\n7 7\n5 6\n3 6",
+    "out": "4\n190\n462"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9 3\n144 199 83 189 26 164 4 146 158\n7 7\n5 6\n3 6",
+    "out": "4\n190\n462"
+   },
+   {
+    "in": "14 8\n128 32 22 39 135 30 49 133 156 86 12 79 162 117\n4 5\n4 7\n2 9\n7 12\n13 14\n5 7\n11 11\n13 14",
+    "out": "174\n253\n596\n515\n279\n214\n12\n279"
+   },
+   {
+    "in": "14 7\n67 180 87 160 148 178 54 162 126 175 15 105 78 197\n11 14\n2 11\n2 4\n6 9\n9 11\n5 9\n1 3",
+    "out": "395\n1285\n427\n520\n316\n668\n334"
+   },
+   {
+    "in": "6 5\n151 194 169 125 91 31\n2 2\n3 5\n5 6\n6 6\n3 5",
+    "out": "194\n385\n122\n31\n385"
+   },
+   {
+    "in": "9 7\n96 83 150 66 94 153 109 118 0\n9 9\n3 3\n3 8\n9 9\n8 9\n4 8\n8 9",
+    "out": "0\n150\n690\n0\n118\n540\n118"
+   },
+   {
+    "in": "8 6\n103 32 17 141 10 68 26 70\n4 7\n5 7\n4 7\n7 8\n8 8\n4 5",
+    "out": "245\n104\n245\n96\n70\n151"
+   }
+  ]
+ },
+ {
+  "id": "gy-018",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-018",
+  "title": "观山湖跑道分段计时",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "观山湖公园的跑道被分成 n 段，每段有一个计时值。教练会问很多次“从第 l 段到第 r 段一共用了多少”。\n\n**任务**：给定长度为 n 的数组，回答 q 次询问：第 l 个数到第 r 个数的和是多少（下标从 1 开始）。",
+  "input_md": "第一行两个整数 n、q（1 ≤ n, q ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 q 行，每行两个整数 l、r（1 ≤ l ≤ r ≤ n）。",
+  "output_md": "q 行，每行一个整数，表示区间和。",
+  "constraints_md": "1 ≤ n, q ≤ 10^5，0 ≤ a[i] ≤ 10^9；区间和可能超过 int。",
+  "hint_md": "多次区间求和，不要每次 for 一遍，会超时。\n预处理前缀和 pre[i] = a[1] + … + a[i]。\n答案就是 pre[r] - pre[l-1]。",
+  "note_md": "",
+  "hints": [
+   "多次区间求和，不要每次 for 一遍，会超时。",
+   "预处理前缀和 pre[i] = a[1] + … + a[i]。",
+   "答案就是 pre[r] - pre[l-1]。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "前缀和",
+   "区间查询"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9 3\n177 59 7 12 163 132 51 120 53\n1 7\n5 6\n3 4",
+    "out": "601\n295\n19"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9 3\n177 59 7 12 163 132 51 120 53\n1 7\n5 6\n3 4",
+    "out": "601\n295\n19"
+   },
+   {
+    "in": "13 6\n57 78 41 163 11 181 188 60 86 51 136 67 128\n8 10\n4 4\n5 11\n8 13\n11 12\n8 11",
+    "out": "197\n163\n713\n528\n203\n333"
+   },
+   {
+    "in": "11 4\n131 77 192 92 71 119 80 55 111 138 6\n10 11\n11 11\n10 11\n10 10",
+    "out": "144\n6\n144\n138"
+   },
+   {
+    "in": "7 6\n35 134 8 188 94 129 51\n2 4\n7 7\n3 5\n4 5\n1 2\n7 7",
+    "out": "330\n51\n290\n282\n169\n51"
+   },
+   {
+    "in": "5 4\n131 120 44 89 151\n5 5\n2 4\n3 5\n2 5",
+    "out": "151\n253\n284\n404"
+   },
+   {
+    "in": "6 7\n89 185 129 112 200 22\n5 5\n1 5\n5 5\n5 6\n5 5\n5 5\n1 5",
+    "out": "200\n715\n200\n222\n200\n200\n715"
+   }
+  ]
+ },
+ {
+  "id": "gy-019",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-019",
+  "title": "黔灵山台阶分段高度",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山的一条登山步道被分成 n 段，每段有固定爬升高度。游客想知道连续若干段的总爬升。\n\n**任务**：给定长度为 n 的数组，回答 q 次询问：第 l 个数到第 r 个数的和是多少（下标从 1 开始）。",
+  "input_md": "第一行两个整数 n、q（1 ≤ n, q ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 q 行，每行两个整数 l、r（1 ≤ l ≤ r ≤ n）。",
+  "output_md": "q 行，每行一个整数，表示区间和。",
+  "constraints_md": "1 ≤ n, q ≤ 10^5，0 ≤ a[i] ≤ 10^9；区间和可能超过 int。",
+  "hint_md": "多次区间求和，不要每次 for 一遍，会超时。\n预处理前缀和 pre[i] = a[1] + … + a[i]。\n答案就是 pre[r] - pre[l-1]。",
+  "note_md": "",
+  "hints": [
+   "多次区间求和，不要每次 for 一遍，会超时。",
+   "预处理前缀和 pre[i] = a[1] + … + a[i]。",
+   "答案就是 pre[r] - pre[l-1]。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "前缀和",
+   "区间查询"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9 5\n163 147 176 166 149 200 68 29 186\n2 2\n6 8\n9 9\n7 7\n1 5",
+    "out": "147\n297\n186\n68\n801"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9 5\n163 147 176 166 149 200 68 29 186\n2 2\n6 8\n9 9\n7 7\n1 5",
+    "out": "147\n297\n186\n68\n801"
+   },
+   {
+    "in": "15 6\n89 148 33 31 6 4 123 97 61 187 174 111 108 185 125\n6 9\n15 15\n10 10\n14 15\n5 6\n12 13",
+    "out": "285\n125\n187\n310\n10\n219"
+   },
+   {
+    "in": "9 8\n163 86 59 22 167 22 75 170 16\n5 7\n7 9\n9 9\n6 8\n7 7\n8 9\n3 5\n2 2",
+    "out": "264\n261\n16\n267\n75\n186\n248\n86"
+   },
+   {
+    "in": "15 4\n69 40 13 135 51 20 53 67 186 56 34 182 12 196 145\n4 12\n5 14\n9 14\n3 15",
+    "out": "784\n857\n666\n1150"
+   },
+   {
+    "in": "14 6\n183 10 30 11 154 30 32 10 60 99 193 200 129 150\n4 9\n6 10\n10 13\n6 11\n1 4\n11 11",
+    "out": "297\n231\n621\n424\n234\n193"
+   },
+   {
+    "in": "8 8\n184 46 11 159 182 142 66 84\n8 8\n3 4\n8 8\n3 6\n2 4\n7 7\n7 8\n1 7",
+    "out": "84\n170\n84\n494\n216\n66\n150\n790"
+   }
+  ]
+ },
+ {
+  "id": "gy-020",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-020",
+  "title": "花果园楼栋公摊电费",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "花果园一栋楼的 n 层各自记录了公摊电费。物业要回答多次“第 l 层到第 r 层一共多少钱”。\n\n**任务**：给定长度为 n 的数组，回答 q 次询问：第 l 个数到第 r 个数的和是多少（下标从 1 开始）。",
+  "input_md": "第一行两个整数 n、q（1 ≤ n, q ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 q 行，每行两个整数 l、r（1 ≤ l ≤ r ≤ n）。",
+  "output_md": "q 行，每行一个整数，表示区间和。",
+  "constraints_md": "1 ≤ n, q ≤ 10^5，0 ≤ a[i] ≤ 10^9；区间和可能超过 int。",
+  "hint_md": "多次区间求和，不要每次 for 一遍，会超时。\n预处理前缀和 pre[i] = a[1] + … + a[i]。\n答案就是 pre[r] - pre[l-1]。",
+  "note_md": "",
+  "hints": [
+   "多次区间求和，不要每次 for 一遍，会超时。",
+   "预处理前缀和 pre[i] = a[1] + … + a[i]。",
+   "答案就是 pre[r] - pre[l-1]。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "前缀和",
+   "区间查询"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 4\n36 185 84 131 20\n3 3\n2 4\n1 2\n5 5",
+    "out": "84\n400\n221\n20"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 4\n36 185 84 131 20\n3 3\n2 4\n1 2\n5 5",
+    "out": "84\n400\n221\n20"
+   },
+   {
+    "in": "13 4\n181 99 120 192 116 20 140 5 95 72 12 157 122\n4 11\n6 12\n2 7\n1 9",
+    "out": "652\n501\n687\n968"
+   },
+   {
+    "in": "11 8\n119 49 135 132 86 3 100 0 35 131 85\n11 11\n3 11\n8 11\n6 10\n10 11\n9 10\n5 6\n11 11",
+    "out": "85\n707\n251\n269\n216\n166\n89\n85"
+   },
+   {
+    "in": "15 4\n138 95 198 175 102 45 105 102 42 36 166 7 172 159 76\n4 7\n7 8\n7 14\n12 14",
+    "out": "427\n207\n789\n338"
+   },
+   {
+    "in": "7 6\n110 150 30 95 87 72 137\n4 6\n1 2\n7 7\n2 6\n4 6\n4 4",
+    "out": "254\n260\n137\n434\n254\n95"
+   },
+   {
+    "in": "5 3\n51 23 14 124 177\n5 5\n3 4\n3 3",
+    "out": "177\n138\n14"
+   }
+  ]
+ },
+ {
+  "id": "gy-021",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-021",
+  "title": "灯会临时摊位的人流增量",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "观山湖灯会期间，沿湖 n 个点位的人流会因临时摊位增加。每次活动给 [l, r] 区间每个点位增加 x 人。所有活动结束后，求最大人流和总人流。\n\n**任务**：给定初始数组，做 m 次操作：把区间 [l, r] 的每个数都增加 x。所有操作结束后，输出数组最大值与总和。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 m 行，每行三个整数 l、r、x（1 ≤ l ≤ r ≤ n，1 ≤ x ≤ 10^9）。",
+  "output_md": "一行两个整数：最终数组最大值、最终数组总和。",
+  "constraints_md": "1 ≤ n, m ≤ 10^5，0 ≤ a[i], x ≤ 10^9。",
+  "hint_md": "每次给一整段加同一个数，用差分数组。\n对 [l, r] 加 x：d[l] += x，d[r+1] -= x。\n最后从前往后累加 d，还原每个位置，再统计最大值和总和。",
+  "note_md": "",
+  "hints": [
+   "每次给一整段加同一个数，用差分数组。",
+   "对 [l, r] 加 x：d[l] += x，d[r+1] -= x。",
+   "最后从前往后累加 d，还原每个位置，再统计最大值和总和。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "差分",
+   "区间修改"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "11 8\n27 29 14 21 20 44 19 14 2 50 19\n1 8 19\n2 6 7\n10 11 12\n1 11 14\n4 4 18\n1 9 1\n6 7 11\n6 7 5",
+    "out": "101 683"
+   }
+  ],
+  "tests": [
+   {
+    "in": "11 8\n27 29 14 21 20 44 19 14 2 50 19\n1 8 19\n2 6 7\n10 11 12\n1 11 14\n4 4 18\n1 9 1\n6 7 11\n6 7 5",
+    "out": "101 683"
+   },
+   {
+    "in": "14 8\n42 17 24 46 10 48 32 34 22 3 14 49 10 42\n12 13 2\n14 14 5\n5 9 5\n5 13 20\n4 10 15\n9 13 9\n10 13 2\n12 12 2",
+    "out": "88 767"
+   },
+   {
+    "in": "5 6\n26 40 6 21 38\n3 5 16\n3 3 18\n2 2 9\n2 5 4\n3 5 7\n3 5 19",
+    "out": "84 300"
+   },
+   {
+    "in": "7 4\n35 12 32 16 10 0 3\n2 4 17\n6 7 1\n2 6 10\n3 6 20",
+    "out": "79 291"
+   },
+   {
+    "in": "6 4\n29 2 31 17 29 9\n6 6 9\n3 5 4\n6 6 15\n2 6 9",
+    "out": "44 198"
+   },
+   {
+    "in": "6 6\n42 23 41 19 15 47\n4 6 10\n2 5 7\n5 6 19\n1 3 13\n5 6 18\n5 5 5",
+    "out": "94 363"
+   }
+  ]
+ },
+ {
+  "id": "gy-022",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-022",
+  "title": "南明河清淤施工影响",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "南明河沿线 n 段同时施工，每次施工让 [l, r] 段的浑浊度增加 x。全部施工结束后，求最大浑浊度和总浑浊度。\n\n**任务**：给定初始数组，做 m 次操作：把区间 [l, r] 的每个数都增加 x。所有操作结束后，输出数组最大值与总和。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 m 行，每行三个整数 l、r、x（1 ≤ l ≤ r ≤ n，1 ≤ x ≤ 10^9）。",
+  "output_md": "一行两个整数：最终数组最大值、最终数组总和。",
+  "constraints_md": "1 ≤ n, m ≤ 10^5，0 ≤ a[i], x ≤ 10^9。",
+  "hint_md": "每次给一整段加同一个数，用差分数组。\n对 [l, r] 加 x：d[l] += x，d[r+1] -= x。\n最后从前往后累加 d，还原每个位置，再统计最大值和总和。",
+  "note_md": "",
+  "hints": [
+   "每次给一整段加同一个数，用差分数组。",
+   "对 [l, r] 加 x：d[l] += x，d[r+1] -= x。",
+   "最后从前往后累加 d，还原每个位置，再统计最大值和总和。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "差分",
+   "区间修改"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9 6\n26 2 33 5 6 29 0 36 50\n4 6 8\n1 7 4\n2 6 18\n8 9 15\n3 6 16\n3 6 16",
+    "out": "91 487"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9 6\n26 2 33 5 6 29 0 36 50\n4 6 8\n1 7 4\n2 6 18\n8 9 15\n3 6 16\n3 6 16",
+    "out": "91 487"
+   },
+   {
+    "in": "7 7\n21 21 35 37 48 37 2\n7 7 14\n4 6 6\n2 4 8\n2 5 6\n7 7 10\n2 4 4\n2 4 2",
+    "out": "63 309"
+   },
+   {
+    "in": "15 8\n6 16 43 20 0 35 9 14 5 50 36 3 42 50 29\n7 9 15\n4 6 3\n4 8 19\n15 15 8\n15 15 15\n8 10 11\n9 12 20\n2 13 13",
+    "out": "94 799"
+   },
+   {
+    "in": "7 5\n49 30 47 9 27 48 13\n6 6 7\n3 7 5\n7 7 4\n5 6 13\n7 7 18",
+    "out": "73 303"
+   },
+   {
+    "in": "14 8\n47 32 45 13 31 36 9 3 40 45 50 27 5 1\n8 8 12\n5 14 3\n6 7 15\n14 14 15\n3 3 10\n14 14 19\n12 13 5\n13 14 16",
+    "out": "55 542"
+   },
+   {
+    "in": "8 6\n42 45 5 5 8 22 31 39\n8 8 17\n3 5 13\n7 8 3\n6 8 4\n4 5 5\n3 8 17",
+    "out": "80 383"
+   }
+  ]
+ },
+ {
+  "id": "gy-023",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-023",
+  "title": "地铁站出入口客流叠加",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "某地铁站有 n 个出入口，活动期间会有一批批乘客从 [l, r] 连续出入口进入，每个出入口增加 x 人。求最终最大客流和总客流。\n\n**任务**：给定初始数组，做 m 次操作：把区间 [l, r] 的每个数都增加 x。所有操作结束后，输出数组最大值与总和。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 m 行，每行三个整数 l、r、x（1 ≤ l ≤ r ≤ n，1 ≤ x ≤ 10^9）。",
+  "output_md": "一行两个整数：最终数组最大值、最终数组总和。",
+  "constraints_md": "1 ≤ n, m ≤ 10^5，0 ≤ a[i], x ≤ 10^9。",
+  "hint_md": "每次给一整段加同一个数，用差分数组。\n对 [l, r] 加 x：d[l] += x，d[r+1] -= x。\n最后从前往后累加 d，还原每个位置，再统计最大值和总和。",
+  "note_md": "",
+  "hints": [
+   "每次给一整段加同一个数，用差分数组。",
+   "对 [l, r] 加 x：d[l] += x，d[r+1] -= x。",
+   "最后从前往后累加 d，还原每个位置，再统计最大值和总和。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "差分",
+   "区间修改"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "6 5\n16 17 31 26 19 26\n3 6 6\n4 5 16\n4 6 19\n5 6 12\n2 3 11",
+    "out": "72 294"
+   }
+  ],
+  "tests": [
+   {
+    "in": "6 5\n16 17 31 26 19 26\n3 6 6\n4 5 16\n4 6 19\n5 6 12\n2 3 11",
+    "out": "72 294"
+   },
+   {
+    "in": "12 7\n27 1 49 26 3 42 44 41 35 5 49 22\n8 9 12\n10 11 18\n2 4 20\n10 12 19\n6 7 9\n6 8 5\n2 7 15",
+    "out": "86 644"
+   },
+   {
+    "in": "6 5\n47 10 19 33 13 9\n1 4 16\n3 6 12\n3 4 17\n2 6 15\n1 1 5",
+    "out": "93 357"
+   },
+   {
+    "in": "7 4\n29 30 22 32 19 5 15\n2 4 18\n3 6 20\n2 4 10\n7 7 4",
+    "out": "80 320"
+   },
+   {
+    "in": "12 3\n48 28 23 48 4 38 39 23 1 44 4 22\n8 8 16\n2 9 6\n4 8 18",
+    "out": "72 476"
+   },
+   {
+    "in": "8 5\n8 40 27 13 39 43 14 5\n7 8 5\n2 5 20\n3 8 9\n1 7 1\n2 3 13",
+    "out": "74 366"
+   }
+  ]
+ },
+ {
+  "id": "gy-024",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-024",
+  "title": "老旧小区加装电梯补贴",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "某街道 n 个单元申请加装电梯，每批批复给 [l, r] 单元每户补贴 x 元。全部批复后求单户最高补贴和总补贴。\n\n**任务**：给定初始数组，做 m 次操作：把区间 [l, r] 的每个数都增加 x。所有操作结束后，输出数组最大值与总和。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 m 行，每行三个整数 l、r、x（1 ≤ l ≤ r ≤ n，1 ≤ x ≤ 10^9）。",
+  "output_md": "一行两个整数：最终数组最大值、最终数组总和。",
+  "constraints_md": "1 ≤ n, m ≤ 10^5，0 ≤ a[i], x ≤ 10^9。",
+  "hint_md": "每次给一整段加同一个数，用差分数组。\n对 [l, r] 加 x：d[l] += x，d[r+1] -= x。\n最后从前往后累加 d，还原每个位置，再统计最大值和总和。",
+  "note_md": "",
+  "hints": [
+   "每次给一整段加同一个数，用差分数组。",
+   "对 [l, r] 加 x：d[l] += x，d[r+1] -= x。",
+   "最后从前往后累加 d，还原每个位置，再统计最大值和总和。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "差分",
+   "区间修改"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 5\n50 44 19 16 27\n2 5 3\n3 4 12\n3 3 13\n4 5 20\n3 4 9",
+    "out": "60 263"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 5\n50 44 19 16 27\n2 5 3\n3 4 12\n3 3 13\n4 5 20\n3 4 9",
+    "out": "60 263"
+   },
+   {
+    "in": "7 8\n37 46 41 8 38 35 29\n5 5 4\n5 7 13\n3 6 19\n2 7 3\n2 4 14\n2 7 3\n4 4 20\n7 7 17",
+    "out": "80 468"
+   },
+   {
+    "in": "14 6\n32 12 42 27 19 28 34 29 44 44 48 16 13 8\n5 9 19\n3 4 1\n10 13 19\n10 11 18\n10 12 12\n1 2 13",
+    "out": "97 667"
+   },
+   {
+    "in": "7 8\n41 45 10 26 1 22 10\n1 4 4\n3 6 2\n5 6 19\n4 4 9\n7 7 3\n6 7 4\n6 7 2\n6 6 3",
+    "out": "52 244"
+   },
+   {
+    "in": "9 7\n34 15 43 46 25 39 3 14 17\n7 9 9\n1 7 6\n9 9 3\n5 8 14\n1 8 18\n5 8 11\n5 9 5",
+    "out": "93 577"
+   },
+   {
+    "in": "13 8\n41 3 10 39 20 34 13 46 1 27 2 39 37\n1 11 15\n13 13 5\n4 9 17\n13 13 9\n12 12 3\n5 10 4\n3 9 11\n1 2 11",
+    "out": "93 719"
+   }
+  ]
+ },
+ {
+  "id": "gy-025",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-025",
+  "title": "青云路夜市的油烟监测",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "青云路夜市 n 个摊位，每次集中烹饪会让 [l, r] 摊位的油烟值增加 x。夜市结束后求最高油烟值和油烟总和。\n\n**任务**：给定初始数组，做 m 次操作：把区间 [l, r] 的每个数都增加 x。所有操作结束后，输出数组最大值与总和。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。\n接下来 m 行，每行三个整数 l、r、x（1 ≤ l ≤ r ≤ n，1 ≤ x ≤ 10^9）。",
+  "output_md": "一行两个整数：最终数组最大值、最终数组总和。",
+  "constraints_md": "1 ≤ n, m ≤ 10^5，0 ≤ a[i], x ≤ 10^9。",
+  "hint_md": "每次给一整段加同一个数，用差分数组。\n对 [l, r] 加 x：d[l] += x，d[r+1] -= x。\n最后从前往后累加 d，还原每个位置，再统计最大值和总和。",
+  "note_md": "",
+  "hints": [
+   "每次给一整段加同一个数，用差分数组。",
+   "对 [l, r] 加 x：d[l] += x，d[r+1] -= x。",
+   "最后从前往后累加 d，还原每个位置，再统计最大值和总和。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "差分",
+   "区间修改"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "15 8\n47 33 50 7 27 25 13 20 7 8 35 0 26 21 26\n5 8 7\n15 15 19\n8 8 3\n14 15 6\n5 14 5\n9 14 13\n11 15 16\n3 5 20",
+    "out": "70 675"
+   }
+  ],
+  "tests": [
+   {
+    "in": "15 8\n47 33 50 7 27 25 13 20 7 8 35 0 26 21 26\n5 8 7\n15 15 19\n8 8 3\n14 15 6\n5 14 5\n9 14 13\n11 15 16\n3 5 20",
+    "out": "70 675"
+   },
+   {
+    "in": "14 7\n31 41 26 18 25 7 22 12 39 23 43 49 7 8\n7 14 15\n10 12 5\n13 13 7\n9 12 15\n1 6 4\n12 14 7\n9 13 17",
+    "out": "108 683"
+   },
+   {
+    "in": "9 5\n25 48 13 17 11 2 42 50 22\n3 8 11\n7 8 16\n5 6 1\n1 8 3\n9 9 14",
+    "out": "80 368"
+   },
+   {
+    "in": "7 3\n32 11 17 1 10 29 48\n3 7 6\n6 7 13\n6 6 17",
+    "out": "67 221"
+   },
+   {
+    "in": "6 6\n4 39 24 39 47 8\n6 6 11\n5 5 3\n2 6 6\n4 4 8\n2 3 15\n1 1 18",
+    "out": "60 261"
+   },
+   {
+    "in": "10 8\n45 46 32 45 36 46 17 31 24 18\n8 10 13\n4 9 17\n10 10 6\n4 9 8\n5 7 6\n9 10 6\n8 8 2\n6 6 2",
+    "out": "79 569"
+   }
+  ]
+ },
+ {
+  "id": "gy-026",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-026",
+  "title": "夜市摊位的时间段排班",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "青云路夜市有 n 个摊位申请使用同一条过道，每个申请给出开始和结束时间。过道同一时刻只能给一个摊位用，求最多能安排多少个申请。\n\n**任务**：有 n 个时间区间 [l, r)。同一时刻只能安排一个区间，求最多能安排多少个互不重叠的区间。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个整数 l、r（0 ≤ l < r ≤ 10^9）。",
+  "output_md": "一个整数，表示最多能安排的区间数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ l < r ≤ 10^9。",
+  "hint_md": "按结束时间从早到晚考虑。\n每次选结束最早的区间，能给后面留出最多时间。\n下一个区间的开始时间必须 ≥ 上一个的结束时间。",
+  "note_md": "",
+  "hints": [
+   "按结束时间从早到晚考虑。",
+   "每次选结束最早的区间，能给后面留出最多时间。",
+   "下一个区间的开始时间必须 ≥ 上一个的结束时间。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "贪心",
+   "区间调度"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\n18 20\n17 23\n12 13\n2 4",
+    "out": "3"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\n18 20\n17 23\n12 13\n2 4",
+    "out": "3"
+   },
+   {
+    "in": "7\n7 9\n16 24\n20 23\n12 16\n6 12\n19 25\n3 7",
+    "out": "4"
+   },
+   {
+    "in": "4\n18 23\n5 12\n19 20\n18 21",
+    "out": "2"
+   },
+   {
+    "in": "8\n0 4\n14 18\n12 19\n14 17\n17 21\n14 17\n20 26\n4 8",
+    "out": "4"
+   },
+   {
+    "in": "7\n20 21\n17 18\n10 14\n13 14\n1 6\n4 11\n9 17",
+    "out": "4"
+   },
+   {
+    "in": "5\n9 11\n12 17\n7 12\n8 15\n5 8",
+    "out": "3"
+   }
+  ]
+ },
+ {
+  "id": "gy-027",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-027",
+  "title": "地铁志愿者的服务时段",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "贵阳地铁招募志愿者，每人报了一个 [开始, 结束) 服务时段。同一时段只能安排一人，求最多能安排多少名志愿者。\n\n**任务**：有 n 个时间区间 [l, r)。同一时刻只能安排一个区间，求最多能安排多少个互不重叠的区间。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个整数 l、r（0 ≤ l < r ≤ 10^9）。",
+  "output_md": "一个整数，表示最多能安排的区间数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ l < r ≤ 10^9。",
+  "hint_md": "按结束时间从早到晚考虑。\n每次选结束最早的区间，能给后面留出最多时间。\n下一个区间的开始时间必须 ≥ 上一个的结束时间。",
+  "note_md": "",
+  "hints": [
+   "按结束时间从早到晚考虑。",
+   "每次选结束最早的区间，能给后面留出最多时间。",
+   "下一个区间的开始时间必须 ≥ 上一个的结束时间。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "贪心",
+   "区间调度"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8\n10 11\n18 24\n17 22\n15 19\n8 10\n3 11\n4 9\n7 8",
+    "out": "4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8\n10 11\n18 24\n17 22\n15 19\n8 10\n3 11\n4 9\n7 8",
+    "out": "4"
+   },
+   {
+    "in": "4\n3 7\n18 24\n19 23\n18 19",
+    "out": "3"
+   },
+   {
+    "in": "8\n0 2\n18 24\n12 20\n0 8\n7 11\n5 13\n14 16\n9 17",
+    "out": "4"
+   },
+   {
+    "in": "5\n13 14\n8 13\n16 22\n19 23\n17 19",
+    "out": "4"
+   },
+   {
+    "in": "8\n11 17\n0 1\n14 16\n1 7\n8 16\n0 7\n17 20\n15 17",
+    "out": "4"
+   },
+   {
+    "in": "3\n12 14\n10 15\n0 5",
+    "out": "2"
+   }
+  ]
+ },
+ {
+  "id": "gy-028",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-028",
+  "title": "青岩古镇讲解员的预约",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇的讲解员收到了 n 个预约，每个预约有开始和结束时刻。同一时刻只能接一个团，求最多能接多少个团。\n\n**任务**：有 n 个时间区间 [l, r)。同一时刻只能安排一个区间，求最多能安排多少个互不重叠的区间。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个整数 l、r（0 ≤ l < r ≤ 10^9）。",
+  "output_md": "一个整数，表示最多能安排的区间数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ l < r ≤ 10^9。",
+  "hint_md": "按结束时间从早到晚考虑。\n每次选结束最早的区间，能给后面留出最多时间。\n下一个区间的开始时间必须 ≥ 上一个的结束时间。",
+  "note_md": "",
+  "hints": [
+   "按结束时间从早到晚考虑。",
+   "每次选结束最早的区间，能给后面留出最多时间。",
+   "下一个区间的开始时间必须 ≥ 上一个的结束时间。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "贪心",
+   "区间调度"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7\n1 9\n0 8\n13 20\n13 20\n6 9\n10 17\n11 12",
+    "out": "3"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7\n1 9\n0 8\n13 20\n13 20\n6 9\n10 17\n11 12",
+    "out": "3"
+   },
+   {
+    "in": "7\n1 7\n5 7\n7 11\n13 17\n7 8\n14 21\n3 4",
+    "out": "4"
+   },
+   {
+    "in": "7\n9 16\n1 4\n13 18\n13 18\n3 8\n17 25\n6 9",
+    "out": "4"
+   },
+   {
+    "in": "3\n19 23\n7 13\n17 23",
+    "out": "2"
+   },
+   {
+    "in": "7\n8 14\n13 19\n20 21\n9 17\n8 9\n7 10\n14 19",
+    "out": "3"
+   },
+   {
+    "in": "6\n19 24\n18 19\n2 10\n7 15\n0 8\n1 3",
+    "out": "4"
+   }
+  ]
+ },
+ {
+  "id": "gy-029",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-029",
+  "title": "观山湖公园充电桩的占用",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "观山湖公园的充电桩收到 n 个占用申请，每个申请有起止时间。同一时刻只能服务一辆车，求最多能服务多少辆。\n\n**任务**：有 n 个时间区间 [l, r)。同一时刻只能安排一个区间，求最多能安排多少个互不重叠的区间。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个整数 l、r（0 ≤ l < r ≤ 10^9）。",
+  "output_md": "一个整数，表示最多能安排的区间数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ l < r ≤ 10^9。",
+  "hint_md": "按结束时间从早到晚考虑。\n每次选结束最早的区间，能给后面留出最多时间。\n下一个区间的开始时间必须 ≥ 上一个的结束时间。",
+  "note_md": "",
+  "hints": [
+   "按结束时间从早到晚考虑。",
+   "每次选结束最早的区间，能给后面留出最多时间。",
+   "下一个区间的开始时间必须 ≥ 上一个的结束时间。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "贪心",
+   "区间调度"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "6\n13 18\n16 17\n2 4\n15 23\n13 15\n17 18",
+    "out": "4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "6\n13 18\n16 17\n2 4\n15 23\n13 15\n17 18",
+    "out": "4"
+   },
+   {
+    "in": "9\n9 11\n5 8\n15 17\n15 21\n13 18\n14 19\n17 24\n3 10\n7 10",
+    "out": "4"
+   },
+   {
+    "in": "7\n16 18\n14 18\n9 17\n13 21\n7 10\n1 8\n13 21",
+    "out": "2"
+   },
+   {
+    "in": "5\n8 12\n14 16\n6 7\n19 27\n11 15",
+    "out": "4"
+   },
+   {
+    "in": "7\n4 11\n9 11\n14 21\n3 9\n7 10\n6 12\n19 24",
+    "out": "3"
+   },
+   {
+    "in": "9\n16 20\n3 11\n17 21\n4 5\n6 14\n18 26\n7 8\n0 5\n18 21",
+    "out": "3"
+   }
+  ]
+ },
+ {
+  "id": "gy-030",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-030",
+  "title": "花果园电梯的维修窗口",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "花果园一栋楼的电梯收到 n 个维修申请，每个申请占用一个时间区间。同一时刻只能做一项维修，求最多能完成多少项。\n\n**任务**：有 n 个时间区间 [l, r)。同一时刻只能安排一个区间，求最多能安排多少个互不重叠的区间。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个整数 l、r（0 ≤ l < r ≤ 10^9）。",
+  "output_md": "一个整数，表示最多能安排的区间数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ l < r ≤ 10^9。",
+  "hint_md": "按结束时间从早到晚考虑。\n每次选结束最早的区间，能给后面留出最多时间。\n下一个区间的开始时间必须 ≥ 上一个的结束时间。",
+  "note_md": "",
+  "hints": [
+   "按结束时间从早到晚考虑。",
+   "每次选结束最早的区间，能给后面留出最多时间。",
+   "下一个区间的开始时间必须 ≥ 上一个的结束时间。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "贪心",
+   "区间调度"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7\n11 15\n20 25\n19 27\n8 13\n18 22\n14 16\n16 20",
+    "out": "4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7\n11 15\n20 25\n19 27\n8 13\n18 22\n14 16\n16 20",
+    "out": "4"
+   },
+   {
+    "in": "3\n3 8\n18 24\n2 3",
+    "out": "3"
+   },
+   {
+    "in": "9\n9 17\n16 22\n1 2\n9 13\n8 12\n11 15\n13 17\n9 13\n0 4",
+    "out": "3"
+   },
+   {
+    "in": "4\n0 1\n15 19\n5 12\n1 4",
+    "out": "4"
+   },
+   {
+    "in": "8\n18 19\n12 15\n20 25\n6 12\n8 11\n2 5\n3 11\n7 11",
+    "out": "5"
+   },
+   {
+    "in": "8\n11 16\n16 23\n20 28\n0 3\n10 17\n16 24\n1 7\n3 10",
+    "out": "4"
+   }
+  ]
+ },
+ {
+  "id": "gy-031",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-031",
+  "title": "回贵阳要带的特产",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "在外地上学的小黔要回贵阳，行李箱最多装 W 千克。每样特产有重量和价值，每样最多带一件，求能带走的最高总价值。\n\n**任务**：有 n 件物品，每件有重量 w[i] 和价值 v[i]，每件最多选一次。背包容量为 W，求不超过容量时能获得的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "每件物品只有选或不选两种状态。\ndp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "每件物品只有选或不选两种状态。",
+   "dp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "01 背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 15\n7 30\n13 23\n14 24\n6 36\n9 67",
+    "out": "103"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 15\n7 30\n13 23\n14 24\n6 36\n9 67",
+    "out": "103"
+   },
+   {
+    "in": "4 25\n1 18\n7 41\n20 57\n6 73",
+    "out": "132"
+   },
+   {
+    "in": "6 17\n2 35\n2 17\n7 42\n9 9\n4 68\n6 18",
+    "out": "162"
+   },
+   {
+    "in": "5 22\n8 58\n10 72\n4 69\n12 78\n5 43",
+    "out": "199"
+   },
+   {
+    "in": "2 17\n12 31\n16 49",
+    "out": "49"
+   },
+   {
+    "in": "5 22\n14 17\n22 72\n18 36\n11 21\n15 42",
+    "out": "72"
+   }
+  ]
+ },
+ {
+  "id": "gy-032",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-032",
+  "title": "龙洞堡机场的托运行李",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "龙洞堡机场的托运额度是 W 千克。小黔有 n 件行李，每件有重量和价值，每件只能带一件，求不超重时能带的最大价值。\n\n**任务**：有 n 件物品，每件有重量 w[i] 和价值 v[i]，每件最多选一次。背包容量为 W，求不超过容量时能获得的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "每件物品只有选或不选两种状态。\ndp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "每件物品只有选或不选两种状态。",
+   "dp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "01 背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 13\n5 48\n9 67\n2 27\n6 24",
+    "out": "99"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 13\n5 48\n9 67\n2 27\n6 24",
+    "out": "99"
+   },
+   {
+    "in": "4 18\n3 76\n16 15\n3 33\n1 1",
+    "out": "110"
+   },
+   {
+    "in": "5 14\n10 38\n14 59\n5 78\n8 26\n9 6",
+    "out": "104"
+   },
+   {
+    "in": "7 16\n8 69\n6 35\n1 19\n8 30\n9 37\n6 25\n11 70",
+    "out": "123"
+   },
+   {
+    "in": "4 12\n10 73\n4 55\n10 13\n7 30",
+    "out": "85"
+   },
+   {
+    "in": "6 22\n18 27\n4 80\n22 33\n22 39\n1 31\n11 50",
+    "out": "161"
+   }
+  ]
+ },
+ {
+  "id": "gy-033",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-033",
+  "title": "花果园搬家的纸箱",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "花果园搬家时只有一辆能装 W 千克的小车。n 个纸箱各有重量和价值，每个纸箱只能装一次，求能搬走的最大价值。\n\n**任务**：有 n 件物品，每件有重量 w[i] 和价值 v[i]，每件最多选一次。背包容量为 W，求不超过容量时能获得的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "每件物品只有选或不选两种状态。\ndp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "每件物品只有选或不选两种状态。",
+   "dp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "01 背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "6 10\n6 4\n4 60\n5 28\n9 19\n3 6\n9 79",
+    "out": "88"
+   }
+  ],
+  "tests": [
+   {
+    "in": "6 10\n6 4\n4 60\n5 28\n9 19\n3 6\n9 79",
+    "out": "88"
+   },
+   {
+    "in": "5 16\n6 47\n12 66\n8 75\n10 16\n15 55",
+    "out": "122"
+   },
+   {
+    "in": "5 24\n16 9\n15 74\n11 59\n15 40\n24 63",
+    "out": "74"
+   },
+   {
+    "in": "3 23\n11 80\n19 37\n21 9",
+    "out": "80"
+   },
+   {
+    "in": "7 20\n14 56\n10 77\n6 69\n15 42\n2 76\n8 62\n4 51",
+    "out": "258"
+   },
+   {
+    "in": "4 20\n10 3\n20 21\n19 53\n7 62",
+    "out": "65"
+   }
+  ]
+ },
+ {
+  "id": "gy-034",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-034",
+  "title": "青岩古镇的伴手礼预算",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "在青岩古镇买伴手礼，背包最多承受 W 的重量。每件商品有重量和喜欢程度，每件只能买一件，求最大喜欢程度之和。\n\n**任务**：有 n 件物品，每件有重量 w[i] 和价值 v[i]，每件最多选一次。背包容量为 W，求不超过容量时能获得的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "每件物品只有选或不选两种状态。\ndp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "每件物品只有选或不选两种状态。",
+   "dp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "01 背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 25\n11 34\n3 76\n5 55\n2 4\n20 22\n4 12\n3 68",
+    "out": "237"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 25\n11 34\n3 76\n5 55\n2 4\n20 22\n4 12\n3 68",
+    "out": "237"
+   },
+   {
+    "in": "6 21\n14 17\n2 11\n9 68\n3 71\n14 78\n16 68",
+    "out": "160"
+   },
+   {
+    "in": "7 17\n10 70\n6 47\n12 59\n13 75\n3 53\n5 9\n6 12",
+    "out": "128"
+   },
+   {
+    "in": "4 25\n16 58\n4 60\n1 2\n6 71",
+    "out": "133"
+   },
+   {
+    "in": "4 25\n11 78\n5 73\n7 74\n25 37",
+    "out": "225"
+   },
+   {
+    "in": "6 24\n9 4\n19 31\n11 32\n8 39\n4 14\n23 46",
+    "out": "85"
+   }
+  ]
+ },
+ {
+  "id": "gy-035",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-035",
+  "title": "露营装备的背包装载",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "去高坡云顶露营，背包承重 W。n 件装备各有重量和保暖价值，每件只能带一件，求最大总价值。\n\n**任务**：有 n 件物品，每件有重量 w[i] 和价值 v[i]，每件最多选一次。背包容量为 W，求不超过容量时能获得的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "每件物品只有选或不选两种状态。\ndp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "每件物品只有选或不选两种状态。",
+   "dp[j] 表示容量 j 时的最大价值，倒着枚举容量避免重复选同一件。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "01 背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 22\n13 33\n22 79\n12 8\n21 69\n11 69\n22 25\n7 16",
+    "out": "85"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 22\n13 33\n22 79\n12 8\n21 69\n11 69\n22 25\n7 16",
+    "out": "85"
+   },
+   {
+    "in": "2 16\n15 9\n16 44",
+    "out": "44"
+   },
+   {
+    "in": "3 12\n8 22\n9 30\n6 64",
+    "out": "64"
+   },
+   {
+    "in": "6 19\n6 67\n5 59\n8 35\n11 65\n10 62\n11 24",
+    "out": "161"
+   },
+   {
+    "in": "6 8\n6 9\n5 62\n3 3\n8 47\n2 49\n7 76",
+    "out": "111"
+   },
+   {
+    "in": "4 15\n3 75\n8 37\n12 66\n5 63",
+    "out": "141"
+   }
+  ]
+ },
+ {
+  "id": "gy-036",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-036",
+  "title": "丝娃娃的配菜不限量",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "吃丝娃娃时，一张皮最多卷 W 克的配菜。每种配菜有重量和美味值，同一种可以重复拿，求一张皮的最大美味值。\n\n**任务**：有 n 种物品，每种有重量 w[i] 和价值 v[i]，每种可以选任意多次。背包容量为 W，求不超过容量时的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "和 01 背包只差一个枚举方向。\n容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "和 01 背包只差一个枚举方向。",
+   "容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "完全背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 18\n4 80\n4 30\n12 34\n18 8",
+    "out": "320"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 18\n4 80\n4 30\n12 34\n18 8",
+    "out": "320"
+   },
+   {
+    "in": "2 19\n16 23\n2 11",
+    "out": "99"
+   },
+   {
+    "in": "2 15\n8 9\n8 67",
+    "out": "67"
+   },
+   {
+    "in": "3 22\n16 39\n10 42\n16 46",
+    "out": "84"
+   },
+   {
+    "in": "4 8\n3 53\n2 58\n6 52\n6 15",
+    "out": "232"
+   },
+   {
+    "in": "6 17\n13 73\n10 36\n12 30\n10 53\n9 5\n2 27",
+    "out": "216"
+   }
+  ]
+ },
+ {
+  "id": "gy-037",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-037",
+  "title": "烙锅点菜可以重复",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "在贵阳吃烙锅，锅最多放 W 克的菜。每种菜有重量和香辣值，同一种可以重复点，求一锅的最大香辣值。\n\n**任务**：有 n 种物品，每种有重量 w[i] 和价值 v[i]，每种可以选任意多次。背包容量为 W，求不超过容量时的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "和 01 背包只差一个枚举方向。\n容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "和 01 背包只差一个枚举方向。",
+   "容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "完全背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 17\n11 64\n15 68\n13 27\n2 73\n11 36",
+    "out": "584"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 17\n11 64\n15 68\n13 27\n2 73\n11 36",
+    "out": "584"
+   },
+   {
+    "in": "6 14\n8 60\n13 35\n14 62\n6 16\n12 26\n8 7",
+    "out": "76"
+   },
+   {
+    "in": "5 21\n13 48\n7 6\n4 54\n21 65\n15 2",
+    "out": "270"
+   },
+   {
+    "in": "2 24\n1 39\n6 46",
+    "out": "936"
+   },
+   {
+    "in": "3 15\n13 57\n10 43\n5 57",
+    "out": "171"
+   },
+   {
+    "in": "3 18\n3 19\n14 52\n14 49",
+    "out": "114"
+   }
+  ]
+ },
+ {
+  "id": "gy-038",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-038",
+  "title": "肠旺面的加料",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "一碗肠旺面最多加 W 克的料。每种加料有重量和满足感，同一种可以重复加，求最大满足感。\n\n**任务**：有 n 种物品，每种有重量 w[i] 和价值 v[i]，每种可以选任意多次。背包容量为 W，求不超过容量时的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "和 01 背包只差一个枚举方向。\n容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "和 01 背包只差一个枚举方向。",
+   "容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "完全背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 16\n6 2\n11 24\n9 76\n12 13",
+    "out": "78"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 16\n6 2\n11 24\n9 76\n12 13",
+    "out": "78"
+   },
+   {
+    "in": "3 25\n17 67\n15 45\n25 48",
+    "out": "67"
+   },
+   {
+    "in": "6 10\n9 56\n2 27\n6 76\n5 14\n6 78\n7 61",
+    "out": "135"
+   },
+   {
+    "in": "2 25\n5 38\n15 40",
+    "out": "190"
+   },
+   {
+    "in": "6 17\n8 70\n17 29\n8 30\n8 24\n15 73\n7 44",
+    "out": "140"
+   },
+   {
+    "in": "2 19\n1 76\n8 6",
+    "out": "1444"
+   }
+  ]
+ },
+ {
+  "id": "gy-039",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-039",
+  "title": "酸汤鱼的配菜",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "一锅酸汤鱼最多放 W 克配菜。每种配菜有重量和鲜味值，可以重复放，求最大鲜味值。\n\n**任务**：有 n 种物品，每种有重量 w[i] 和价值 v[i]，每种可以选任意多次。背包容量为 W，求不超过容量时的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "和 01 背包只差一个枚举方向。\n容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "和 01 背包只差一个枚举方向。",
+   "容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "完全背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 12\n10 80\n7 65\n5 2\n2 1",
+    "out": "81"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 12\n10 80\n7 65\n5 2\n2 1",
+    "out": "81"
+   },
+   {
+    "in": "6 14\n4 2\n12 71\n3 28\n3 71\n14 49\n4 30",
+    "out": "284"
+   },
+   {
+    "in": "6 18\n15 19\n4 26\n9 46\n15 44\n8 27\n10 65",
+    "out": "117"
+   },
+   {
+    "in": "5 25\n7 53\n23 32\n18 38\n16 11\n18 59",
+    "out": "159"
+   },
+   {
+    "in": "5 24\n2 10\n22 30\n5 74\n2 64\n13 35",
+    "out": "768"
+   },
+   {
+    "in": "4 19\n5 48\n1 29\n4 4\n9 1",
+    "out": "551"
+   }
+  ]
+ },
+ {
+  "id": "gy-040",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-040",
+  "title": "豆米火锅的自助配菜",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "豆米火锅自助台最多装 W 克。每种配菜有重量和喜爱值，可以重复取，求最大喜爱值。\n\n**任务**：有 n 种物品，每种有重量 w[i] 和价值 v[i]，每种可以选任意多次。背包容量为 W，求不超过容量时的最大总价值。",
+  "input_md": "第一行两个整数 n、W（1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5）。\n接下来 n 行，每行两个整数 w[i]、v[i]（1 ≤ w[i] ≤ W，1 ≤ v[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最大总价值。",
+  "constraints_md": "1 ≤ n ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ v[i] ≤ 10^9。",
+  "hint_md": "和 01 背包只差一个枚举方向。\n容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。\n答案是 dp[W]。",
+  "note_md": "",
+  "hints": [
+   "和 01 背包只差一个枚举方向。",
+   "容量从小到大枚举，dp[j] 就可以在同一件物品上继续加。",
+   "答案是 dp[W]。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "完全背包"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "6 13\n7 73\n12 1\n6 37\n13 8\n8 76\n4 29",
+    "out": "110"
+   }
+  ],
+  "tests": [
+   {
+    "in": "6 13\n7 73\n12 1\n6 37\n13 8\n8 76\n4 29",
+    "out": "110"
+   },
+   {
+    "in": "3 14\n11 15\n8 1\n4 68",
+    "out": "204"
+   },
+   {
+    "in": "5 10\n9 76\n5 48\n8 5\n3 30\n8 69",
+    "out": "96"
+   },
+   {
+    "in": "5 13\n5 58\n9 71\n13 31\n4 62\n4 19",
+    "out": "186"
+   },
+   {
+    "in": "6 13\n11 48\n6 33\n12 58\n10 46\n3 52\n2 6",
+    "out": "208"
+   },
+   {
+    "in": "5 24\n24 65\n4 68\n8 18\n18 70\n16 29",
+    "out": "408"
+   }
+  ]
+ },
+ {
+  "id": "gy-041",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-041",
+  "title": "观山湖的水位上涨记录",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "观山湖泵站按天记录了水位。小黔想知道，按时间顺序挑出若干天，让水位严格递增，最多能挑出多少天。\n\n**任务**：给定长度为 n 的序列，求最长严格上升子序列的长度（不要求连续）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最长严格上升子序列的长度。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9。",
+  "hint_md": "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。\n维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。\n对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。",
+  "note_md": "",
+  "hints": [
+   "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。",
+   "维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。",
+   "对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "二分",
+   "LIS"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "13\n15 35 12 8 27 11 9 44 19 36 4 42 35",
+    "out": "5"
+   }
+  ],
+  "tests": [
+   {
+    "in": "13\n15 35 12 8 27 11 9 44 19 36 4 42 35",
+    "out": "5"
+   },
+   {
+    "in": "18\n41 49 28 35 30 16 8 14 10 1 46 47 15 15 38 31 37 33",
+    "out": "5"
+   },
+   {
+    "in": "6\n30 1 22 10 21 35",
+    "out": "4"
+   },
+   {
+    "in": "12\n17 49 43 26 36 22 20 50 36 48 39 39",
+    "out": "4"
+   },
+   {
+    "in": "7\n18 3 25 10 17 24 12",
+    "out": "4"
+   },
+   {
+    "in": "12\n21 40 0 35 48 50 16 21 36 40 33 23",
+    "out": "5"
+   }
+  ]
+ },
+ {
+  "id": "gy-042",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-042",
+  "title": "黔灵山猕猴的排队身高",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山的猕猴按到达顺序排成一列，饲养员记录每只的身高。他想按原顺序挑出一组身高严格递增的猴子，最多挑多少只。\n\n**任务**：给定长度为 n 的序列，求最长严格上升子序列的长度（不要求连续）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最长严格上升子序列的长度。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9。",
+  "hint_md": "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。\n维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。\n对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。",
+  "note_md": "",
+  "hints": [
+   "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。",
+   "维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。",
+   "对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "二分",
+   "LIS"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "20\n22 39 5 26 6 26 11 41 6 46 19 22 5 5 31 21 45 48 21 19",
+    "out": "8"
+   }
+  ],
+  "tests": [
+   {
+    "in": "20\n22 39 5 26 6 26 11 41 6 46 19 22 5 5 31 21 45 48 21 19",
+    "out": "8"
+   },
+   {
+    "in": "6\n49 39 25 2 27 44",
+    "out": "3"
+   },
+   {
+    "in": "12\n19 8 22 41 24 22 23 36 0 20 33 26",
+    "out": "4"
+   },
+   {
+    "in": "8\n19 41 48 2 9 50 7 27",
+    "out": "4"
+   },
+   {
+    "in": "15\n45 29 35 2 23 13 49 5 8 44 33 44 46 1 9",
+    "out": "6"
+   },
+   {
+    "in": "12\n13 31 41 38 5 23 49 32 43 19 8 14",
+    "out": "4"
+   }
+  ]
+ },
+ {
+  "id": "gy-043",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-043",
+  "title": "花果园电梯的楼层记录",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "花果园电梯一天里按顺序停靠了很多楼层。小黔想从中挑出若干次停靠，使楼层严格递增，最多能挑多少次。\n\n**任务**：给定长度为 n 的序列，求最长严格上升子序列的长度（不要求连续）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最长严格上升子序列的长度。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9。",
+  "hint_md": "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。\n维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。\n对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。",
+  "note_md": "",
+  "hints": [
+   "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。",
+   "维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。",
+   "对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "二分",
+   "LIS"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "14\n45 30 47 21 10 2 22 9 10 19 38 14 18 36",
+    "out": "6"
+   }
+  ],
+  "tests": [
+   {
+    "in": "14\n45 30 47 21 10 2 22 9 10 19 38 14 18 36",
+    "out": "6"
+   },
+   {
+    "in": "13\n50 37 0 37 15 27 2 1 18 20 12 48 18",
+    "out": "5"
+   },
+   {
+    "in": "13\n50 50 20 28 45 3 21 10 17 43 14 24 43",
+    "out": "5"
+   },
+   {
+    "in": "14\n26 26 43 33 35 49 12 14 32 40 16 6 40 25",
+    "out": "4"
+   },
+   {
+    "in": "18\n22 27 36 38 18 1 10 49 0 39 45 45 36 1 15 9 16 20",
+    "out": "6"
+   },
+   {
+    "in": "13\n42 31 48 17 39 26 4 41 17 32 44 14 34",
+    "out": "4"
+   }
+  ]
+ },
+ {
+  "id": "gy-044",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-044",
+  "title": "数博会的入场编号",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "数博会入口按顺序发放参观编号。工作人员想从这些编号里挑出一组严格递增的编号做抽奖样本，最多能挑多少个。\n\n**任务**：给定长度为 n 的序列，求最长严格上升子序列的长度（不要求连续）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最长严格上升子序列的长度。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9。",
+  "hint_md": "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。\n维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。\n对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。",
+  "note_md": "",
+  "hints": [
+   "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。",
+   "维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。",
+   "对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "二分",
+   "LIS"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "11\n20 23 22 0 18 6 18 22 7 19 25",
+    "out": "5"
+   }
+  ],
+  "tests": [
+   {
+    "in": "11\n20 23 22 0 18 6 18 22 7 19 25",
+    "out": "5"
+   },
+   {
+    "in": "11\n41 11 32 49 15 45 0 32 29 2 4",
+    "out": "3"
+   },
+   {
+    "in": "10\n11 1 37 10 17 28 22 48 44 26",
+    "out": "5"
+   },
+   {
+    "in": "12\n15 16 15 29 6 35 28 11 13 43 48 23",
+    "out": "6"
+   },
+   {
+    "in": "7\n33 26 37 25 46 49 9",
+    "out": "4"
+   },
+   {
+    "in": "15\n29 4 31 47 43 26 10 33 44 15 45 36 37 41 12",
+    "out": "6"
+   }
+  ]
+ },
+ {
+  "id": "gy-045",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-045",
+  "title": "贵阳的逐日气温",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "气象站记录了连续 n 天的最高气温。小黔想找一段按时间严格升温的日子，最多能有多少天。\n\n**任务**：给定长度为 n 的序列，求最长严格上升子序列的长度（不要求连续）。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示最长严格上升子序列的长度。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ a[i] ≤ 10^9。",
+  "hint_md": "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。\n维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。\n对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。",
+  "note_md": "",
+  "hints": [
+   "最朴素的做法是 dp[i] 表示以 i 结尾的 LIS，O(n²) 会超时。",
+   "维护一个 tails 数组：长度为 len 的上升子序列，结尾最小能是多少。",
+   "对每个数二分找到第一个 ≥ 它的位置替换；严格上升用 lower_bound。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "二分",
+   "LIS"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "12\n8 11 49 6 8 23 29 19 12 33 28 36",
+    "out": "6"
+   }
+  ],
+  "tests": [
+   {
+    "in": "12\n8 11 49 6 8 23 29 19 12 33 28 36",
+    "out": "6"
+   },
+   {
+    "in": "18\n3 36 18 46 15 26 35 7 37 35 23 38 9 10 47 25 36 44",
+    "out": "7"
+   },
+   {
+    "in": "14\n4 31 39 0 25 45 35 40 8 38 45 10 29 36",
+    "out": "5"
+   },
+   {
+    "in": "7\n3 15 10 24 8 36 46",
+    "out": "5"
+   },
+   {
+    "in": "12\n15 34 45 45 16 14 38 21 50 32 27 38",
+    "out": "5"
+   },
+   {
+    "in": "17\n11 50 3 45 8 21 24 46 15 49 50 20 33 12 47 21 22",
+    "out": "7"
+   }
+  ]
+ },
+ {
+  "id": "gy-046",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-046",
+  "title": "花果园地下车库找车位",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "花果园地下车库是一个 n×m 的格子，1 表示墙，0 表示能走。小黔从左上角出发，每次上下左右走一格，求到右下角的最少步数；走不到输出 -1。\n\n**任务**：在 n×m 的 0/1 网格中，0 表示可走，1 表示墙。从左上角 (1,1) 走到右下角 (n,m)，每步上下左右移动一格，求最少步数；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行一个长度为 m 的 01 串。",
+  "output_md": "一个整数，表示最少步数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，保证字符只有 0 和 1。",
+  "hint_md": "边权都是 1，用 BFS 一层层扩展。\n起点或终点是墙时直接输出 -1。\n用 dist 数组记录步数，首次到达就是最短。",
+  "note_md": "",
+  "hints": [
+   "边权都是 1，用 BFS 一层层扩展。",
+   "起点或终点是墙时直接输出 -1。",
+   "用 dist 数组记录步数，首次到达就是最短。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "BFS",
+   "网格",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 6\n010010\n110000\n100001\n001100\n000000\n000000\n011110",
+    "out": "-1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 6\n010010\n110000\n100001\n001100\n000000\n000000\n011110",
+    "out": "-1"
+   },
+   {
+    "in": "3 7\n0100000\n0000100\n0001000",
+    "out": "10"
+   },
+   {
+    "in": "3 7\n0000001\n0000001\n0000010",
+    "out": "-1"
+   },
+   {
+    "in": "7 6\n000011\n000110\n000000\n000000\n001110\n000000\n000000",
+    "out": "11"
+   },
+   {
+    "in": "4 7\n0111000\n0100000\n0100100\n0000000",
+    "out": "9"
+   },
+   {
+    "in": "3 7\n0100010\n0001100\n0110000",
+    "out": "-1"
+   }
+  ]
+ },
+ {
+  "id": "gy-047",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-047",
+  "title": "青岩古镇石板巷找出口",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇的石板巷被抽象成 n×m 的格子，1 是封闭院落，0 是巷道。游客从左上角走到右下角，求最少转弯前的步数。\n\n**任务**：在 n×m 的 0/1 网格中，0 表示可走，1 表示墙。从左上角 (1,1) 走到右下角 (n,m)，每步上下左右移动一格，求最少步数；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行一个长度为 m 的 01 串。",
+  "output_md": "一个整数，表示最少步数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，保证字符只有 0 和 1。",
+  "hint_md": "边权都是 1，用 BFS 一层层扩展。\n起点或终点是墙时直接输出 -1。\n用 dist 数组记录步数，首次到达就是最短。",
+  "note_md": "",
+  "hints": [
+   "边权都是 1，用 BFS 一层层扩展。",
+   "起点或终点是墙时直接输出 -1。",
+   "用 dist 数组记录步数，首次到达就是最短。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "BFS",
+   "网格",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3 3\n000\n000\n010",
+    "out": "4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3 3\n000\n000\n010",
+    "out": "4"
+   },
+   {
+    "in": "6 5\n01000\n01011\n00000\n00000\n00010\n00100",
+    "out": "9"
+   },
+   {
+    "in": "4 7\n0000001\n1101001\n0000000\n0010010",
+    "out": "9"
+   },
+   {
+    "in": "5 7\n0000100\n0001001\n0100100\n0000101\n0010000",
+    "out": "10"
+   },
+   {
+    "in": "3 3\n000\n000\n000",
+    "out": "4"
+   },
+   {
+    "in": "5 6\n000000\n000110\n101101\n100010\n000000",
+    "out": "9"
+   }
+  ]
+ },
+ {
+  "id": "gy-048",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-048",
+  "title": "黔灵山公园的迷宫步道",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山公园有一段迷宫步道，n×m 的格子中 1 表示不可通行。小黔从左上角出发，求到右下角的最少移动次数。\n\n**任务**：在 n×m 的 0/1 网格中，0 表示可走，1 表示墙。从左上角 (1,1) 走到右下角 (n,m)，每步上下左右移动一格，求最少步数；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行一个长度为 m 的 01 串。",
+  "output_md": "一个整数，表示最少步数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，保证字符只有 0 和 1。",
+  "hint_md": "边权都是 1，用 BFS 一层层扩展。\n起点或终点是墙时直接输出 -1。\n用 dist 数组记录步数，首次到达就是最短。",
+  "note_md": "",
+  "hints": [
+   "边权都是 1，用 BFS 一层层扩展。",
+   "起点或终点是墙时直接输出 -1。",
+   "用 dist 数组记录步数，首次到达就是最短。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "BFS",
+   "网格",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3 5\n00011\n00000\n01000",
+    "out": "6"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3 5\n00011\n00000\n01000",
+    "out": "6"
+   },
+   {
+    "in": "7 3\n001\n100\n000\n101\n000\n000\n000",
+    "out": "8"
+   },
+   {
+    "in": "4 3\n001\n000\n010\n000",
+    "out": "5"
+   },
+   {
+    "in": "7 4\n0000\n0000\n0000\n0001\n0000\n0000\n0000",
+    "out": "9"
+   },
+   {
+    "in": "6 3\n010\n000\n000\n000\n000\n000",
+    "out": "7"
+   },
+   {
+    "in": "5 4\n0101\n0001\n0000\n0100\n0000",
+    "out": "7"
+   }
+  ]
+ },
+ {
+  "id": "gy-049",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-049",
+  "title": "贵阳地铁站厅的换乘通道",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "地铁站厅被看成 n×m 的网格，1 表示封闭区域。乘客从左上角走到右下角，求最少走多少格；到不了输出 -1。\n\n**任务**：在 n×m 的 0/1 网格中，0 表示可走，1 表示墙。从左上角 (1,1) 走到右下角 (n,m)，每步上下左右移动一格，求最少步数；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行一个长度为 m 的 01 串。",
+  "output_md": "一个整数，表示最少步数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，保证字符只有 0 和 1。",
+  "hint_md": "边权都是 1，用 BFS 一层层扩展。\n起点或终点是墙时直接输出 -1。\n用 dist 数组记录步数，首次到达就是最短。",
+  "note_md": "",
+  "hints": [
+   "边权都是 1，用 BFS 一层层扩展。",
+   "起点或终点是墙时直接输出 -1。",
+   "用 dist 数组记录步数，首次到达就是最短。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "BFS",
+   "网格",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 6\n010101\n100010\n101000\n000110",
+    "out": "-1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 6\n010101\n100010\n101000\n000110",
+    "out": "-1"
+   },
+   {
+    "in": "4 5\n00010\n00110\n01000\n00000",
+    "out": "7"
+   },
+   {
+    "in": "4 4\n0000\n1001\n1100\n0100",
+    "out": "6"
+   },
+   {
+    "in": "3 4\n0100\n0000\n0010",
+    "out": "5"
+   },
+   {
+    "in": "5 3\n000\n010\n001\n100\n000",
+    "out": "6"
+   },
+   {
+    "in": "6 5\n00001\n10010\n01000\n00000\n00000\n00000",
+    "out": "9"
+   }
+  ]
+ },
+ {
+  "id": "gy-050",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-050",
+  "title": "数博会展馆寻展位",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "数博会展馆的展位排成 n×m 网格，1 表示被占用。参观者从左上角走到右下角，求最短步行格数。\n\n**任务**：在 n×m 的 0/1 网格中，0 表示可走，1 表示墙。从左上角 (1,1) 走到右下角 (n,m)，每步上下左右移动一格，求最少步数；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行一个长度为 m 的 01 串。",
+  "output_md": "一个整数，表示最少步数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，保证字符只有 0 和 1。",
+  "hint_md": "边权都是 1，用 BFS 一层层扩展。\n起点或终点是墙时直接输出 -1。\n用 dist 数组记录步数，首次到达就是最短。",
+  "note_md": "",
+  "hints": [
+   "边权都是 1，用 BFS 一层层扩展。",
+   "起点或终点是墙时直接输出 -1。",
+   "用 dist 数组记录步数，首次到达就是最短。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "BFS",
+   "网格",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "6 6\n000000\n000111\n000000\n101000\n010000\n000010",
+    "out": "10"
+   }
+  ],
+  "tests": [
+   {
+    "in": "6 6\n000000\n000111\n000000\n101000\n010000\n000010",
+    "out": "10"
+   },
+   {
+    "in": "3 7\n0000010\n1000010\n0100000",
+    "out": "8"
+   },
+   {
+    "in": "5 4\n0100\n0001\n1000\n0001\n0000",
+    "out": "7"
+   },
+   {
+    "in": "4 7\n0100010\n1000100\n0100100\n0100000",
+    "out": "-1"
+   },
+   {
+    "in": "5 6\n010000\n100111\n000000\n100000\n000000",
+    "out": "-1"
+   },
+   {
+    "in": "3 4\n0001\n0101\n0100",
+    "out": "5"
+   }
+  ]
+ },
+ {
+  "id": "gy-051",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-051",
+  "title": "贵阳地铁换乘最少站数",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "贵阳地铁有 n 个站、m 条直接相连的线路。小黔从 1 号站出发，求到 n 号站最少经过多少条边；到不了输出 -1。\n\n**任务**：给定 n 个点和 m 条双向边，求从 1 号点到 n 号点最少经过多少条边；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条双向边。",
+  "output_md": "一个整数，表示最少边数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5，1 ≤ u, v ≤ n。",
+  "hint_md": "无权图的最短路径就是 BFS 的层数。\n从 1 号点入队，dist[1]=0。\n第一次访问到 n 号点时的 dist 就是答案。",
+  "note_md": "",
+  "hints": [
+   "无权图的最短路径就是 BFS 的层数。",
+   "从 1 号点入队，dist[1]=0。",
+   "第一次访问到 n 号点时的 dist 就是答案。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "图",
+   "BFS",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3 6\n1 2\n1 3\n1 3\n1 2\n2 3\n1 3",
+    "out": "1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3 6\n1 2\n1 3\n1 3\n1 2\n2 3\n1 3",
+    "out": "1"
+   },
+   {
+    "in": "7 9\n1 6\n1 4\n3 5\n5 7\n1 4\n1 7\n5 6\n2 6\n3 5",
+    "out": "1"
+   },
+   {
+    "in": "6 3\n1 2\n3 4\n5 6",
+    "out": "-1"
+   },
+   {
+    "in": "6 10\n4 5\n1 6\n1 2\n3 6\n2 3\n1 4\n2 6\n4 5\n1 5\n4 5",
+    "out": "1"
+   },
+   {
+    "in": "5 8\n4 5\n1 4\n2 5\n2 5\n1 5\n4 5\n2 4\n1 4",
+    "out": "1"
+   },
+   {
+    "in": "7 10\n3 6\n4 5\n4 5\n4 6\n2 3\n1 6\n1 6\n5 7\n5 6\n4 6",
+    "out": "3"
+   }
+  ]
+ },
+ {
+  "id": "gy-052",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-052",
+  "title": "花果园楼栋间的步行网络",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "花果园小区有 n 栋楼，m 对楼栋之间有直达小路。快递员从 1 号楼到 n 号楼，求最少经过多少条小路。\n\n**任务**：给定 n 个点和 m 条双向边，求从 1 号点到 n 号点最少经过多少条边；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条双向边。",
+  "output_md": "一个整数，表示最少边数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5，1 ≤ u, v ≤ n。",
+  "hint_md": "无权图的最短路径就是 BFS 的层数。\n从 1 号点入队，dist[1]=0。\n第一次访问到 n 号点时的 dist 就是答案。",
+  "note_md": "",
+  "hints": [
+   "无权图的最短路径就是 BFS 的层数。",
+   "从 1 号点入队，dist[1]=0。",
+   "第一次访问到 n 号点时的 dist 就是答案。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "图",
+   "BFS",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 5\n5 6\n1 6\n6 7\n1 3\n4 6",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 5\n5 6\n1 6\n6 7\n1 3\n4 6",
+    "out": "2"
+   },
+   {
+    "in": "4 3\n1 3\n1 2\n3 4",
+    "out": "2"
+   },
+   {
+    "in": "4 3\n1 2\n1 4\n1 3",
+    "out": "1"
+   },
+   {
+    "in": "7 4\n3 6\n1 4\n3 7\n1 3",
+    "out": "2"
+   },
+   {
+    "in": "5 2\n3 4\n1 2",
+    "out": "-1"
+   },
+   {
+    "in": "4 3\n1 3\n2 4\n1 4",
+    "out": "1"
+   }
+  ]
+ },
+ {
+  "id": "gy-053",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-053",
+  "title": "青岩古镇的公交线路",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇周边有 n 个站点、m 条双向公交线。游客从 1 号站到 n 号站，求最少换乘段数。\n\n**任务**：给定 n 个点和 m 条双向边，求从 1 号点到 n 号点最少经过多少条边；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条双向边。",
+  "output_md": "一个整数，表示最少边数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5，1 ≤ u, v ≤ n。",
+  "hint_md": "无权图的最短路径就是 BFS 的层数。\n从 1 号点入队，dist[1]=0。\n第一次访问到 n 号点时的 dist 就是答案。",
+  "note_md": "",
+  "hints": [
+   "无权图的最短路径就是 BFS 的层数。",
+   "从 1 号点入队，dist[1]=0。",
+   "第一次访问到 n 号点时的 dist 就是答案。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "图",
+   "BFS",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 6\n3 4\n2 4\n1 3\n2 4\n3 4\n1 2",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 6\n3 4\n2 4\n1 3\n2 4\n3 4\n1 2",
+    "out": "2"
+   },
+   {
+    "in": "5 8\n1 4\n1 3\n1 5\n2 3\n1 3\n4 5\n1 4\n3 4",
+    "out": "1"
+   },
+   {
+    "in": "6 9\n3 4\n2 3\n4 6\n4 5\n3 5\n1 2\n4 5\n1 4\n3 4",
+    "out": "2"
+   },
+   {
+    "in": "8 2\n3 4\n2 4",
+    "out": "-1"
+   },
+   {
+    "in": "4 2\n1 3\n2 4",
+    "out": "-1"
+   },
+   {
+    "in": "8 5\n3 6\n2 4\n4 7\n4 8\n6 8",
+    "out": "-1"
+   }
+  ]
+ },
+ {
+  "id": "gy-054",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-054",
+  "title": "观山湖绿道的连接",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "观山湖绿道有 n 个入口、m 条相连的步道。小黔从 1 号入口到 n 号入口，求最少走几条步道。\n\n**任务**：给定 n 个点和 m 条双向边，求从 1 号点到 n 号点最少经过多少条边；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条双向边。",
+  "output_md": "一个整数，表示最少边数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5，1 ≤ u, v ≤ n。",
+  "hint_md": "无权图的最短路径就是 BFS 的层数。\n从 1 号点入队，dist[1]=0。\n第一次访问到 n 号点时的 dist 就是答案。",
+  "note_md": "",
+  "hints": [
+   "无权图的最短路径就是 BFS 的层数。",
+   "从 1 号点入队，dist[1]=0。",
+   "第一次访问到 n 号点时的 dist 就是答案。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "图",
+   "BFS",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 10\n2 3\n1 2\n3 4\n3 4\n1 2\n1 3\n3 4\n1 2\n2 3\n2 3",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 10\n2 3\n1 2\n3 4\n3 4\n1 2\n1 3\n3 4\n1 2\n2 3\n2 3",
+    "out": "2"
+   },
+   {
+    "in": "5 8\n1 5\n2 4\n1 2\n2 3\n4 5\n1 5\n1 5\n3 4",
+    "out": "1"
+   },
+   {
+    "in": "8 9\n4 5\n3 8\n1 4\n2 6\n4 5\n5 6\n2 6\n5 6\n1 5",
+    "out": "-1"
+   },
+   {
+    "in": "5 2\n4 5\n3 5",
+    "out": "-1"
+   },
+   {
+    "in": "6 5\n1 2\n1 4\n2 4\n1 2\n1 2",
+    "out": "-1"
+   },
+   {
+    "in": "4 10\n1 2\n3 4\n2 4\n2 3\n2 3\n3 4\n1 4\n2 4\n1 4\n3 4",
+    "out": "1"
+   }
+  ]
+ },
+ {
+  "id": "gy-055",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-055",
+  "title": "北站到机场的大巴换乘",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "贵阳北站到龙洞堡机场之间有 n 个接驳点和 m 条双向接驳线。求从 1 号点到 n 号点最少坐几段。\n\n**任务**：给定 n 个点和 m 条双向边，求从 1 号点到 n 号点最少经过多少条边；走不到输出 -1。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条双向边。",
+  "output_md": "一个整数，表示最少边数；无法到达输出 -1。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5，1 ≤ u, v ≤ n。",
+  "hint_md": "无权图的最短路径就是 BFS 的层数。\n从 1 号点入队，dist[1]=0。\n第一次访问到 n 号点时的 dist 就是答案。",
+  "note_md": "",
+  "hints": [
+   "无权图的最短路径就是 BFS 的层数。",
+   "从 1 号点入队，dist[1]=0。",
+   "第一次访问到 n 号点时的 dist 就是答案。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "图",
+   "BFS",
+   "最短路"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8 9\n1 2\n1 3\n4 8\n2 5\n6 8\n5 7\n3 8\n2 7\n4 5",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8 9\n1 2\n1 3\n4 8\n2 5\n6 8\n5 7\n3 8\n2 7\n4 5",
+    "out": "2"
+   },
+   {
+    "in": "8 6\n5 8\n2 5\n7 8\n1 8\n1 5\n6 7",
+    "out": "1"
+   },
+   {
+    "in": "8 3\n5 6\n1 8\n3 4",
+    "out": "1"
+   },
+   {
+    "in": "5 3\n1 2\n1 2\n1 4",
+    "out": "-1"
+   },
+   {
+    "in": "5 4\n1 5\n2 4\n1 5\n3 4",
+    "out": "1"
+   },
+   {
+    "in": "3 4\n2 3\n2 3\n1 2\n2 3",
+    "out": "2"
+   }
+  ]
+ },
+ {
+  "id": "gy-056",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-056",
+  "title": "小区团购群的合并",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "花果园有 n 个团购群，m 次合并操作把两个群合成一个。求最后还剩多少个群。\n\n**任务**：给定 n 个点和 m 条边，求这个图一共有多少个连通块。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条边。",
+  "output_md": "一个整数，表示连通块数量。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5。",
+  "hint_md": "初始时有 n 个连通块。\n每成功合并两个不同集合，连通块数减一。\n用并查集判断两个点是否已经在同一集合。",
+  "note_md": "",
+  "hints": [
+   "初始时有 n 个连通块。",
+   "每成功合并两个不同集合，连通块数减一。",
+   "用并查集判断两个点是否已经在同一集合。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "并查集",
+   "连通块"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3 4\n3 1\n1 3\n3 1\n3 1",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3 4\n3 1\n1 3\n3 1\n3 1",
+    "out": "2"
+   },
+   {
+    "in": "3 6\n2 1\n3 1\n2 1\n2 3\n3 1\n1 3",
+    "out": "1"
+   },
+   {
+    "in": "8 2\n3 5\n2 8",
+    "out": "6"
+   },
+   {
+    "in": "4 4\n2 3\n3 2\n4 2\n2 4",
+    "out": "2"
+   },
+   {
+    "in": "4 3\n3 1\n2 1\n4 3",
+    "out": "1"
+   },
+   {
+    "in": "8 5\n8 3\n7 4\n5 3\n5 6\n5 7",
+    "out": "3"
+   }
+  ]
+ },
+ {
+  "id": "gy-057",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-057",
+  "title": "老小区院落的连通",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "贵阳某老小区有 n 个院落，m 条小路连接其中两个院落。求这些院落一共分成多少个互不相通的片区。\n\n**任务**：给定 n 个点和 m 条边，求这个图一共有多少个连通块。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条边。",
+  "output_md": "一个整数，表示连通块数量。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5。",
+  "hint_md": "初始时有 n 个连通块。\n每成功合并两个不同集合，连通块数减一。\n用并查集判断两个点是否已经在同一集合。",
+  "note_md": "",
+  "hints": [
+   "初始时有 n 个连通块。",
+   "每成功合并两个不同集合，连通块数减一。",
+   "用并查集判断两个点是否已经在同一集合。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "并查集",
+   "连通块"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 10\n6 7\n1 6\n4 2\n4 5\n6 4\n1 7\n6 7\n5 1\n5 6\n5 6",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 10\n6 7\n1 6\n4 2\n4 5\n6 4\n1 7\n6 7\n5 1\n5 6\n5 6",
+    "out": "2"
+   },
+   {
+    "in": "6 4\n3 1\n1 2\n2 3\n6 5",
+    "out": "3"
+   },
+   {
+    "in": "7 3\n1 5\n5 7\n7 2",
+    "out": "4"
+   },
+   {
+    "in": "5 4\n3 1\n5 2\n3 4\n3 4",
+    "out": "2"
+   },
+   {
+    "in": "6 10\n2 4\n6 2\n2 3\n6 3\n6 2\n4 1\n6 5\n2 3\n5 3\n6 3",
+    "out": "1"
+   },
+   {
+    "in": "8 6\n2 7\n3 2\n7 6\n1 4\n6 5\n6 5",
+    "out": "3"
+   }
+  ]
+ },
+ {
+  "id": "gy-058",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-058",
+  "title": "花溪大学城的社团联盟",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "花溪大学城有 n 个社团，m 对社团结成了联盟。求最后有多少个独立的联盟。\n\n**任务**：给定 n 个点和 m 条边，求这个图一共有多少个连通块。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条边。",
+  "output_md": "一个整数，表示连通块数量。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5。",
+  "hint_md": "初始时有 n 个连通块。\n每成功合并两个不同集合，连通块数减一。\n用并查集判断两个点是否已经在同一集合。",
+  "note_md": "",
+  "hints": [
+   "初始时有 n 个连通块。",
+   "每成功合并两个不同集合，连通块数减一。",
+   "用并查集判断两个点是否已经在同一集合。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "并查集",
+   "连通块"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 4\n4 1\n2 3\n4 1\n1 2",
+    "out": "1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 4\n4 1\n2 3\n4 1\n1 2",
+    "out": "1"
+   },
+   {
+    "in": "5 6\n5 1\n1 5\n4 5\n1 2\n2 4\n3 2",
+    "out": "1"
+   },
+   {
+    "in": "5 8\n1 2\n2 5\n2 4\n3 5\n3 5\n1 2\n3 4\n5 1",
+    "out": "1"
+   },
+   {
+    "in": "6 3\n3 6\n5 6\n5 6",
+    "out": "4"
+   },
+   {
+    "in": "3 5\n3 2\n2 1\n1 2\n2 3\n1 2",
+    "out": "1"
+   },
+   {
+    "in": "4 9\n3 4\n1 4\n2 1\n1 2\n2 4\n4 1\n3 1\n2 3\n2 1",
+    "out": "1"
+   }
+  ]
+ },
+ {
+  "id": "gy-059",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-059",
+  "title": "数博会参展商的合作群",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "数博会有 n 家参展商，m 对参展商建立了合作关系。求最后有多少个互不合作的群体。\n\n**任务**：给定 n 个点和 m 条边，求这个图一共有多少个连通块。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条边。",
+  "output_md": "一个整数，表示连通块数量。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5。",
+  "hint_md": "初始时有 n 个连通块。\n每成功合并两个不同集合，连通块数减一。\n用并查集判断两个点是否已经在同一集合。",
+  "note_md": "",
+  "hints": [
+   "初始时有 n 个连通块。",
+   "每成功合并两个不同集合，连通块数减一。",
+   "用并查集判断两个点是否已经在同一集合。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "并查集",
+   "连通块"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8 6\n8 7\n4 5\n3 6\n1 4\n2 4\n7 3",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8 6\n8 7\n4 5\n3 6\n1 4\n2 4\n7 3",
+    "out": "2"
+   },
+   {
+    "in": "4 7\n2 4\n2 1\n2 1\n2 4\n3 1\n3 2\n4 2",
+    "out": "1"
+   },
+   {
+    "in": "5 3\n4 5\n3 5\n5 4",
+    "out": "3"
+   },
+   {
+    "in": "7 9\n1 6\n5 3\n1 5\n1 4\n5 1\n1 2\n7 5\n1 2\n6 7",
+    "out": "1"
+   },
+   {
+    "in": "8 6\n2 4\n7 2\n3 4\n4 3\n4 6\n3 1",
+    "out": "3"
+   },
+   {
+    "in": "4 8\n3 1\n3 2\n2 1\n3 2\n1 2\n4 1\n3 4\n3 4",
+    "out": "1"
+   }
+  ]
+ },
+ {
+  "id": "gy-060",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-060",
+  "title": "观山湖公园的健身小组",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "观山湖公园有 n 个健身小组，m 次合并把两个小组合并。求最后剩下多少个小组。\n\n**任务**：给定 n 个点和 m 条边，求这个图一共有多少个连通块。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5）。\n接下来 m 行，每行两个整数 u、v，表示一条边。",
+  "output_md": "一个整数，表示连通块数量。",
+  "constraints_md": "1 ≤ n ≤ 10^5，0 ≤ m ≤ 2×10^5。",
+  "hint_md": "初始时有 n 个连通块。\n每成功合并两个不同集合，连通块数减一。\n用并查集判断两个点是否已经在同一集合。",
+  "note_md": "",
+  "hints": [
+   "初始时有 n 个连通块。",
+   "每成功合并两个不同集合，连通块数减一。",
+   "用并查集判断两个点是否已经在同一集合。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "并查集",
+   "连通块"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 5\n2 1\n1 4\n2 4\n3 1\n2 3",
+    "out": "1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 5\n2 1\n1 4\n2 4\n3 1\n2 3",
+    "out": "1"
+   },
+   {
+    "in": "4 6\n3 1\n2 3\n4 1\n4 1\n3 1\n2 4",
+    "out": "1"
+   },
+   {
+    "in": "4 9\n1 2\n4 1\n3 2\n1 2\n3 4\n4 2\n4 2\n2 3\n2 4",
+    "out": "1"
+   },
+   {
+    "in": "8 2\n8 3\n1 2",
+    "out": "6"
+   },
+   {
+    "in": "6 4\n1 6\n2 3\n2 3\n6 3",
+    "out": "3"
+   },
+   {
+    "in": "5 10\n4 2\n4 3\n2 4\n5 4\n1 2\n3 4\n2 1\n4 3\n3 2\n4 1",
+    "out": "1"
+   }
+  ]
+ },
+ {
+  "id": "gy-061",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-061",
+  "title": "分丝娃娃的薄饼",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "小黔有 a 张丝娃娃薄饼和 b 份配菜，想平均分给尽可能多的人且不浪费。求最多能分给多少人。\n\n**任务**：给定 n 对数，分别输出每一对数的最大公约数。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个正整数 a、b（1 ≤ a, b ≤ 10^9）。",
+  "output_md": "n 行，每行一个整数，表示对应两数的最大公约数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a, b ≤ 10^9。",
+  "hint_md": "用辗转相除法：gcd(a,b) = gcd(b, a%b)。\nC++17 可以直接调用 std::gcd。\n注意 a、b 都很大，用 long long。",
+  "note_md": "",
+  "hints": [
+   "用辗转相除法：gcd(a,b) = gcd(b, a%b)。",
+   "C++17 可以直接调用 std::gcd。",
+   "注意 a、b 都很大，用 long long。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "最大公约数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\n296 105\n135 129\n500 339\n252 9",
+    "out": "1\n3\n1\n9"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\n296 105\n135 129\n500 339\n252 9",
+    "out": "1\n3\n1\n9"
+   },
+   {
+    "in": "5\n402 124\n258 290\n281 468\n269 343\n343 253",
+    "out": "2\n2\n1\n1\n1"
+   },
+   {
+    "in": "2\n48 96\n393 359",
+    "out": "48\n1"
+   },
+   {
+    "in": "2\n398 12\n107 338",
+    "out": "2\n1"
+   },
+   {
+    "in": "3\n431 134\n74 343\n250 246",
+    "out": "1\n1\n2"
+   },
+   {
+    "in": "2\n152 22\n139 371",
+    "out": "2\n1"
+   }
+  ]
+ },
+ {
+  "id": "gy-062",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-062",
+  "title": "分烙锅的土豆",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "一锅烙锅有 a 片土豆和 b 片藕片，要平均分到若干盘且不浪费。求最多能分多少盘。\n\n**任务**：给定 n 对数，分别输出每一对数的最大公约数。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个正整数 a、b（1 ≤ a, b ≤ 10^9）。",
+  "output_md": "n 行，每行一个整数，表示对应两数的最大公约数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a, b ≤ 10^9。",
+  "hint_md": "用辗转相除法：gcd(a,b) = gcd(b, a%b)。\nC++17 可以直接调用 std::gcd。\n注意 a、b 都很大，用 long long。",
+  "note_md": "",
+  "hints": [
+   "用辗转相除法：gcd(a,b) = gcd(b, a%b)。",
+   "C++17 可以直接调用 std::gcd。",
+   "注意 a、b 都很大，用 long long。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "最大公约数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3\n374 478\n494 35\n443 131",
+    "out": "2\n1\n1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3\n374 478\n494 35\n443 131",
+    "out": "2\n1\n1"
+   },
+   {
+    "in": "2\n253 473\n83 361",
+    "out": "11\n1"
+   },
+   {
+    "in": "5\n21 470\n176 437\n290 436\n255 108\n440 425",
+    "out": "1\n1\n2\n3\n5"
+   },
+   {
+    "in": "4\n24 245\n457 246\n71 471\n478 476",
+    "out": "1\n1\n1\n2"
+   },
+   {
+    "in": "4\n331 52\n316 451\n78 446\n256 391",
+    "out": "1\n1\n2\n1"
+   },
+   {
+    "in": "6\n365 3\n239 126\n435 474\n390 310\n249 9\n103 377",
+    "out": "1\n1\n3\n10\n3\n1"
+   }
+  ]
+ },
+ {
+  "id": "gy-063",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-063",
+  "title": "青岩古镇分玫瑰糖",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇有 a 颗玫瑰糖和 b 块核桃糖，要装成若干份完全相同的礼盒。求最多能装多少盒。\n\n**任务**：给定 n 对数，分别输出每一对数的最大公约数。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个正整数 a、b（1 ≤ a, b ≤ 10^9）。",
+  "output_md": "n 行，每行一个整数，表示对应两数的最大公约数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a, b ≤ 10^9。",
+  "hint_md": "用辗转相除法：gcd(a,b) = gcd(b, a%b)。\nC++17 可以直接调用 std::gcd。\n注意 a、b 都很大，用 long long。",
+  "note_md": "",
+  "hints": [
+   "用辗转相除法：gcd(a,b) = gcd(b, a%b)。",
+   "C++17 可以直接调用 std::gcd。",
+   "注意 a、b 都很大，用 long long。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "最大公约数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "2\n125 144\n358 170",
+    "out": "1\n2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "2\n125 144\n358 170",
+    "out": "1\n2"
+   },
+   {
+    "in": "4\n434 199\n467 440\n287 127\n39 375",
+    "out": "1\n1\n1\n3"
+   },
+   {
+    "in": "5\n58 280\n149 216\n487 396\n425 96\n354 220",
+    "out": "2\n1\n1\n1\n2"
+   },
+   {
+    "in": "4\n113 316\n127 187\n368 154\n410 373",
+    "out": "1\n1\n2\n1"
+   },
+   {
+    "in": "5\n378 153\n365 368\n2 440\n392 411\n406 480",
+    "out": "9\n1\n2\n1\n2"
+   },
+   {
+    "in": "6\n303 359\n17 402\n446 217\n242 363\n500 130\n81 288",
+    "out": "1\n1\n1\n121\n10\n9"
+   }
+  ]
+ },
+ {
+  "id": "gy-064",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-064",
+  "title": "花果园分停车位",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "花果园有 a 个地面车位和 b 个地下车位，要平均分配给若干栋楼。求最多能分给多少栋楼。\n\n**任务**：给定 n 对数，分别输出每一对数的最大公约数。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个正整数 a、b（1 ≤ a, b ≤ 10^9）。",
+  "output_md": "n 行，每行一个整数，表示对应两数的最大公约数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a, b ≤ 10^9。",
+  "hint_md": "用辗转相除法：gcd(a,b) = gcd(b, a%b)。\nC++17 可以直接调用 std::gcd。\n注意 a、b 都很大，用 long long。",
+  "note_md": "",
+  "hints": [
+   "用辗转相除法：gcd(a,b) = gcd(b, a%b)。",
+   "C++17 可以直接调用 std::gcd。",
+   "注意 a、b 都很大，用 long long。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "最大公约数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3\n85 421\n232 164\n378 363",
+    "out": "1\n4\n3"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3\n85 421\n232 164\n378 363",
+    "out": "1\n4\n3"
+   },
+   {
+    "in": "6\n131 226\n243 465\n318 496\n32 483\n393 84\n306 246",
+    "out": "1\n3\n2\n1\n3\n6"
+   },
+   {
+    "in": "5\n18 413\n2 348\n226 101\n74 489\n14 348",
+    "out": "1\n2\n1\n1\n2"
+   },
+   {
+    "in": "6\n469 392\n212 451\n80 483\n136 368\n137 490\n374 16",
+    "out": "7\n1\n1\n8\n1\n2"
+   },
+   {
+    "in": "6\n87 89\n453 159\n480 102\n367 153\n162 494\n148 226",
+    "out": "1\n3\n6\n1\n2\n2"
+   },
+   {
+    "in": "5\n334 231\n456 109\n143 193\n3 295\n214 349",
+    "out": "1\n1\n1\n1\n1"
+   }
+  ]
+ },
+ {
+  "id": "gy-065",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-065",
+  "title": "肠旺面分面条",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "面馆有 a 团面和 b 份血旺，要分成若干碗分量相同的肠旺面。求最多能分多少碗。\n\n**任务**：给定 n 对数，分别输出每一对数的最大公约数。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行两个正整数 a、b（1 ≤ a, b ≤ 10^9）。",
+  "output_md": "n 行，每行一个整数，表示对应两数的最大公约数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a, b ≤ 10^9。",
+  "hint_md": "用辗转相除法：gcd(a,b) = gcd(b, a%b)。\nC++17 可以直接调用 std::gcd。\n注意 a、b 都很大，用 long long。",
+  "note_md": "",
+  "hints": [
+   "用辗转相除法：gcd(a,b) = gcd(b, a%b)。",
+   "C++17 可以直接调用 std::gcd。",
+   "注意 a、b 都很大，用 long long。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "最大公约数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "2\n154 485\n103 334",
+    "out": "1\n1"
+   }
+  ],
+  "tests": [
+   {
+    "in": "2\n154 485\n103 334",
+    "out": "1\n1"
+   },
+   {
+    "in": "6\n254 105\n410 103\n333 274\n149 456\n56 85\n5 177",
+    "out": "1\n1\n1\n1\n1\n1"
+   },
+   {
+    "in": "4\n107 24\n90 332\n291 83\n40 37",
+    "out": "1\n2\n1\n1"
+   },
+   {
+    "in": "5\n360 449\n388 229\n283 464\n298 354\n142 77",
+    "out": "1\n1\n1\n2\n1"
+   },
+   {
+    "in": "3\n340 415\n46 443\n452 47",
+    "out": "5\n1\n1"
+   },
+   {
+    "in": "6\n29 59\n211 16\n14 182\n266 349\n322 130\n259 56",
+    "out": "1\n1\n14\n1\n2\n7"
+   }
+  ]
+ },
+ {
+  "id": "gy-066",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-066",
+  "title": "数博会的质数门票号",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "数博会门票按 1 到 n 编号。工作人员想知道编号是质数的门票一共有多少张。\n\n**任务**：统计 1 到 n 之间（含 n）有多少个质数。",
+  "input_md": "一个整数 n（1 ≤ n ≤ 2×10^6）。",
+  "output_md": "一个整数，表示 1 到 n 的质数个数。",
+  "constraints_md": "1 ≤ n ≤ 2×10^6。",
+  "hint_md": "逐个试除到 sqrt(n) 的总复杂度太高。\n用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。\n筛完后统计仍然为 true 的个数。",
+  "note_md": "",
+  "hints": [
+   "逐个试除到 sqrt(n) 的总复杂度太高。",
+   "用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。",
+   "筛完后统计仍然为 true 的个数。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "筛法",
+   "质数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "802",
+    "out": "139"
+   }
+  ],
+  "tests": [
+   {
+    "in": "802",
+    "out": "139"
+   },
+   {
+    "in": "1220",
+    "out": "199"
+   },
+   {
+    "in": "1074",
+    "out": "180"
+   },
+   {
+    "in": "607",
+    "out": "111"
+   },
+   {
+    "in": "2619",
+    "out": "380"
+   },
+   {
+    "in": "1499",
+    "out": "239"
+   }
+  ]
+ },
+ {
+  "id": "gy-067",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-067",
+  "title": "甲秀楼的石栏编号",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "甲秀楼修缮时给 n 块石栏编号。小黔想知道编号为质数的石栏有多少块。\n\n**任务**：统计 1 到 n 之间（含 n）有多少个质数。",
+  "input_md": "一个整数 n（1 ≤ n ≤ 2×10^6）。",
+  "output_md": "一个整数，表示 1 到 n 的质数个数。",
+  "constraints_md": "1 ≤ n ≤ 2×10^6。",
+  "hint_md": "逐个试除到 sqrt(n) 的总复杂度太高。\n用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。\n筛完后统计仍然为 true 的个数。",
+  "note_md": "",
+  "hints": [
+   "逐个试除到 sqrt(n) 的总复杂度太高。",
+   "用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。",
+   "筛完后统计仍然为 true 的个数。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "筛法",
+   "质数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "2458",
+    "out": "363"
+   }
+  ],
+  "tests": [
+   {
+    "in": "2458",
+    "out": "363"
+   },
+   {
+    "in": "2888",
+    "out": "418"
+   },
+   {
+    "in": "2174",
+    "out": "326"
+   },
+   {
+    "in": "736",
+    "out": "130"
+   },
+   {
+    "in": "2989",
+    "out": "429"
+   },
+   {
+    "in": "2481",
+    "out": "367"
+   }
+  ]
+ },
+ {
+  "id": "gy-068",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-068",
+  "title": "贵阳公交的线路编号",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "贵阳公交把 n 条线路从 1 到 n 编号。调度员想统计编号为质数的线路有多少条。\n\n**任务**：统计 1 到 n 之间（含 n）有多少个质数。",
+  "input_md": "一个整数 n（1 ≤ n ≤ 2×10^6）。",
+  "output_md": "一个整数，表示 1 到 n 的质数个数。",
+  "constraints_md": "1 ≤ n ≤ 2×10^6。",
+  "hint_md": "逐个试除到 sqrt(n) 的总复杂度太高。\n用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。\n筛完后统计仍然为 true 的个数。",
+  "note_md": "",
+  "hints": [
+   "逐个试除到 sqrt(n) 的总复杂度太高。",
+   "用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。",
+   "筛完后统计仍然为 true 的个数。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "筛法",
+   "质数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "1893",
+    "out": "290"
+   }
+  ],
+  "tests": [
+   {
+    "in": "1893",
+    "out": "290"
+   },
+   {
+    "in": "2832",
+    "out": "410"
+   },
+   {
+    "in": "1229",
+    "out": "201"
+   },
+   {
+    "in": "993",
+    "out": "167"
+   },
+   {
+    "in": "980",
+    "out": "165"
+   },
+   {
+    "in": "1699",
+    "out": "266"
+   }
+  ]
+ },
+ {
+  "id": "gy-069",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-069",
+  "title": "猕猴桃装箱的编号",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "修文猕猴桃装箱后从 1 到 n 编号。质检员想统计质数编号的箱子有多少个。\n\n**任务**：统计 1 到 n 之间（含 n）有多少个质数。",
+  "input_md": "一个整数 n（1 ≤ n ≤ 2×10^6）。",
+  "output_md": "一个整数，表示 1 到 n 的质数个数。",
+  "constraints_md": "1 ≤ n ≤ 2×10^6。",
+  "hint_md": "逐个试除到 sqrt(n) 的总复杂度太高。\n用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。\n筛完后统计仍然为 true 的个数。",
+  "note_md": "",
+  "hints": [
+   "逐个试除到 sqrt(n) 的总复杂度太高。",
+   "用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。",
+   "筛完后统计仍然为 true 的个数。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "筛法",
+   "质数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "1779",
+    "out": "275"
+   }
+  ],
+  "tests": [
+   {
+    "in": "1779",
+    "out": "275"
+   },
+   {
+    "in": "2191",
+    "out": "327"
+   },
+   {
+    "in": "1416",
+    "out": "223"
+   },
+   {
+    "in": "1244",
+    "out": "203"
+   },
+   {
+    "in": "109",
+    "out": "29"
+   },
+   {
+    "in": "1100",
+    "out": "184"
+   }
+  ]
+ },
+ {
+  "id": "gy-070",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-070",
+  "title": "南明河桥墩的编号",
+  "difficulty": 3,
+  "time_limit": 2.0,
+  "statement_md": "南明河沿线有 n 个桥墩，从 1 到 n 编号。巡检员想统计质数编号的桥墩有多少个。\n\n**任务**：统计 1 到 n 之间（含 n）有多少个质数。",
+  "input_md": "一个整数 n（1 ≤ n ≤ 2×10^6）。",
+  "output_md": "一个整数，表示 1 到 n 的质数个数。",
+  "constraints_md": "1 ≤ n ≤ 2×10^6。",
+  "hint_md": "逐个试除到 sqrt(n) 的总复杂度太高。\n用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。\n筛完后统计仍然为 true 的个数。",
+  "note_md": "",
+  "hints": [
+   "逐个试除到 sqrt(n) 的总复杂度太高。",
+   "用埃氏筛：先假设全是质数，再把每个质数的倍数标记为合数。",
+   "筛完后统计仍然为 true 的个数。"
+  ],
+  "difficulty_label": "提高",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "数论",
+   "筛法",
+   "质数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "856",
+    "out": "147"
+   }
+  ],
+  "tests": [
+   {
+    "in": "856",
+    "out": "147"
+   },
+   {
+    "in": "2183",
+    "out": "327"
+   },
+   {
+    "in": "2786",
+    "out": "404"
+   },
+   {
+    "in": "596",
+    "out": "108"
+   },
+   {
+    "in": "982",
+    "out": "165"
+   },
+   {
+    "in": "795",
+    "out": "138"
+   }
+  ]
+ },
+ {
+  "id": "gy-071",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-071",
+  "title": "“肠旺面”的拼音招牌",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青云路一家肠旺面馆把拼音 changwangmian 印在招牌上。老板想知道招牌里有多少个元音字母。\n\n**任务**：给定一个只含小写字母的字符串，统计其中元音字母 a、e、i、o、u 的个数。",
+  "input_md": "一行一个只含小写字母的字符串 s（1 ≤ |s| ≤ 10^5）。",
+  "output_md": "一个整数，表示元音字母个数。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含小写字母。",
+  "hint_md": "用 getline 读入整行，避免空格截断（虽然本题没有空格）。\n遍历每个字符，判断是否属于 aeiou。\nO(|s|) 一遍扫描即可。",
+  "note_md": "",
+  "hints": [
+   "用 getline 读入整行，避免空格截断（虽然本题没有空格）。",
+   "遍历每个字符，判断是否属于 aeiou。",
+   "O(|s|) 一遍扫描即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "字符串",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "iwmmawagi",
+    "out": "4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "iwmmawagi",
+    "out": "4"
+   },
+   {
+    "in": "aacaacgia",
+    "out": "6"
+   },
+   {
+    "in": "hmiansnscanamg",
+    "out": "4"
+   },
+   {
+    "in": "iscncain",
+    "out": "3"
+   },
+   {
+    "in": "cnannccn",
+    "out": "1"
+   },
+   {
+    "in": "ngnnwsn",
+    "out": "0"
+   }
+  ]
+ },
+ {
+  "id": "gy-072",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-072",
+  "title": "“丝娃娃”的拼音菜单",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "一家丝娃娃店的菜单上写着 siwawa。店员想统计其中元音字母的个数。\n\n**任务**：给定一个只含小写字母的字符串，统计其中元音字母 a、e、i、o、u 的个数。",
+  "input_md": "一行一个只含小写字母的字符串 s（1 ≤ |s| ≤ 10^5）。",
+  "output_md": "一个整数，表示元音字母个数。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含小写字母。",
+  "hint_md": "用 getline 读入整行，避免空格截断（虽然本题没有空格）。\n遍历每个字符，判断是否属于 aeiou。\nO(|s|) 一遍扫描即可。",
+  "note_md": "",
+  "hints": [
+   "用 getline 读入整行，避免空格截断（虽然本题没有空格）。",
+   "遍历每个字符，判断是否属于 aeiou。",
+   "O(|s|) 一遍扫描即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "字符串",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "gcnnaacsai",
+    "out": "4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "gcnnaacsai",
+    "out": "4"
+   },
+   {
+    "in": "wnaisacm",
+    "out": "3"
+   },
+   {
+    "in": "imnaism",
+    "out": "3"
+   },
+   {
+    "in": "gnanaa",
+    "out": "3"
+   },
+   {
+    "in": "aaniwaacgniian",
+    "out": "8"
+   },
+   {
+    "in": "maawiwnwanhsan",
+    "out": "5"
+   }
+  ]
+ },
+ {
+  "id": "gy-073",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-073",
+  "title": "“甲秀楼”的拼音导览",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "甲秀楼导览牌上印着 jiaxiulou。讲解员想统计元音字母的个数。\n\n**任务**：给定一个只含小写字母的字符串，统计其中元音字母 a、e、i、o、u 的个数。",
+  "input_md": "一行一个只含小写字母的字符串 s（1 ≤ |s| ≤ 10^5）。",
+  "output_md": "一个整数，表示元音字母个数。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含小写字母。",
+  "hint_md": "用 getline 读入整行，避免空格截断（虽然本题没有空格）。\n遍历每个字符，判断是否属于 aeiou。\nO(|s|) 一遍扫描即可。",
+  "note_md": "",
+  "hints": [
+   "用 getline 读入整行，避免空格截断（虽然本题没有空格）。",
+   "遍历每个字符，判断是否属于 aeiou。",
+   "O(|s|) 一遍扫描即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "字符串",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "hgswamasignaanwca",
+    "out": "6"
+   }
+  ],
+  "tests": [
+   {
+    "in": "hgswamasignaanwca",
+    "out": "6"
+   },
+   {
+    "in": "ismisniahwnnma",
+    "out": "5"
+   },
+   {
+    "in": "ggnaian",
+    "out": "3"
+   },
+   {
+    "in": "haancnin",
+    "out": "3"
+   },
+   {
+    "in": "anwaiaw",
+    "out": "4"
+   },
+   {
+    "in": "swghanawchahwicham",
+    "out": "5"
+   }
+  ]
+ },
+ {
+  "id": "gy-074",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-074",
+  "title": "“观山湖”的拼音路牌",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "观山湖公园的路牌上写着 guanshanhu。小黔想统计元音字母的个数。\n\n**任务**：给定一个只含小写字母的字符串，统计其中元音字母 a、e、i、o、u 的个数。",
+  "input_md": "一行一个只含小写字母的字符串 s（1 ≤ |s| ≤ 10^5）。",
+  "output_md": "一个整数，表示元音字母个数。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含小写字母。",
+  "hint_md": "用 getline 读入整行，避免空格截断（虽然本题没有空格）。\n遍历每个字符，判断是否属于 aeiou。\nO(|s|) 一遍扫描即可。",
+  "note_md": "",
+  "hints": [
+   "用 getline 读入整行，避免空格截断（虽然本题没有空格）。",
+   "遍历每个字符，判断是否属于 aeiou。",
+   "O(|s|) 一遍扫描即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "字符串",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "nannna",
+    "out": "2"
+   }
+  ],
+  "tests": [
+   {
+    "in": "nannna",
+    "out": "2"
+   },
+   {
+    "in": "hwwcs",
+    "out": "0"
+   },
+   {
+    "in": "asncnwanhnwa",
+    "out": "3"
+   },
+   {
+    "in": "sasnahggnwahahansa",
+    "out": "6"
+   },
+   {
+    "in": "gaasnhcwahinacnahi",
+    "out": "7"
+   },
+   {
+    "in": "iwsnwannnww",
+    "out": "2"
+   }
+  ]
+ },
+ {
+  "id": "gy-075",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-075",
+  "title": "“青岩古镇”的拼音门票",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇门票上印着 qingyanguzhen。售票员想统计元音字母的个数。\n\n**任务**：给定一个只含小写字母的字符串，统计其中元音字母 a、e、i、o、u 的个数。",
+  "input_md": "一行一个只含小写字母的字符串 s（1 ≤ |s| ≤ 10^5）。",
+  "output_md": "一个整数，表示元音字母个数。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含小写字母。",
+  "hint_md": "用 getline 读入整行，避免空格截断（虽然本题没有空格）。\n遍历每个字符，判断是否属于 aeiou。\nO(|s|) 一遍扫描即可。",
+  "note_md": "",
+  "hints": [
+   "用 getline 读入整行，避免空格截断（虽然本题没有空格）。",
+   "遍历每个字符，判断是否属于 aeiou。",
+   "O(|s|) 一遍扫描即可。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "字符串",
+   "计数"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "angawcnmaanai",
+    "out": "6"
+   }
+  ],
+  "tests": [
+   {
+    "in": "angawcnmaanai",
+    "out": "6"
+   },
+   {
+    "in": "cncswnciwhgs",
+    "out": "1"
+   },
+   {
+    "in": "aiamgasain",
+    "out": "6"
+   },
+   {
+    "in": "cgaiagcsiagn",
+    "out": "5"
+   },
+   {
+    "in": "gamcihhiiaaiamii",
+    "out": "10"
+   },
+   {
+    "in": "iwcagwaaigaici",
+    "out": "8"
+   }
+  ]
+ },
+ {
+  "id": "gy-076",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-076",
+  "title": "黔灵山猕猴的散步路线",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山的一只猕猴从原点出发，按 U/D/L/R 指令散步。U 向上、D 向下、L 向左、R 向右，求最后的位置。\n\n**任务**：机器人从原点 (0,0) 出发，按 n 条指令移动：U 向上、D 向下、L 向左、R 向右。输出最终坐标 x y。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个大写字母 U/D/L/R。",
+  "output_md": "一行两个整数 x、y，表示最终坐标。",
+  "constraints_md": "1 ≤ n ≤ 10^5，指令只会是 U/D/L/R。",
+  "hint_md": "维护 x、y 两个变量，初始为 0。\nU 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。\n最后按 x y 输出。",
+  "note_md": "",
+  "hints": [
+   "维护 x、y 两个变量，初始为 0。",
+   "U 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。",
+   "最后按 x y 输出。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "坐标"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\nL\nD\nL\nU",
+    "out": "-2 0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\nL\nD\nL\nU",
+    "out": "-2 0"
+   },
+   {
+    "in": "9\nL\nD\nD\nR\nU\nD\nL\nL\nL",
+    "out": "-3 -2"
+   },
+   {
+    "in": "3\nL\nD\nD",
+    "out": "-1 -2"
+   },
+   {
+    "in": "5\nD\nD\nL\nD\nR",
+    "out": "0 -3"
+   },
+   {
+    "in": "4\nL\nD\nR\nR",
+    "out": "1 -1"
+   },
+   {
+    "in": "5\nD\nL\nD\nD\nR",
+    "out": "0 -3"
+   }
+  ]
+ },
+ {
+  "id": "gy-077",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-077",
+  "title": "花果园的送快递机器人",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "花果园的快递机器人从原点出发，按上下左右指令移动。求它送完这一趟后的坐标。\n\n**任务**：机器人从原点 (0,0) 出发，按 n 条指令移动：U 向上、D 向下、L 向左、R 向右。输出最终坐标 x y。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个大写字母 U/D/L/R。",
+  "output_md": "一行两个整数 x、y，表示最终坐标。",
+  "constraints_md": "1 ≤ n ≤ 10^5，指令只会是 U/D/L/R。",
+  "hint_md": "维护 x、y 两个变量，初始为 0。\nU 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。\n最后按 x y 输出。",
+  "note_md": "",
+  "hints": [
+   "维护 x、y 两个变量，初始为 0。",
+   "U 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。",
+   "最后按 x y 输出。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "坐标"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5\nL\nD\nU\nD\nU",
+    "out": "-1 0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5\nL\nD\nU\nD\nU",
+    "out": "-1 0"
+   },
+   {
+    "in": "3\nD\nL\nD",
+    "out": "-1 -2"
+   },
+   {
+    "in": "8\nU\nL\nR\nL\nU\nR\nU\nU",
+    "out": "0 4"
+   },
+   {
+    "in": "7\nU\nU\nD\nR\nU\nD\nR",
+    "out": "2 1"
+   },
+   {
+    "in": "7\nL\nL\nL\nR\nD\nL\nL",
+    "out": "-4 -1"
+   },
+   {
+    "in": "6\nU\nD\nR\nL\nD\nR",
+    "out": "1 -1"
+   }
+  ]
+ },
+ {
+  "id": "gy-078",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-078",
+  "title": "数博会展馆的巡检机器人",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "数博会展馆里有一台巡检机器人，从原点开始按指令移动。求巡检结束时的坐标。\n\n**任务**：机器人从原点 (0,0) 出发，按 n 条指令移动：U 向上、D 向下、L 向左、R 向右。输出最终坐标 x y。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个大写字母 U/D/L/R。",
+  "output_md": "一行两个整数 x、y，表示最终坐标。",
+  "constraints_md": "1 ≤ n ≤ 10^5，指令只会是 U/D/L/R。",
+  "hint_md": "维护 x、y 两个变量，初始为 0。\nU 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。\n最后按 x y 输出。",
+  "note_md": "",
+  "hints": [
+   "维护 x、y 两个变量，初始为 0。",
+   "U 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。",
+   "最后按 x y 输出。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "坐标"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7\nD\nD\nR\nD\nD\nU\nD",
+    "out": "1 -4"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7\nD\nD\nR\nD\nD\nU\nD",
+    "out": "1 -4"
+   },
+   {
+    "in": "4\nR\nU\nL\nR",
+    "out": "1 1"
+   },
+   {
+    "in": "3\nR\nD\nD",
+    "out": "1 -2"
+   },
+   {
+    "in": "5\nL\nL\nD\nU\nR",
+    "out": "-1 0"
+   },
+   {
+    "in": "4\nL\nD\nL\nU",
+    "out": "-2 0"
+   },
+   {
+    "in": "5\nR\nR\nU\nL\nL",
+    "out": "0 1"
+   }
+  ]
+ },
+ {
+  "id": "gy-079",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-079",
+  "title": "南明河的保洁船",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "南明河保洁船从码头出发，按上下左右指令移动。求它最后停在哪里。\n\n**任务**：机器人从原点 (0,0) 出发，按 n 条指令移动：U 向上、D 向下、L 向左、R 向右。输出最终坐标 x y。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个大写字母 U/D/L/R。",
+  "output_md": "一行两个整数 x、y，表示最终坐标。",
+  "constraints_md": "1 ≤ n ≤ 10^5，指令只会是 U/D/L/R。",
+  "hint_md": "维护 x、y 两个变量，初始为 0。\nU 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。\n最后按 x y 输出。",
+  "note_md": "",
+  "hints": [
+   "维护 x、y 两个变量，初始为 0。",
+   "U 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。",
+   "最后按 x y 输出。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "坐标"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\nL\nL\nL\nL",
+    "out": "-4 0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\nL\nL\nL\nL",
+    "out": "-4 0"
+   },
+   {
+    "in": "5\nD\nR\nL\nL\nR",
+    "out": "0 -1"
+   },
+   {
+    "in": "3\nD\nR\nD",
+    "out": "1 -2"
+   },
+   {
+    "in": "7\nL\nL\nR\nR\nL\nR\nL",
+    "out": "-1 0"
+   },
+   {
+    "in": "9\nU\nR\nR\nR\nD\nL\nD\nD\nU",
+    "out": "2 -1"
+   },
+   {
+    "in": "5\nD\nL\nR\nU\nU",
+    "out": "0 1"
+   }
+  ]
+ },
+ {
+  "id": "gy-080",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-080",
+  "title": "青岩古镇的导览车",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇的导览车从原点出发，按 U/D/L/R 指令行驶。求它最后的坐标。\n\n**任务**：机器人从原点 (0,0) 出发，按 n 条指令移动：U 向上、D 向下、L 向左、R 向右。输出最终坐标 x y。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n接下来 n 行，每行一个大写字母 U/D/L/R。",
+  "output_md": "一行两个整数 x、y，表示最终坐标。",
+  "constraints_md": "1 ≤ n ≤ 10^5，指令只会是 U/D/L/R。",
+  "hint_md": "维护 x、y 两个变量，初始为 0。\nU 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。\n最后按 x y 输出。",
+  "note_md": "",
+  "hints": [
+   "维护 x、y 两个变量，初始为 0。",
+   "U 让 y 加 1，D 让 y 减 1，L 让 x 减 1，R 让 x 加 1。",
+   "最后按 x y 输出。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "模拟",
+   "坐标"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9\nD\nD\nD\nR\nL\nD\nU\nR\nL",
+    "out": "0 -3"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9\nD\nD\nD\nR\nL\nD\nU\nR\nL",
+    "out": "0 -3"
+   },
+   {
+    "in": "10\nR\nD\nR\nR\nU\nD\nD\nR\nU\nD",
+    "out": "4 -2"
+   },
+   {
+    "in": "3\nD\nR\nL",
+    "out": "0 -1"
+   },
+   {
+    "in": "6\nR\nU\nD\nR\nL\nU",
+    "out": "1 1"
+   },
+   {
+    "in": "4\nU\nR\nD\nL",
+    "out": "0 0"
+   },
+   {
+    "in": "7\nD\nR\nU\nR\nU\nU\nD",
+    "out": "2 1"
+   }
+  ]
+ },
+ {
+  "id": "gy-081",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-081",
+  "title": "花果园二手房总价第 k 高",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "花果园一批二手房各有总价。小黔想知道总价从高到低排第 k 的房子是多少钱。\n\n**任务**：给定 n 个整数，输出从大到小排第 k 的数（1 ≤ k ≤ n）。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，1 ≤ k ≤ n）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示第 k 大的数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ k ≤ n。",
+  "hint_md": "直接排序后取第 k 个最省事，O(n log n)。\n也可以维护一个大小为 k 的小根堆，O(n log k)。\n注意“第 k 大”是从 1 开始数，不是下标 k。",
+  "note_md": "",
+  "hints": [
+   "直接排序后取第 k 个最省事，O(n log n)。",
+   "也可以维护一个大小为 k 的小根堆，O(n log k)。",
+   "注意“第 k 大”是从 1 开始数，不是下标 k。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "第 k 大",
+   "堆"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 3\n120 116 84 169 379 153 174",
+    "out": "169"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 3\n120 116 84 169 379 153 174",
+    "out": "169"
+   },
+   {
+    "in": "4 3\n91 171 379 336",
+    "out": "171"
+   },
+   {
+    "in": "7 4\n168 35 128 430 201 46 150",
+    "out": "150"
+   },
+   {
+    "in": "3 2\n349 68 20",
+    "out": "68"
+   },
+   {
+    "in": "8 8\n225 369 82 494 37 23 58 31",
+    "out": "23"
+   },
+   {
+    "in": "5 1\n440 16 8 359 464",
+    "out": "464"
+   }
+  ]
+ },
+ {
+  "id": "gy-082",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-082",
+  "title": "贵阳中考录取分第 k 高",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "某校记录了 n 名考生的录取分。老师想知道从高到低第 k 高的分数。\n\n**任务**：给定 n 个整数，输出从大到小排第 k 的数（1 ≤ k ≤ n）。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，1 ≤ k ≤ n）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示第 k 大的数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ k ≤ n。",
+  "hint_md": "直接排序后取第 k 个最省事，O(n log n)。\n也可以维护一个大小为 k 的小根堆，O(n log k)。\n注意“第 k 大”是从 1 开始数，不是下标 k。",
+  "note_md": "",
+  "hints": [
+   "直接排序后取第 k 个最省事，O(n log n)。",
+   "也可以维护一个大小为 k 的小根堆，O(n log k)。",
+   "注意“第 k 大”是从 1 开始数，不是下标 k。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "第 k 大",
+   "堆"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4 2\n131 183 398 115",
+    "out": "183"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4 2\n131 183 398 115",
+    "out": "183"
+   },
+   {
+    "in": "9 5\n244 187 236 355 176 227 21 280 397",
+    "out": "236"
+   },
+   {
+    "in": "4 1\n261 339 408 417",
+    "out": "417"
+   },
+   {
+    "in": "5 3\n115 81 15 287 354",
+    "out": "115"
+   },
+   {
+    "in": "6 5\n298 37 10 177 175 477",
+    "out": "37"
+   },
+   {
+    "in": "5 2\n345 418 29 471 465",
+    "out": "465"
+   }
+  ]
+ },
+ {
+  "id": "gy-083",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-083",
+  "title": "青云路摊位营业额第 k 高",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "青云路夜市各摊位的营业额已经统计好。管理员想知道营业额从高到低第 k 名是多少。\n\n**任务**：给定 n 个整数，输出从大到小排第 k 的数（1 ≤ k ≤ n）。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，1 ≤ k ≤ n）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示第 k 大的数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ k ≤ n。",
+  "hint_md": "直接排序后取第 k 个最省事，O(n log n)。\n也可以维护一个大小为 k 的小根堆，O(n log k)。\n注意“第 k 大”是从 1 开始数，不是下标 k。",
+  "note_md": "",
+  "hints": [
+   "直接排序后取第 k 个最省事，O(n log n)。",
+   "也可以维护一个大小为 k 的小根堆，O(n log k)。",
+   "注意“第 k 大”是从 1 开始数，不是下标 k。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "第 k 大",
+   "堆"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "10 9\n264 496 452 225 59 35 175 4 61 451",
+    "out": "35"
+   }
+  ],
+  "tests": [
+   {
+    "in": "10 9\n264 496 452 225 59 35 175 4 61 451",
+    "out": "35"
+   },
+   {
+    "in": "9 8\n30 415 83 237 281 211 397 243 186",
+    "out": "83"
+   },
+   {
+    "in": "3 2\n367 51 110",
+    "out": "110"
+   },
+   {
+    "in": "10 6\n106 238 170 205 283 345 409 297 45 339",
+    "out": "238"
+   },
+   {
+    "in": "4 4\n47 408 372 368",
+    "out": "47"
+   },
+   {
+    "in": "3 3\n89 424 69",
+    "out": "69"
+   }
+  ]
+ },
+ {
+  "id": "gy-084",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-084",
+  "title": "观山湖马拉松第 k 名成绩",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "观山湖马拉松记录了 n 名选手的完赛成绩（秒）。求从高到低第 k 名的时间。\n\n**任务**：给定 n 个整数，输出从大到小排第 k 的数（1 ≤ k ≤ n）。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，1 ≤ k ≤ n）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示第 k 大的数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ k ≤ n。",
+  "hint_md": "直接排序后取第 k 个最省事，O(n log n)。\n也可以维护一个大小为 k 的小根堆，O(n log k)。\n注意“第 k 大”是从 1 开始数，不是下标 k。",
+  "note_md": "",
+  "hints": [
+   "直接排序后取第 k 个最省事，O(n log n)。",
+   "也可以维护一个大小为 k 的小根堆，O(n log k)。",
+   "注意“第 k 大”是从 1 开始数，不是下标 k。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "第 k 大",
+   "堆"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "7 4\n333 488 273 81 27 281 188",
+    "out": "273"
+   }
+  ],
+  "tests": [
+   {
+    "in": "7 4\n333 488 273 81 27 281 188",
+    "out": "273"
+   },
+   {
+    "in": "5 2\n169 121 272 21 324",
+    "out": "272"
+   },
+   {
+    "in": "9 1\n245 280 236 337 167 167 307 58 48",
+    "out": "337"
+   },
+   {
+    "in": "3 3\n473 376 477",
+    "out": "376"
+   },
+   {
+    "in": "5 4\n219 93 494 122 218",
+    "out": "122"
+   },
+   {
+    "in": "10 10\n432 299 411 414 382 290 222 52 349 146",
+    "out": "52"
+   }
+  ]
+ },
+ {
+  "id": "gy-085",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-085",
+  "title": "数博会预约人数第 k 高",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "数博会各展馆的预约人数不同。主办方想知道从高到低第 k 名的预约人数。\n\n**任务**：给定 n 个整数，输出从大到小排第 k 的数（1 ≤ k ≤ n）。",
+  "input_md": "第一行两个整数 n、k（1 ≤ n ≤ 10^5，1 ≤ k ≤ n）。\n第二行 n 个整数 a[i]（0 ≤ a[i] ≤ 10^9）。",
+  "output_md": "一个整数，表示第 k 大的数。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ k ≤ n。",
+  "hint_md": "直接排序后取第 k 个最省事，O(n log n)。\n也可以维护一个大小为 k 的小根堆，O(n log k)。\n注意“第 k 大”是从 1 开始数，不是下标 k。",
+  "note_md": "",
+  "hints": [
+   "直接排序后取第 k 个最省事，O(n log n)。",
+   "也可以维护一个大小为 k 的小根堆，O(n log k)。",
+   "注意“第 k 大”是从 1 开始数，不是下标 k。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "排序",
+   "第 k 大",
+   "堆"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9 3\n249 124 60 145 303 317 324 477 100",
+    "out": "317"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9 3\n249 124 60 145 303 317 324 477 100",
+    "out": "317"
+   },
+   {
+    "in": "8 6\n217 99 1 279 320 328 217 205",
+    "out": "205"
+   },
+   {
+    "in": "9 2\n139 119 348 2 193 52 414 301 239",
+    "out": "348"
+   },
+   {
+    "in": "9 1\n447 208 152 200 155 490 439 138 40",
+    "out": "490"
+   },
+   {
+    "in": "4 1\n398 179 118 478",
+    "out": "478"
+   },
+   {
+    "in": "7 1\n442 476 429 451 150 497 465",
+    "out": "497"
+   }
+  ]
+ },
+ {
+  "id": "gy-086",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-086",
+  "title": "观山湖天际线的下一栋高楼",
+  "difficulty": 5,
+  "time_limit": 2.0,
+  "statement_md": "观山湖沿线有 n 栋楼，给出每栋的高度。对每栋楼，求它右边第一栋比它高的楼的编号；没有就输出 0。\n\n**任务**：给定 n 个数，对每个位置 i，求它右边第一个严格大于 a[i] 的位置编号；不存在则输出 0。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（1 ≤ a[i] ≤ 10^9）。",
+  "output_md": "n 行，第 i 行表示位置 i 的答案（1-based 编号，找不到输出 0）。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。",
+  "hint_md": "暴力向右找是 O(n²)，需要换个方向。\n从右往左扫，维护一个“还没找到更大值”的单调栈。\n栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。",
+  "note_md": "",
+  "hints": [
+   "暴力向右找是 O(n²)，需要换个方向。",
+   "从右往左扫，维护一个“还没找到更大值”的单调栈。",
+   "栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。"
+  ],
+  "difficulty_label": "挑战",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "单调栈",
+   "数据结构"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "10\n14 29 22 22 7 26 16 25 17 13",
+    "out": "2\n0\n6\n6\n6\n0\n8\n0\n0\n0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "10\n14 29 22 22 7 26 16 25 17 13",
+    "out": "2\n0\n6\n6\n6\n0\n8\n0\n0\n0"
+   },
+   {
+    "in": "5\n20 11 18 2 6",
+    "out": "0\n3\n0\n5\n0"
+   },
+   {
+    "in": "6\n5 6 10 9 17 12",
+    "out": "2\n3\n5\n5\n0\n0"
+   },
+   {
+    "in": "10\n12 16 14 29 28 10 11 11 25 6",
+    "out": "2\n4\n4\n0\n0\n7\n9\n9\n0\n0"
+   },
+   {
+    "in": "10\n30 3 21 10 10 19 22 2 7 16",
+    "out": "0\n3\n7\n6\n6\n7\n0\n9\n10\n0"
+   },
+   {
+    "in": "8\n27 19 12 24 17 2 10 14",
+    "out": "0\n4\n4\n0\n0\n7\n8\n0"
+   }
+  ]
+ },
+ {
+  "id": "gy-087",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-087",
+  "title": "黔灵山步道的下一段陡坡",
+  "difficulty": 5,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山步道有 n 段，每段有一个坡度值。求每一段右边第一段比它更陡的段的编号；没有输出 0。\n\n**任务**：给定 n 个数，对每个位置 i，求它右边第一个严格大于 a[i] 的位置编号；不存在则输出 0。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（1 ≤ a[i] ≤ 10^9）。",
+  "output_md": "n 行，第 i 行表示位置 i 的答案（1-based 编号，找不到输出 0）。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。",
+  "hint_md": "暴力向右找是 O(n²)，需要换个方向。\n从右往左扫，维护一个“还没找到更大值”的单调栈。\n栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。",
+  "note_md": "",
+  "hints": [
+   "暴力向右找是 O(n²)，需要换个方向。",
+   "从右往左扫，维护一个“还没找到更大值”的单调栈。",
+   "栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。"
+  ],
+  "difficulty_label": "挑战",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "单调栈",
+   "数据结构"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "4\n4 11 5 24",
+    "out": "2\n4\n4\n0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "4\n4 11 5 24",
+    "out": "2\n4\n4\n0"
+   },
+   {
+    "in": "6\n22 2 11 2 3 11",
+    "out": "0\n3\n0\n5\n6\n0"
+   },
+   {
+    "in": "8\n6 17 11 13 27 29 21 1",
+    "out": "2\n5\n4\n5\n6\n0\n0\n0"
+   },
+   {
+    "in": "3\n3 19 12",
+    "out": "2\n0\n0"
+   },
+   {
+    "in": "10\n29 15 20 25 19 5 19 3 8 3",
+    "out": "0\n3\n4\n0\n0\n7\n0\n9\n0\n0"
+   },
+   {
+    "in": "10\n1 11 20 13 10 8 25 11 14 28",
+    "out": "2\n3\n7\n7\n7\n7\n10\n9\n10\n0"
+   }
+  ]
+ },
+ {
+  "id": "gy-088",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-088",
+  "title": "南明河的下一处深水段",
+  "difficulty": 5,
+  "time_limit": 2.0,
+  "statement_md": "南明河被分成 n 段，每段有一个深度。求每一段右边第一段更深的段的编号；没有输出 0。\n\n**任务**：给定 n 个数，对每个位置 i，求它右边第一个严格大于 a[i] 的位置编号；不存在则输出 0。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（1 ≤ a[i] ≤ 10^9）。",
+  "output_md": "n 行，第 i 行表示位置 i 的答案（1-based 编号，找不到输出 0）。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。",
+  "hint_md": "暴力向右找是 O(n²)，需要换个方向。\n从右往左扫，维护一个“还没找到更大值”的单调栈。\n栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。",
+  "note_md": "",
+  "hints": [
+   "暴力向右找是 O(n²)，需要换个方向。",
+   "从右往左扫，维护一个“还没找到更大值”的单调栈。",
+   "栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。"
+  ],
+  "difficulty_label": "挑战",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "单调栈",
+   "数据结构"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "8\n7 2 28 11 3 13 10 21",
+    "out": "3\n3\n0\n6\n6\n8\n8\n0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "8\n7 2 28 11 3 13 10 21",
+    "out": "3\n3\n0\n6\n6\n8\n8\n0"
+   },
+   {
+    "in": "5\n9 21 17 22 27",
+    "out": "2\n4\n4\n5\n0"
+   },
+   {
+    "in": "9\n21 1 3 23 2 16 28 29 15",
+    "out": "4\n3\n4\n7\n6\n7\n8\n0\n0"
+   },
+   {
+    "in": "10\n16 21 30 29 12 15 11 23 1 11",
+    "out": "2\n3\n0\n0\n6\n8\n8\n0\n10\n0"
+   },
+   {
+    "in": "3\n7 29 28",
+    "out": "2\n0\n0"
+   },
+   {
+    "in": "7\n18 6 6 20 12 15 22",
+    "out": "4\n4\n4\n7\n6\n7\n0"
+   }
+  ]
+ },
+ {
+  "id": "gy-089",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-089",
+  "title": "花果园楼栋的下一栋高楼",
+  "difficulty": 5,
+  "time_limit": 2.0,
+  "statement_md": "花果园一排楼栋各有高度。求每栋楼右边第一栋更高的楼的编号；没有输出 0。\n\n**任务**：给定 n 个数，对每个位置 i，求它右边第一个严格大于 a[i] 的位置编号；不存在则输出 0。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（1 ≤ a[i] ≤ 10^9）。",
+  "output_md": "n 行，第 i 行表示位置 i 的答案（1-based 编号，找不到输出 0）。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。",
+  "hint_md": "暴力向右找是 O(n²)，需要换个方向。\n从右往左扫，维护一个“还没找到更大值”的单调栈。\n栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。",
+  "note_md": "",
+  "hints": [
+   "暴力向右找是 O(n²)，需要换个方向。",
+   "从右往左扫，维护一个“还没找到更大值”的单调栈。",
+   "栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。"
+  ],
+  "difficulty_label": "挑战",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "单调栈",
+   "数据结构"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5\n28 19 3 1 30",
+    "out": "5\n5\n5\n5\n0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5\n28 19 3 1 30",
+    "out": "5\n5\n5\n5\n0"
+   },
+   {
+    "in": "5\n24 17 9 26 6",
+    "out": "4\n4\n4\n0\n0"
+   },
+   {
+    "in": "10\n21 30 2 11 9 1 29 20 22 18",
+    "out": "2\n0\n4\n7\n7\n7\n0\n9\n0\n0"
+   },
+   {
+    "in": "6\n7 28 1 9 18 28",
+    "out": "2\n0\n4\n5\n6\n0"
+   },
+   {
+    "in": "9\n11 17 7 30 4 20 7 4 12",
+    "out": "2\n4\n4\n0\n6\n0\n9\n9\n0"
+   },
+   {
+    "in": "3\n27 24 4",
+    "out": "0\n0\n0"
+   }
+  ]
+ },
+ {
+  "id": "gy-090",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-090",
+  "title": "贵阳气温的下一个高温日",
+  "difficulty": 5,
+  "time_limit": 2.0,
+  "statement_md": "贵阳连续 n 天记录了最高气温。求每一天右边第一个气温更高的日子的编号；没有输出 0。\n\n**任务**：给定 n 个数，对每个位置 i，求它右边第一个严格大于 a[i] 的位置编号；不存在则输出 0。",
+  "input_md": "第一行一个整数 n（1 ≤ n ≤ 10^5）。\n第二行 n 个整数 a[i]（1 ≤ a[i] ≤ 10^9）。",
+  "output_md": "n 行，第 i 行表示位置 i 的答案（1-based 编号，找不到输出 0）。",
+  "constraints_md": "1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。",
+  "hint_md": "暴力向右找是 O(n²)，需要换个方向。\n从右往左扫，维护一个“还没找到更大值”的单调栈。\n栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。",
+  "note_md": "",
+  "hints": [
+   "暴力向右找是 O(n²)，需要换个方向。",
+   "从右往左扫，维护一个“还没找到更大值”的单调栈。",
+   "栈里存下标，遇到 ≤ 当前值的就弹出，栈顶就是答案。"
+  ],
+  "difficulty_label": "挑战",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "单调栈",
+   "数据结构"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "9\n6 25 17 19 15 6 10 14 22",
+    "out": "2\n0\n4\n9\n9\n7\n8\n9\n0"
+   }
+  ],
+  "tests": [
+   {
+    "in": "9\n6 25 17 19 15 6 10 14 22",
+    "out": "2\n0\n4\n9\n9\n7\n8\n9\n0"
+   },
+   {
+    "in": "6\n11 5 14 16 22 2",
+    "out": "3\n3\n4\n5\n0\n0"
+   },
+   {
+    "in": "7\n22 26 27 25 8 24 9",
+    "out": "2\n3\n0\n0\n6\n0\n0"
+   },
+   {
+    "in": "9\n19 7 26 24 2 16 11 16 8",
+    "out": "3\n3\n0\n0\n6\n0\n8\n0\n0"
+   },
+   {
+    "in": "7\n22 30 9 24 30 13 10",
+    "out": "2\n0\n4\n5\n0\n0\n0"
+   },
+   {
+    "in": "8\n24 29 5 9 19 22 1 9",
+    "out": "2\n0\n4\n5\n6\n0\n8\n0"
+   }
+  ]
+ },
+ {
+  "id": "gy-091",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-091",
+  "title": "花果园送货的最短路径",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "花果园的送货地图是 n×m 的网格，每格有一个通行代价。快递员从左上角走到右下角，只能向右或向下，求最小总代价。\n\n**任务**：给定 n×m 的代价网格，从左上角走到右下角，每次只能向右或向下，求路径上的最小总代价（包含起点和终点）。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行 m 个整数，表示每格的代价。",
+  "output_md": "一个整数，表示最小总代价。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，0 ≤ 格子代价 ≤ 10^9。",
+  "hint_md": "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。\n只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。\n第一行和第一列只能单向转移，要单独处理。",
+  "note_md": "",
+  "hints": [
+   "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。",
+   "只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。",
+   "第一行和第一列只能单向转移，要单独处理。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "网格 DP"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "2 6\n4 6 4 5 5 8\n2 6 7 3 3 3",
+    "out": "28"
+   }
+  ],
+  "tests": [
+   {
+    "in": "2 6\n4 6 4 5 5 8\n2 6 7 3 3 3",
+    "out": "28"
+   },
+   {
+    "in": "3 6\n8 7 6 8 5 8\n2 6 9 7 2 5\n8 7 7 6 4 6",
+    "out": "44"
+   },
+   {
+    "in": "6 4\n4 9 7 5\n9 8 3 5\n9 4 7 8\n4 2 8 5\n9 1 7 6\n6 8 4 3",
+    "out": "42"
+   },
+   {
+    "in": "5 6\n2 6 7 8 1 2\n7 8 8 7 8 2\n7 7 8 5 5 9\n5 3 6 8 9 8\n1 8 4 1 3 7",
+    "out": "45"
+   },
+   {
+    "in": "6 2\n8 5\n4 9\n9 5\n5 7\n6 4\n8 1",
+    "out": "37"
+   },
+   {
+    "in": "4 3\n3 3 1\n5 6 4\n2 3 3\n4 7 3",
+    "out": "17"
+   }
+  ]
+ },
+ {
+  "id": "gy-092",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-092",
+  "title": "黔灵山爬山的体力消耗",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "黔灵山爬山路线是 n×m 的网格，每格有体力消耗。小黔从左上角走到右下角，只能向右或向下，求最少消耗。\n\n**任务**：给定 n×m 的代价网格，从左上角走到右下角，每次只能向右或向下，求路径上的最小总代价（包含起点和终点）。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行 m 个整数，表示每格的代价。",
+  "output_md": "一个整数，表示最小总代价。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，0 ≤ 格子代价 ≤ 10^9。",
+  "hint_md": "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。\n只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。\n第一行和第一列只能单向转移，要单独处理。",
+  "note_md": "",
+  "hints": [
+   "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。",
+   "只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。",
+   "第一行和第一列只能单向转移，要单独处理。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "网格 DP"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3 3\n3 3 1\n8 5 7\n7 7 4",
+    "out": "18"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3 3\n3 3 1\n8 5 7\n7 7 4",
+    "out": "18"
+   },
+   {
+    "in": "2 5\n6 3 5 6 4\n9 8 3 1 1",
+    "out": "19"
+   },
+   {
+    "in": "6 6\n9 9 7 9 1 8\n6 7 1 8 9 2\n6 1 2 8 5 5\n8 3 8 4 4 1\n2 4 3 3 2 9\n8 2 9 9 4 3",
+    "out": "44"
+   },
+   {
+    "in": "3 4\n1 1 8 3\n7 2 2 6\n4 4 8 8",
+    "out": "20"
+   },
+   {
+    "in": "4 6\n3 4 4 6 9 1\n9 8 4 4 1 7\n7 3 9 7 8 5\n8 3 5 1 8 9",
+    "out": "41"
+   },
+   {
+    "in": "5 2\n6 8\n3 7\n2 1\n7 6\n5 6",
+    "out": "24"
+   }
+  ]
+ },
+ {
+  "id": "gy-093",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-093",
+  "title": "青岩古镇石板路的游览",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "青岩古镇的游览图是 n×m 的网格，每格有步行代价。游客从左上角到右下角，只能向右或向下，求最小总代价。\n\n**任务**：给定 n×m 的代价网格，从左上角走到右下角，每次只能向右或向下，求路径上的最小总代价（包含起点和终点）。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行 m 个整数，表示每格的代价。",
+  "output_md": "一个整数，表示最小总代价。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，0 ≤ 格子代价 ≤ 10^9。",
+  "hint_md": "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。\n只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。\n第一行和第一列只能单向转移，要单独处理。",
+  "note_md": "",
+  "hints": [
+   "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。",
+   "只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。",
+   "第一行和第一列只能单向转移，要单独处理。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "网格 DP"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "3 4\n6 4 1 9\n7 3 1 2\n2 4 4 9",
+    "out": "23"
+   }
+  ],
+  "tests": [
+   {
+    "in": "3 4\n6 4 1 9\n7 3 1 2\n2 4 4 9",
+    "out": "23"
+   },
+   {
+    "in": "6 4\n2 6 6 9\n2 9 6 2\n1 7 2 6\n4 6 9 5\n1 8 5 6\n9 7 3 3",
+    "out": "29"
+   },
+   {
+    "in": "6 2\n3 4\n7 3\n4 1\n7 1\n7 5\n1 4",
+    "out": "21"
+   },
+   {
+    "in": "5 5\n2 7 2 7 8\n2 2 7 9 8\n6 6 6 4 9\n3 4 4 8 6\n4 9 8 7 5",
+    "out": "39"
+   },
+   {
+    "in": "3 6\n9 2 9 6 2 4\n8 3 4 2 3 3\n5 1 4 7 9 6",
+    "out": "32"
+   },
+   {
+    "in": "6 3\n7 3 9\n6 3 5\n7 1 7\n6 2 8\n9 8 4\n1 2 3",
+    "out": "29"
+   }
+  ]
+ },
+ {
+  "id": "gy-094",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-094",
+  "title": "数博会展馆的参观路线",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "数博会展馆排成 n×m 网格，每格有一个参观耗时。参观者从左上角到右下角，只能向右或向下，求最短耗时。\n\n**任务**：给定 n×m 的代价网格，从左上角走到右下角，每次只能向右或向下，求路径上的最小总代价（包含起点和终点）。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行 m 个整数，表示每格的代价。",
+  "output_md": "一个整数，表示最小总代价。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，0 ≤ 格子代价 ≤ 10^9。",
+  "hint_md": "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。\n只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。\n第一行和第一列只能单向转移，要单独处理。",
+  "note_md": "",
+  "hints": [
+   "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。",
+   "只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。",
+   "第一行和第一列只能单向转移，要单独处理。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "网格 DP"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 3\n8 4 6\n4 5 1\n3 1 7\n1 2 6\n5 7 2",
+    "out": "26"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 3\n8 4 6\n4 5 1\n3 1 7\n1 2 6\n5 7 2",
+    "out": "26"
+   },
+   {
+    "in": "4 2\n3 3\n6 9\n8 3\n2 6",
+    "out": "24"
+   },
+   {
+    "in": "2 3\n3 2 1\n3 2 3",
+    "out": "9"
+   },
+   {
+    "in": "2 5\n6 2 3 3 9\n4 7 1 8 6",
+    "out": "26"
+   },
+   {
+    "in": "4 4\n3 1 6 6\n9 5 4 8\n3 2 7 2\n1 9 2 3",
+    "out": "23"
+   },
+   {
+    "in": "6 5\n6 7 1 2 9\n9 6 1 6 9\n3 8 3 7 4\n8 2 1 3 7\n9 3 9 5 9\n5 6 3 1 3",
+    "out": "31"
+   }
+  ]
+ },
+ {
+  "id": "gy-095",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-095",
+  "title": "南明河滨河步道的跑步",
+  "difficulty": 4,
+  "time_limit": 2.0,
+  "statement_md": "南明河滨河步道是 n×m 的网格，每格有一个疲劳值。跑者从左上角到右下角，只能向右或向下，求最小疲劳值。\n\n**任务**：给定 n×m 的代价网格，从左上角走到右下角，每次只能向右或向下，求路径上的最小总代价（包含起点和终点）。",
+  "input_md": "第一行两个整数 n、m（1 ≤ n, m ≤ 1000）。\n接下来 n 行，每行 m 个整数，表示每格的代价。",
+  "output_md": "一个整数，表示最小总代价。",
+  "constraints_md": "1 ≤ n, m ≤ 1000，0 ≤ 格子代价 ≤ 10^9。",
+  "hint_md": "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。\n只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。\n第一行和第一列只能单向转移，要单独处理。",
+  "note_md": "",
+  "hints": [
+   "dp[i][j] 表示从左上角走到 (i,j) 的最小代价。",
+   "只能从上面或左边过来：dp[i][j] = a[i][j] + min(dp[i-1][j], dp[i][j-1])。",
+   "第一行和第一列只能单向转移，要单独处理。"
+  ],
+  "difficulty_label": "进阶",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "动态规划",
+   "网格 DP"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "5 5\n1 1 3 9 4\n8 6 7 4 5\n8 7 1 1 7\n9 2 8 9 5\n1 6 7 7 8",
+    "out": "34"
+   }
+  ],
+  "tests": [
+   {
+    "in": "5 5\n1 1 3 9 4\n8 6 7 4 5\n8 7 1 1 7\n9 2 8 9 5\n1 6 7 7 8",
+    "out": "34"
+   },
+   {
+    "in": "3 6\n5 7 9 6 6 6\n8 7 4 7 1 3\n8 7 9 1 3 7",
+    "out": "41"
+   },
+   {
+    "in": "4 6\n4 5 7 3 3 7\n4 3 7 1 8 7\n1 4 2 5 6 9\n1 6 6 1 5 5",
+    "out": "31"
+   },
+   {
+    "in": "6 4\n4 9 4 8\n6 3 6 2\n4 5 6 4\n3 4 4 6\n9 5 2 4\n5 1 8 5",
+    "out": "36"
+   },
+   {
+    "in": "2 5\n8 7 1 4 3\n8 5 2 6 2",
+    "out": "25"
+   },
+   {
+    "in": "6 3\n2 9 2\n4 3 3\n6 1 6\n9 1 6\n7 2 1\n1 5 6",
+    "out": "20"
+   }
+  ]
+ },
+ {
+  "id": "gy-096",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-096",
+  "title": "甲秀楼长联的标点检查",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "甲秀楼长联整理时，需要检查一段由 ()[]{} 组成的括号串是否合法：每个左括号都要有同类型右括号按正确顺序闭合。\n\n**任务**：给定一个由 ()[]{} 组成的括号串，判断是否合法：每个左括号都要有同类型右括号按正确顺序闭合，且不能有多余括号。",
+  "input_md": "一行一个长度不超过 10^5 的括号串。",
+  "output_md": "合法输出 YES，否则输出 NO。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含 ()[]{}。",
+  "hint_md": "用栈保存还没配对的左括号。\n遇到右括号时，栈顶必须是同类型左括号。\n扫描结束后栈必须为空。",
+  "note_md": "",
+  "hints": [
+   "用栈保存还没配对的左括号。",
+   "遇到右括号时，栈顶必须是同类型左括号。",
+   "扫描结束后栈必须为空。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "栈",
+   "字符串"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "([[[)(",
+    "out": "NO"
+   }
+  ],
+  "tests": [
+   {
+    "in": "([[[)(",
+    "out": "NO"
+   },
+   {
+    "in": "[[",
+    "out": "NO"
+   },
+   {
+    "in": "{)[}]}}(]]]",
+    "out": "NO"
+   },
+   {
+    "in": "}{",
+    "out": "NO"
+   },
+   {
+    "in": "(({{(]{{{[}(",
+    "out": "NO"
+   },
+   {
+    "in": "(]})({[)]((",
+    "out": "NO"
+   }
+  ]
+ },
+ {
+  "id": "gy-097",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-097",
+  "title": "贵阳地铁导向牌的括号",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "地铁导向牌的文案里有 ()[]{} 组成的括号串。检查它们是否配对正确。\n\n**任务**：给定一个由 ()[]{} 组成的括号串，判断是否合法：每个左括号都要有同类型右括号按正确顺序闭合，且不能有多余括号。",
+  "input_md": "一行一个长度不超过 10^5 的括号串。",
+  "output_md": "合法输出 YES，否则输出 NO。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含 ()[]{}。",
+  "hint_md": "用栈保存还没配对的左括号。\n遇到右括号时，栈顶必须是同类型左括号。\n扫描结束后栈必须为空。",
+  "note_md": "",
+  "hints": [
+   "用栈保存还没配对的左括号。",
+   "遇到右括号时，栈顶必须是同类型左括号。",
+   "扫描结束后栈必须为空。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "栈",
+   "字符串"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "{}}([[)}",
+    "out": "NO"
+   }
+  ],
+  "tests": [
+   {
+    "in": "{}}([[)}",
+    "out": "NO"
+   },
+   {
+    "in": "([[{[])])}",
+    "out": "NO"
+   },
+   {
+    "in": "][]))]][[}",
+    "out": "NO"
+   },
+   {
+    "in": "}()][[}{{",
+    "out": "NO"
+   },
+   {
+    "in": "{}({]{{{",
+    "out": "NO"
+   },
+   {
+    "in": "){{]{](}{[",
+    "out": "NO"
+   }
+  ]
+ },
+ {
+  "id": "gy-098",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-098",
+  "title": "数博会展位编号的括号",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "数博会展位编号里混入了一串括号。检查这段括号串是否合法。\n\n**任务**：给定一个由 ()[]{} 组成的括号串，判断是否合法：每个左括号都要有同类型右括号按正确顺序闭合，且不能有多余括号。",
+  "input_md": "一行一个长度不超过 10^5 的括号串。",
+  "output_md": "合法输出 YES，否则输出 NO。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含 ()[]{}。",
+  "hint_md": "用栈保存还没配对的左括号。\n遇到右括号时，栈顶必须是同类型左括号。\n扫描结束后栈必须为空。",
+  "note_md": "",
+  "hints": [
+   "用栈保存还没配对的左括号。",
+   "遇到右括号时，栈顶必须是同类型左括号。",
+   "扫描结束后栈必须为空。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "栈",
+   "字符串"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "{{))}[)(",
+    "out": "NO"
+   }
+  ],
+  "tests": [
+   {
+    "in": "{{))}[)(",
+    "out": "NO"
+   },
+   {
+    "in": "][]([(}{)[",
+    "out": "NO"
+   },
+   {
+    "in": ")]){",
+    "out": "NO"
+   },
+   {
+    "in": "{)}[)(}(",
+    "out": "NO"
+   },
+   {
+    "in": "}))(]){[(())",
+    "out": "NO"
+   },
+   {
+    "in": "{[[)}{}(){",
+    "out": "NO"
+   }
+  ]
+ },
+ {
+  "id": "gy-099",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-099",
+  "title": "青云路摊位招牌的括号",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "青云路摊位的招牌文案里有括号串。检查左右括号是否一一对应。\n\n**任务**：给定一个由 ()[]{} 组成的括号串，判断是否合法：每个左括号都要有同类型右括号按正确顺序闭合，且不能有多余括号。",
+  "input_md": "一行一个长度不超过 10^5 的括号串。",
+  "output_md": "合法输出 YES，否则输出 NO。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含 ()[]{}。",
+  "hint_md": "用栈保存还没配对的左括号。\n遇到右括号时，栈顶必须是同类型左括号。\n扫描结束后栈必须为空。",
+  "note_md": "",
+  "hints": [
+   "用栈保存还没配对的左括号。",
+   "遇到右括号时，栈顶必须是同类型左括号。",
+   "扫描结束后栈必须为空。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "栈",
+   "字符串"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "})[][))(}]]",
+    "out": "NO"
+   }
+  ],
+  "tests": [
+   {
+    "in": "})[][))(}]]",
+    "out": "NO"
+   },
+   {
+    "in": ")}()[()}}{)",
+    "out": "NO"
+   },
+   {
+    "in": "({)[(])}))",
+    "out": "NO"
+   },
+   {
+    "in": "([}[[",
+    "out": "NO"
+   },
+   {
+    "in": "][]}",
+    "out": "NO"
+   },
+   {
+    "in": "[])[]})(}][]",
+    "out": "NO"
+   }
+  ]
+ },
+ {
+  "id": "gy-100",
+  "kind": "local",
+  "chapter": 0,
+  "chapter_title": "贵阳生活 100 题",
+  "label": "GY-100",
+  "title": "花果园电梯告示的括号",
+  "difficulty": 2,
+  "time_limit": 2.0,
+  "statement_md": "花果园电梯告示里有一串括号，检查它们是否正确闭合。\n\n**任务**：给定一个由 ()[]{} 组成的括号串，判断是否合法：每个左括号都要有同类型右括号按正确顺序闭合，且不能有多余括号。",
+  "input_md": "一行一个长度不超过 10^5 的括号串。",
+  "output_md": "合法输出 YES，否则输出 NO。",
+  "constraints_md": "1 ≤ |s| ≤ 10^5，字符只含 ()[]{}。",
+  "hint_md": "用栈保存还没配对的左括号。\n遇到右括号时，栈顶必须是同类型左括号。\n扫描结束后栈必须为空。",
+  "note_md": "",
+  "hints": [
+   "用栈保存还没配对的左括号。",
+   "遇到右括号时，栈顶必须是同类型左括号。",
+   "扫描结束后栈必须为空。"
+  ],
+  "difficulty_label": "基础",
+  "difficulty_note": "",
+  "difficulty_factors": [],
+  "tags": [
+   "栈",
+   "字符串"
+  ],
+  "source": "本地 OJ 原创 · 贵阳生活 100 题",
+  "samples": [
+   {
+    "in": "(]",
+    "out": "NO"
+   }
+  ],
+  "tests": [
+   {
+    "in": "(]",
+    "out": "NO"
+   },
+   {
+    "in": "}({[){({",
+    "out": "NO"
+   },
+   {
+    "in": ")][]()(]]",
+    "out": "NO"
+   },
+   {
+    "in": ")})",
+    "out": "NO"
+   },
+   {
+    "in": "[([])({[(]",
+    "out": "NO"
+   },
+   {
+    "in": "{)}}]]{",
+    "out": "NO"
+   }
+  ]
+ }
+]

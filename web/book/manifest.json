@@ -1,0 +1,318 @@
+{
+  "title": "从语法到算法：C++ 算法设计与 ACM 竞赛入门",
+  "subtitle": "原书电子版 · 阅读与题目联动",
+  "sections": [
+    {
+      "id": "preface",
+      "kind": "preface",
+      "num": 0,
+      "title": "前言",
+      "file": "chapters/preface.md"
+    },
+    {
+      "id": "ch01",
+      "kind": "chapter",
+      "num": 1,
+      "title": "第 1 章　从\"会语法\"到\"能做题\"",
+      "short": "从\"会语法\"到\"能做题\"",
+      "file": "chapters/ch01.md"
+    },
+    {
+      "id": "ch02",
+      "kind": "chapter",
+      "num": 2,
+      "title": "第 2 章　C++ 基础补课",
+      "short": "C++ 基础补课",
+      "file": "chapters/ch02.md"
+    },
+    {
+      "id": "ch03",
+      "kind": "chapter",
+      "num": 3,
+      "title": "第 3 章　STL 速成",
+      "short": "STL 速成",
+      "file": "chapters/ch03.md"
+    },
+    {
+      "id": "ch04",
+      "kind": "chapter",
+      "num": 4,
+      "title": "第 4 章　复杂度：为什么程序会超时",
+      "short": "复杂度：为什么程序会超时",
+      "file": "chapters/ch04.md"
+    },
+    {
+      "id": "ch05",
+      "kind": "chapter",
+      "num": 5,
+      "title": "第 5 章　模拟：把生活翻译成代码",
+      "short": "模拟：把生活翻译成代码",
+      "file": "chapters/ch05.md"
+    },
+    {
+      "id": "ch06",
+      "kind": "chapter",
+      "num": 6,
+      "title": "第 6 章　枚举：先能算对，再算快",
+      "short": "枚举：先能算对，再算快",
+      "file": "chapters/ch06.md"
+    },
+    {
+      "id": "ch07",
+      "kind": "chapter",
+      "num": 7,
+      "title": "第 7 章　排序与二分",
+      "short": "排序与二分",
+      "file": "chapters/ch07.md"
+    },
+    {
+      "id": "ch08",
+      "kind": "chapter",
+      "num": 8,
+      "title": "第 8 章　贪心：眼前的便宜该不该占",
+      "short": "贪心：眼前的便宜该不该占",
+      "file": "chapters/ch08.md"
+    },
+    {
+      "id": "ch09",
+      "kind": "chapter",
+      "num": 9,
+      "title": "第 9 章　递归：把大问题变小",
+      "short": "递归：把大问题变小",
+      "file": "chapters/ch09.md"
+    },
+    {
+      "id": "ch10",
+      "kind": "chapter",
+      "num": 10,
+      "title": "第 10 章　分治：分开算，再合并",
+      "short": "分治：分开算，再合并",
+      "file": "chapters/ch10.md"
+    },
+    {
+      "id": "ch11",
+      "kind": "chapter",
+      "num": 11,
+      "title": "第 11 章　深度优先搜索",
+      "short": "深度优先搜索",
+      "file": "chapters/ch11.md"
+    },
+    {
+      "id": "ch12",
+      "kind": "chapter",
+      "num": 12,
+      "title": "第 12 章　广度优先搜索",
+      "short": "广度优先搜索",
+      "file": "chapters/ch12.md"
+    },
+    {
+      "id": "ch13",
+      "kind": "chapter",
+      "num": 13,
+      "title": "第 13 章　回溯与剪枝",
+      "short": "回溯与剪枝",
+      "file": "chapters/ch13.md"
+    },
+    {
+      "id": "ch14",
+      "kind": "chapter",
+      "num": 14,
+      "title": "第 14 章　栈、队列与单调结构",
+      "short": "栈、队列与单调结构",
+      "file": "chapters/ch14.md"
+    },
+    {
+      "id": "ch15",
+      "kind": "chapter",
+      "num": 15,
+      "title": "第 15 章　哈希、集合与映射",
+      "short": "哈希、集合与映射",
+      "file": "chapters/ch15.md"
+    },
+    {
+      "id": "ch16",
+      "kind": "chapter",
+      "num": 16,
+      "title": "第 16 章　堆与优先队列",
+      "short": "堆与优先队列",
+      "file": "chapters/ch16.md"
+    },
+    {
+      "id": "ch17",
+      "kind": "chapter",
+      "num": 17,
+      "title": "第 17 章　并查集",
+      "short": "并查集",
+      "file": "chapters/ch17.md"
+    },
+    {
+      "id": "ch18",
+      "kind": "chapter",
+      "num": 18,
+      "title": "第 18 章　树状数组与线段树",
+      "short": "树状数组与线段树",
+      "file": "chapters/ch18.md"
+    },
+    {
+      "id": "ch19",
+      "kind": "chapter",
+      "num": 19,
+      "title": "第 19 章　图与图的遍历",
+      "short": "图与图的遍历",
+      "file": "chapters/ch19.md"
+    },
+    {
+      "id": "ch20",
+      "kind": "chapter",
+      "num": 20,
+      "title": "第 20 章　最短路",
+      "short": "最短路",
+      "file": "chapters/ch20.md"
+    },
+    {
+      "id": "ch21",
+      "kind": "chapter",
+      "num": 21,
+      "title": "第 21 章　最小生成树与拓扑排序",
+      "short": "最小生成树与拓扑排序",
+      "file": "chapters/ch21.md"
+    },
+    {
+      "id": "ch22",
+      "kind": "chapter",
+      "num": 22,
+      "title": "第 22 章　树上的算法",
+      "short": "树上的算法",
+      "file": "chapters/ch22.md"
+    },
+    {
+      "id": "ch23",
+      "kind": "chapter",
+      "num": 23,
+      "title": "第 23 章　从递归到动态规划",
+      "short": "从递归到动态规划",
+      "file": "chapters/ch23.md"
+    },
+    {
+      "id": "ch24",
+      "kind": "chapter",
+      "num": 24,
+      "title": "第 24 章　背包问题",
+      "short": "背包问题",
+      "file": "chapters/ch24.md"
+    },
+    {
+      "id": "ch25",
+      "kind": "chapter",
+      "num": 25,
+      "title": "第 25 章　区间 DP 与序列 DP",
+      "short": "区间 DP 与序列 DP",
+      "file": "chapters/ch25.md"
+    },
+    {
+      "id": "ch26",
+      "kind": "chapter",
+      "num": 26,
+      "title": "第 26 章　树形 DP 与状压 DP",
+      "short": "树形 DP 与状压 DP",
+      "file": "chapters/ch26.md"
+    },
+    {
+      "id": "ch27",
+      "kind": "chapter",
+      "num": 27,
+      "title": "第 27 章　DP 优化入门",
+      "short": "DP 优化入门",
+      "file": "chapters/ch27.md"
+    },
+    {
+      "id": "ch28",
+      "kind": "chapter",
+      "num": 28,
+      "title": "第 28 章　字符串算法",
+      "short": "字符串算法",
+      "file": "chapters/ch28.md"
+    },
+    {
+      "id": "ch29",
+      "kind": "chapter",
+      "num": 29,
+      "title": "第 29 章　数论基础",
+      "short": "数论基础",
+      "file": "chapters/ch29.md"
+    },
+    {
+      "id": "ch30",
+      "kind": "chapter",
+      "num": 30,
+      "title": "第 30 章　组合数学与计数",
+      "short": "组合数学与计数",
+      "file": "chapters/ch30.md"
+    },
+    {
+      "id": "ch31",
+      "kind": "chapter",
+      "num": 31,
+      "title": "第 31 章　位运算与高精度",
+      "short": "位运算与高精度",
+      "file": "chapters/ch31.md"
+    },
+    {
+      "id": "ch32",
+      "kind": "chapter",
+      "num": 32,
+      "title": "第 32 章　竞赛实战：策略、模板与训练计划",
+      "short": "竞赛实战：策略、模板与训练计划",
+      "file": "chapters/ch32.md"
+    },
+    {
+      "id": "appendix-A",
+      "kind": "appendix",
+      "letter": "A",
+      "title": "附录 A　竞赛代码模板库",
+      "short": "竞赛代码模板库",
+      "file": "chapters/appendix-A.md"
+    },
+    {
+      "id": "appendix-B",
+      "kind": "appendix",
+      "letter": "B",
+      "title": "附录 B　常见错误速查表",
+      "short": "常见错误速查表",
+      "file": "chapters/appendix-B.md"
+    },
+    {
+      "id": "appendix-C",
+      "kind": "appendix",
+      "letter": "C",
+      "title": "附录 C　贵阳主题练习 40 题",
+      "short": "贵阳主题练习 40 题",
+      "file": "chapters/appendix-C.md"
+    },
+    {
+      "id": "appendix-D",
+      "kind": "appendix",
+      "letter": "D",
+      "title": "附录 D　术语中英对照与 STL 速查",
+      "short": "术语中英对照与 STL 速查",
+      "file": "chapters/appendix-D.md"
+    },
+    {
+      "id": "appendix-E",
+      "kind": "appendix",
+      "letter": "E",
+      "title": "附录 E　习题提示与答案要点",
+      "short": "习题提示与答案要点",
+      "file": "chapters/appendix-E.md"
+    },
+    {
+      "id": "appendix-F",
+      "kind": "appendix",
+      "letter": "F",
+      "title": "附录 F　书里的贵阳：地标、交通与查证说明",
+      "short": "书里的贵阳：地标、交通与查证说明",
+      "file": "chapters/appendix-F.md"
+    }
+  ],
+  "has_pdf": true
+}
