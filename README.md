@@ -110,21 +110,51 @@ Windows 上也可以直接双击 `启动本地OJ.bat`。它会检测 `py -3` 或
 
 ## 界面预览
 
+以下截图均为 **1440 × 900 桌面窗口** 实拍，展示当前版本的苹果风界面与五视图布局。
+
 ### 题目工作台
+
+左侧题库、中间题面、右侧 C++ 编辑器与控制台同屏，难度、提示、提交记录都在题面工具栏里。
 
 ![题目工作台](docs/screenshots/overview.png)
 
 ### 洛谷式控制台
 
-![控制台](docs/screenshots/console.png)
+不判分、不记进度，左边填 stdin，右边直接看 stdout / stderr。适合先手测样例，再提交评测。
+
+![洛谷式控制台](docs/screenshots/console.png)
 
 ### C++17 参考答案
 
+默认折叠，点击后按需加载；首行固定 `#include <bits/stdc++.h>`，可复制到编辑器继续修改。
+
 ![参考答案](docs/screenshots/answer.png)
+
+### 原书联动
+
+39 节原书内容内置在软件里，章节导学、思维导图、题目反查和划词问 AI 在同一页完成。
+
+![原书联动](docs/screenshots/book.png)
+
+### 学习轨迹
+
+通过题数、提交热力图、难度分布、薄弱知识点和冒险者档案，构成一张本机学习地图。
+
+![学习轨迹](docs/screenshots/learning.png)
+
+### 算法竞技场
+
+闪电赛 / 标准赛 / 远征赛三档赛制，限时抽题、积分与段位、赛后 AI 复盘。
+
+![算法竞技场](docs/screenshots/arena.png)
 
 ### 语法加油站
 
+本机代码体检、错误急救卡、语法货架和 5 分钟小练习，不调用云端即可使用。
+
 ![语法加油站](docs/screenshots/grammar.png)
+
+> 截图中的通过数、XP 和段位来自截图机器的本机进度；题库总量以 399 道为准。
 
 ---
 
