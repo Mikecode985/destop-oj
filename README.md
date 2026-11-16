@@ -16,8 +16,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Mikecode985/destop-oj/archive/refs/tags/v1.0.0.zip">
-    <img src="https://img.shields.io/badge/⬇️%20一键下载-v1.0.0%20源码%20ZIP-0071e3?style=for-the-badge" alt="一键下载">
+  <a href="https://github.com/Mikecode985/destop-oj/archive/refs/tags/v1.0.1.zip">
+    <img src="https://img.shields.io/badge/⬇️%20一键下载-v1.0.1%20源码%20ZIP-0071e3?style=for-the-badge" alt="一键下载">
   </a>
   &nbsp;
   <a href="https://github.com/Mikecode985/destop-oj">
@@ -50,7 +50,7 @@
 
 点击上方 **「⬇️ 一键下载」**，或直接打开：
 
-**https://github.com/Mikecode985/destop-oj/archive/refs/tags/v1.0.0.zip**
+**https://github.com/Mikecode985/destop-oj/archive/refs/tags/v1.0.1.zip**
 
 发布页：**https://github.com/Mikecode985/destop-oj/releases/latest**
 
